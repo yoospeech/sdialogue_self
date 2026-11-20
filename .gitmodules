@@ -1,0 +1,3 @@
+[submodule "vendor/sdialog"]
+	path = vendor/sdialog
+	url = https://github.com/idiap/sdialog.git
