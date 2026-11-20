@@ -71,7 +71,7 @@ class PersonaProfile:
         from sdialog.personas import Persona
         language_code = _language_code(language or self.language)
         language_name = LANGUAGES[language_code]
-        if language_code == "en":
+        if language_code != "ko":
             scenario_name = self.scenario_id.replace("_", " ")
             name = f"{self.scenario_id}-{self.persona_id.rsplit('_', 1)[-1]}"
             role = f"{self.speaker} participant in the {scenario_name} scenario"
@@ -79,7 +79,7 @@ class PersonaProfile:
             personality = f"Mood: {self.mood}. Communication style: concise and collaborative."
             circumstances = f"{scenario_name} conversation. Constraint: communicate clearly and stay in role."
             rules = (
-                f"Speak natural English in one or two sentences. Stay within the {scenario_name} scenario. "
+                f"Speak natural {language_name} in one or two sentences. Stay within the {scenario_name} scenario. "
                 "Do not invent private information or unverified facts."
             )
             goal = f"Make practical progress on the shared {scenario_name} objective."
@@ -216,8 +216,8 @@ def get_scenario(scenario_id: str, language: Optional[str] = None) -> Dict[str, 
     """Return an independent copy of context, goals, audio settings and evaluation criteria.
 
     :param scenario_id: Scenario key.
-    :param language: Optional language for human-readable scenario metadata. English metadata is localized;
-        other languages retain the catalog metadata while the agents still receive the selected output language.
+    :param language: Optional language for human-readable scenario metadata. Korean uses the Korean catalog;
+        all other languages use neutral metadata with the selected output language in the instructions.
     :return: A scenario dictionary. Noise SNR ranges are tuples for the Audio API.
 
     Example:
@@ -225,7 +225,7 @@ def get_scenario(scenario_id: str, language: Optional[str] = None) -> Dict[str, 
     """
     import copy
     result = copy.deepcopy(_SCENARIOS[scenario_id])
-    if language is not None and _language_code(language) == "en":
+    if language is not None and _language_code(language) != "ko":
         title = scenario_id.replace("_", " ").title()
         result["title"] = title
         result["relationship"] = "Two fictional participants"
@@ -239,7 +239,7 @@ def get_scenario(scenario_id: str, language: Optional[str] = None) -> Dict[str, 
         result["evaluation_criteria"] = [
             "Both participants maintain their roles and knowledge boundaries",
             "The conversation makes practical progress toward a shared objective",
-            "Responses are relevant, concise, and natural in English",
+            "Responses are relevant, concise, and natural in the selected language",
             "There is no hidden reasoning, special token, or mechanical repetition",
         ]
     for value in result["audio"].get("noise", {}).values():
