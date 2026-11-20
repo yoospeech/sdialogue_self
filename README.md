@@ -1,24 +1,48 @@
+<div align="center">
+
 # SDialogue Self
 
-SDialog를 기반으로 시나리오와 페르소나를 선택하고 대화 생성부터 자동 평가와 음성 합성까지 수행하는
-end-to-end 데이터 생성기입니다. SDialog 본체는 `vendor/sdialog` Git submodule로 관리합니다.
+**From personas to conversations to speech.**
 
-## 제공 기능
+A multilingual dialogue dataset generator powered by SDialog and local Hugging Face models.
 
-- 서른여섯 가지 시나리오와 천 명의 결정적 가상 페르소나
-- 영어 아랍어 중국어 프랑스어 독일어 이탈리아어 일본어 한국어 포르투갈어 스페인어 베트남어
-  태국어 인도네시아어 힌디어 러시아어 폴란드어 선택
-- 고정 턴 수 또는 범위 내 재현 가능한 무작위 턴 수
-- 로컬 Hugging Face 모델을 이용한 대화 생성과 텍스트 기반 자동 평가
-- 시나리오별 오디오 프리셋과 사용자 화자 전용 음향 증강
-- 대화 JSON 평가 JSON WAV 또는 FLAC과 annotation 저장
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](#installation)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](LICENSE)
+[![Powered by SDialog](https://img.shields.io/badge/Powered_by-SDialog-6366F1?style=flat-square)](https://github.com/idiap/sdialog)
+![Hugging Face](https://img.shields.io/badge/Models-Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
-언어 선택은 프롬프트의 출력 언어를 지정합니다. 실제 생성 품질과 TTS 지원 범위는 사용하는 모델에 따라
-달라집니다.
+![Scenarios](https://img.shields.io/badge/Scenarios-36-0EA5E9?style=flat-square)
+![Personas](https://img.shields.io/badge/Personas-1%2C000-8B5CF6?style=flat-square)
+![Language options](https://img.shields.io/badge/Language_options-16-F59E0B?style=flat-square)
 
-## 설치
+[Features](#features) · [Installation](#installation) · [Quickstart](#quickstart) · [Roadmap](#roadmap)
 
-Python 3.10 이상 환경을 권장합니다.
+</div>
+
+## Features
+
+- **Diverse conversations:** 36 everyday, social, and professional scenarios.
+- **Reusable personas:** 1,000 fictional adult profiles built from deterministic attribute combinations.
+- **Multilingual prompts:** 16 selectable output languages.
+- **Flexible turn counts:** fixed lengths or seeded selection within an even-numbered range.
+- **Automatic evaluation:** a text-based HF judge requiring no structured output or tool calling.
+- **Audio generation:** scenario-specific acoustic presets, stereo output, and optional user-only effects.
+- **Dataset artifacts:** dialogue JSON, evaluation JSON, audio, annotations, and RTTM files.
+
+SDialog is pinned as a Git submodule under `vendor/sdialog`. The generator entry point is `sample.py`.
+
+### Language options
+
+English (`en`), Arabic (`ar`), Chinese (`zh`), French (`fr`), German (`de`), Italian (`it`),
+Japanese (`ja`), Korean (`ko`), Portuguese (`pt`), Spanish (`es`), Vietnamese (`vi`), Thai (`th`),
+Indonesian (`id`), Hindi (`hi`), Russian (`ru`), and Polish (`pl`).
+
+Language selection controls the generation prompt. Actual quality and speech support depend on the
+chosen LLM and TTS backend; the default TTS does not necessarily support every listed language.
+
+## Installation
+
+Python 3.10 or newer is recommended. Audio generation requires SDialog's optional audio dependencies.
 
 ```bash
 git clone --recurse-submodules https://github.com/yoospeech/sdialogue_self.git
@@ -26,27 +50,28 @@ cd sdialogue_self
 python -m pip install -r requirements.txt
 ```
 
-이미 저장소를 clone했다면 submodule을 별도로 초기화합니다.
+If you already cloned the repository, initialize the submodule before installing dependencies:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-## 사용법
+## Quickstart
 
-시나리오 목록을 확인합니다.
+List available scenarios and their audio presets:
 
 ```bash
 python sample.py --list-scenarios
 ```
 
-한국어 대화 한 건을 여섯 턴으로 생성 평가하고 음성까지 합성합니다.
+Generate and evaluate a six-turn Korean conversation, then synthesize audio if it passes:
 
 ```bash
 python sample.py --scenario weekend --language ko --turns 6
 ```
 
-일본어 여행 대화 세 건을 각각 여섯 턴에서 열두 턴 사이로 만들고 사용자 화자에만 음향 효과를 적용합니다.
+Generate three Japanese travel conversations with 6–12 turns each, applying acoustic effects only to
+the `user` speaker. Shared timing still follows the selected preset:
 
 ```bash
 python sample.py \
@@ -58,40 +83,58 @@ python sample.py \
   --user-only-augmentation
 ```
 
-텍스트와 평가 JSON만 만들려면 다음 옵션을 사용합니다.
+Generate dialogue and evaluation JSON without synthesizing audio:
 
 ```bash
 python sample.py --scenario random --language en --count 10 --skip-audio
 ```
 
-기본 모델은 `LiquidAI/LFM3-1.7B`이며 `--model`로 다른 로컬 Hugging Face 모델을 지정할 수 있습니다.
-결과는 기본적으로 `output/sample/run_*` 아래에 저장됩니다.
+The default model is `LiquidAI/LFM3-1.7B`. Use `--model` to select another Hugging Face model and
+`python sample.py --help` to view all options. Verify compatibility and output quality for your checkpoint.
 
-## 생성 순서
+## How it works
 
 ```text
-시나리오와 페르소나 선택
-  -> 두 Agent의 대화 생성
-  -> 동일 HF 모델의 일반 텍스트 출력으로 자동 평가
-  -> 대화와 평가 JSON 저장
-  -> 통과한 대화의 오디오와 annotation 생성
+Select scenario and personas
+  -> Generate a conversation between two persona-driven agents
+  -> Evaluate with the shared HF model
+  -> Save dialogue and evaluation JSON
+  -> Synthesize accepted conversations and save audio annotations
 ```
 
-SDialog의 구조화 출력 기반 LLM judge 대신 `PASS: 사유` 또는 `FAIL: 사유` 형식의 일반 텍스트 평가를
-사용합니다. 따라서 tool calling이나 structured output을 지원하지 않는 로컬 HF 모델도 평가에 사용할 수
-있습니다.
+Generation and evaluation share one loaded model. The judge returns a single line such as `PASS: reason`
+or `FAIL: reason`, allowing evaluation without structured output. Malformed verdicts are treated as
+evaluation failures. The LLM is released before audio synthesis begins.
 
-## TODO와 현재 미지원 항목
+The `user` and `agent` labels identify speaker slots; conversations are not limited to customer support.
+Audio presets model acoustic environments, not guaranteed emotional delivery.
 
-- [ ] 명시적인 backchanneling 생성
-  - 현재는 맞장구 발화를 새로 생성하거나 기존 발화 중간에 삽입하지 않습니다.
-  - 오디오 `overlap`은 이미 생성된 턴의 시간만 겹치며 새로운 backchannel을 만들지 않습니다.
-- [ ] 발화 도중의 자연스러운 interruption 및 turn-taking 모델링
-- [ ] 언어별 TTS 지원 여부를 실행 전에 검사하는 기능
-- [ ] 생성과 평가에 서로 다른 모델을 지정하는 옵션
-- [ ] 대규모 생성 작업의 재시작 및 실패 복구
+### Output layout
 
-## 라이선스
+Each run creates a separate directory under `output/sample/` by default:
 
-이 저장소의 코드는 MIT 라이선스를 따릅니다. SDialog의 라이선스와 저작권 고지는 submodule에서 확인할 수
-있습니다.
+```text
+output/sample/run_*/
+├── config.json         # Run settings
+├── summary.json        # Evaluation summary
+├── dialogs/            # Generated conversations
+├── evaluations/        # Verdicts, reasons, and participant metadata
+└── audio/              # WAV or FLAC, JSON annotations, and RTTM
+```
+
+All generated conversations are saved, including failed evaluations. Audio is generated for passing
+conversations by default; `--skip-judge` and `--audio-on-fail` explicitly change this behavior.
+
+## Roadmap
+
+- [ ] **Explicit backchannel generation:** create listener responses and insert them during another speaker's turn.
+  Currently unsupported; audio overlap only shifts existing turns and does not generate backchannels.
+- [ ] Natural interruptions and turn-taking modeling.
+- [ ] Preflight validation of TTS language support.
+- [ ] Separate model selection for generation and evaluation.
+- [ ] Resume and recovery for large generation jobs.
+
+## License
+
+This project's code is released under the [MIT License](LICENSE). SDialog retains its own license and
+copyright notices in [vendor/sdialog](vendor/sdialog).
