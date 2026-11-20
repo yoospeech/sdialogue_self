@@ -1,7 +1,11 @@
 # Multilingual Persona Localization Handoff
 
-Read `AGENTS.md` before continuing. This document records the exact state of the
-language-specific persona and scenario work at commit `ec63586`.
+This file is self-contained: a new coding session can read only this document and
+continue the localization work. Run every command from the repository root. The
+current checkpoint is commit `f5e723f` in `yoospeech/sdialogue_self`.
+
+Do not edit the `vendor/sdialog` submodule for this task. It is the upstream SDialog
+dependency; all project-specific code and data live in this repository root.
 
 ## Goal
 
@@ -96,6 +100,8 @@ persona_library.py
 sample.py
 sample_compact.py
 persona_catalog.json
+fast_softlanding.py
+fast_softlanding.sh
 tools/generate_persona_locales.py
 tools/materialize_personas.py
 tools/validate_persona_locales.py
@@ -124,7 +130,7 @@ python3 tools/validate_persona_locales.py
 Run the loader smoke test:
 
 ```bash
-PYTHONPATH=src /data/util/anaconda3/envs/sdialog/bin/python - <<'PY'
+PYTHONPATH=vendor/sdialog/src /data/util/anaconda3/envs/sdialog/bin/python - <<'PY'
 from persona_library import LANGUAGES, get
 
 for language in LANGUAGES:
@@ -143,7 +149,7 @@ The final validator must report 16 languages, 16,000 personas, and 576 scenarios
 The current checkpoint is:
 
 ```text
-ec63586 Add multilingual persona generation checkpoint
+f5e723f Add multilingual persona generation checkpoint
 ```
 
 After the remaining locales and all validation pass, create a follow-up commit:
@@ -152,13 +158,6 @@ After the remaining locales and all validation pass, create a follow-up commit:
 Complete multilingual persona localizations
 ```
 
-Do not include or delete these unrelated untracked user files:
-
-```text
-dialog_0.json
-dialog_id.json
-dialog_ja.json
-dialog_ko.json
-fast_softlanding.py
-fast_softlanding.sh
-```
+Before committing, use `git status --short` and include only the three remaining
+locale completions plus any necessary validator fixes. Generated dialog and audio
+outputs are ignored by `.gitignore` and must not be committed.
