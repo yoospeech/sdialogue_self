@@ -1,0 +1,2022 @@
+weekend:
+  id: weekend
+  title: Rencana akhir pekan bersama teman
+  relationship: teman
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Rencana akhir pekan bersama teman
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Merencanakan jalan-jalan setengah hari bersama / Menyepakati rencana istirahat dengan sedikit perjalanan
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Merencanakan jalan-jalan setengah hari bersama
+    persona:
+      name: Tokoh rekaan 1A
+      age: dewasa
+      language: Indonesian
+      role: teman yang mengusulkan kegiatan luar ruang
+      background: Berpengalaman mendaki dan senang menjelajahi tempat baru.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Merencanakan jalan-jalan setengah hari bersama. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rencana akhir pekan bersama teman
+  - speaker: agent
+    goal: Menyepakati rencana istirahat dengan sedikit perjalanan
+    persona:
+      name: Tokoh rekaan 1B
+      age: dewasa
+      language: Indonesian
+      role: teman yang lebih suka kegiatan di dalam ruangan
+      background: Minggu ini banyak pekerjaan dan ingin menghemat tenaga.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menyepakati rencana istirahat dengan sedikit perjalanan. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Rencana akhir pekan bersama teman
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Merencanakan jalan-jalan setengah hari bersama / Menyepakati rencana
+    istirahat dengan sedikit perjalanan) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+reunion:
+  id: reunion
+  title: Bertemu kembali dengan teman lama
+  relationship: teman lama
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Bertemu kembali dengan teman lama
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Berbagi kabar terbaru dan mengusulkan pertemuan berikutnya / Mendengar alasan teman menghubungi dan bertukar
+      kabar
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Berbagi kabar terbaru dan mengusulkan pertemuan berikutnya
+    persona:
+      name: Tokoh rekaan 2A
+      age: dewasa
+      language: Indonesian
+      role: teman yang kembali memulai komunikasi
+      background: Jarang berhubungan sejak pindah ke daerah lain.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Berbagi kabar terbaru dan mengusulkan pertemuan berikutnya. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Bertemu kembali dengan teman lama
+  - speaker: agent
+    goal: Mendengar alasan teman menghubungi dan bertukar kabar
+    persona:
+      name: Tokoh rekaan 2B
+      age: dewasa
+      language: Indonesian
+      role: teman yang menunggu kabar
+      background: Senang mengenang masa lalu, tetapi penasaran mengapa temannya tiba-tiba menghubungi.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mendengar alasan teman menghubungi dan bertukar kabar. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Bertemu kembali dengan teman lama
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Berbagi kabar terbaru dan mengusulkan pertemuan berikutnya / Mendengar
+    alasan teman menghubungi dan bertukar kabar) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+roommates:
+  id: roommates
+  title: Aturan tinggal bersama
+  relationship: teman serumah
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Aturan tinggal bersama
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menyepakati jam tenang pada malam hari / Mencari cara untuk saling menghargai sambil menjaga rutinitas
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Menyepakati jam tenang pada malam hari
+    persona:
+      name: Tokoh rekaan 3A
+      age: dewasa
+      language: Indonesian
+      role: teman serumah yang membutuhkan malam yang tenang
+      background: Bekerja dari rumah dan tidur lebih awal.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menyepakati jam tenang pada malam hari. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Aturan tinggal bersama
+  - speaker: agent
+    goal: Mencari cara untuk saling menghargai sambil menjaga rutinitas
+    persona:
+      name: Tokoh rekaan 3B
+      age: dewasa
+      language: Indonesian
+      role: teman serumah yang pulang larut
+      background: Jam kerjanya berakhir malam dan ia memasak setelah pulang.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mencari cara untuk saling menghargai sambil menjaga rutinitas. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Aturan tinggal bersama
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menyepakati jam tenang pada malam hari / Mencari cara untuk saling
+    menghargai sambil menjaga rutinitas) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+family_trip:
+  id: family_trip
+  title: Merencanakan liburan keluarga
+  relationship: anggota keluarga
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Merencanakan liburan keluarga
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menyusun jadwal yang tidak terlalu melelahkan / Menyediakan waktu luang yang cukup
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menyusun jadwal yang tidak terlalu melelahkan
+    persona:
+      name: Tokoh rekaan 4A
+      age: dewasa
+      language: Indonesian
+      role: anggota keluarga yang menyiapkan rencana perjalanan
+      background: Sudah mencari jadwal perjalanan dan beberapa pilihan penginapan.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menyusun jadwal yang tidak terlalu melelahkan. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Merencanakan liburan keluarga
+  - speaker: agent
+    goal: Menyediakan waktu luang yang cukup
+    persona:
+      name: Tokoh rekaan 4B
+      age: dewasa
+      language: Indonesian
+      role: anggota keluarga yang suka bepergian spontan
+      background: Merasa terbebani jika rencana terlalu padat.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menyediakan waktu luang yang cukup. Berbicara secara alami dalam bahasa Indonesia, satu atau
+        dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak
+        menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Merencanakan liburan keluarga
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menyusun jadwal yang tidak terlalu melelahkan / Menyediakan waktu
+    luang yang cukup) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+siblings:
+  id: siblings
+  title: Persiapan acara keluarga
+  relationship: saudara kandung
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Persiapan acara keluarga
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Membagi tugas persiapan secara adil / Mengusulkan waktu yang tersedia dan cara lain untuk berkontribusi
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Membagi tugas persiapan secara adil
+    persona:
+      name: Tokoh rekaan 5A
+      age: dewasa
+      language: Indonesian
+      role: saudara yang bertanggung jawab menyiapkan acara
+      background: Merasa sebagian besar tugas persiapan dibebankan kepadanya.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Membagi tugas persiapan secara adil. Berbicara secara alami dalam bahasa Indonesia, satu atau
+        dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak
+        menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Persiapan acara keluarga
+  - speaker: agent
+    goal: Mengusulkan waktu yang tersedia dan cara lain untuk berkontribusi
+    persona:
+      name: Tokoh rekaan 5B
+      age: dewasa
+      language: Indonesian
+      role: saudara yang kekurangan waktu
+      background: Sulit lama-lama membantu persiapan langsung karena pekerjaan.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mengusulkan waktu yang tersedia dan cara lain untuk berkontribusi. Berbicara secara alami
+        dalam bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum
+        disampaikan lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat
+        berubah selama percakapan.'
+      circumstances: Persiapan acara keluarga
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Membagi tugas persiapan secara adil / Mengusulkan waktu yang tersedia
+    dan cara lain untuk berkontribusi) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+neighbors:
+  id: neighbors
+  title: Menyepakati kebisingan dengan tetangga
+  relationship: tetangga
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menyepakati kebisingan dengan tetangga
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Memastikan kapan kebisingan akan berhenti / Menjelaskan jadwal pekerjaan dan menyesuaikannya
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Memastikan kapan kebisingan akan berhenti
+    persona:
+      name: Tokoh rekaan 6A
+      age: dewasa
+      language: Indonesian
+      role: tetangga yang terganggu kebisingan
+      background: Akhir-akhir ini suara pekerjaan pada malam hari membuatnya sulit berkonsentrasi.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Memastikan kapan kebisingan akan berhenti. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menyepakati kebisingan dengan tetangga
+  - speaker: agent
+    goal: Menjelaskan jadwal pekerjaan dan menyesuaikannya
+    persona:
+      name: Tokoh rekaan 6B
+      age: dewasa
+      language: Indonesian
+      role: tetangga yang sedang merenovasi rumah
+      background: Renovasi memang perlu, tetapi ia tidak tahu seberapa terganggu tetangganya.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menjelaskan jadwal pekerjaan dan menyesuaikannya. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menyepakati kebisingan dengan tetangga
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Memastikan kapan kebisingan akan berhenti / Menjelaskan jadwal pekerjaan
+    dan menyesuaikannya) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+study:
+  id: study
+  title: Rencana belajar bersama
+  relationship: teman belajar
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Rencana belajar bersama
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menentukan kemajuan belajar / Menyediakan waktu latihan yang cukup
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menentukan kemajuan belajar
+    persona:
+      name: Tokoh rekaan 7A
+      age: dewasa
+      language: Indonesian
+      role: pelajar yang terencana
+      background: Membuat jadwal untuk mengulang pelajaran dan mengikutinya.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menentukan kemajuan belajar. Berbicara secara alami dalam bahasa Indonesia, satu atau dua
+        kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak menyatakan
+        fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rencana belajar bersama
+  - speaker: agent
+    goal: Menyediakan waktu latihan yang cukup
+    persona:
+      name: Tokoh rekaan 7B
+      age: dewasa
+      language: Indonesian
+      role: pelajar yang berorientasi pada praktik
+      background: Lebih mudah memahami materi dengan mengerjakan soal sendiri.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menyediakan waktu latihan yang cukup. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rencana belajar bersama
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menentukan kemajuan belajar / Menyediakan waktu latihan yang cukup)
+    atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+tutoring:
+  id: tutoring
+  title: Menjelaskan sebuah konsep
+  relationship: guru dan pelajar dewasa
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menjelaskan sebuah konsep
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Memastikan apakah pelajar sudah memahami materi / Menanyakan bagian yang belum dipahami dan memeriksanya
+      lewat contoh
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Memastikan apakah pelajar sudah memahami materi
+    persona:
+      name: Tokoh rekaan 8A
+      age: dewasa
+      language: Indonesian
+      role: guru yang mendorong murid bertanya
+      background: Menjelaskan konsep matematika dengan contoh sehari-hari.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Memastikan apakah pelajar sudah memahami materi. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menjelaskan sebuah konsep
+  - speaker: agent
+    goal: Menanyakan bagian yang belum dipahami dan memeriksanya lewat contoh
+    persona:
+      name: Tokoh rekaan 8B
+      age: dewasa
+      language: Indonesian
+      role: pelajar dewasa yang bingung tentang pecahan
+      background: Sudah menghafal rumus tetapi kesulitan menerapkannya.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menanyakan bagian yang belum dipahami dan memeriksanya lewat contoh. Berbicara secara alami
+        dalam bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum
+        disampaikan lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat
+        berubah selama percakapan.'
+      circumstances: Menjelaskan sebuah konsep
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Memastikan apakah pelajar sudah memahami materi / Menanyakan bagian
+    yang belum dipahami dan memeriksanya lewat contoh) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+language:
+  id: language
+  title: Pertukaran bahasa
+  relationship: rekan belajar bahasa
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Pertukaran bahasa
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menceritakan pengalaman sehari-hari dengan kata-kata sendiri / Memberi tahu ungkapan alami dengan santai
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menceritakan pengalaman sehari-hari dengan kata-kata sendiri
+    persona:
+      name: Tokoh rekaan 9A
+      age: dewasa
+      language: Indonesian
+      role: pelajar yang berlatih berbicara
+      background: Mengetahui kosakata, tetapi belum percaya diri membuat kalimat panjang.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menceritakan pengalaman sehari-hari dengan kata-kata sendiri. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Pertukaran bahasa
+  - speaker: agent
+    goal: Memberi tahu ungkapan alami dengan santai
+    persona:
+      name: Tokoh rekaan 9B
+      age: dewasa
+      language: Indonesian
+      role: rekan pertukaran bahasa
+      background: Berusaha memberi waktu agar lawan bicara dapat berbicara sendiri.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memberi tahu ungkapan alami dengan santai. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Pertukaran bahasa
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menceritakan pengalaman sehari-hari dengan kata-kata sendiri / Memberi
+    tahu ungkapan alami dengan santai) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+mentor:
+  id: mentor
+  title: Menjelajahi pilihan karier
+  relationship: mentor dan mentee
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menjelajahi pilihan karier
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Merangkum kriteria untuk memilih / Membantu dengan membedakan pengalaman pribadi dari saran umum
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Merangkum kriteria untuk memilih
+    persona:
+      name: Tokoh rekaan 10A
+      age: dewasa
+      language: Indonesian
+      role: orang dewasa yang sedang mempertimbangkan karier
+      background: Bimbang antara pekerjaan saat ini dan bidang baru.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Merangkum kriteria untuk memilih. Berbicara secara alami dalam bahasa Indonesia, satu atau
+        dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak
+        menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menjelajahi pilihan karier
+  - speaker: agent
+    goal: Membantu dengan membedakan pengalaman pribadi dari saran umum
+    persona:
+      name: Tokoh rekaan 10B
+      age: dewasa
+      language: Indonesian
+      role: mentor yang berbagi pengalaman
+      background: Pernah berpindah ke bidang pekerjaan lain.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Membantu dengan membedakan pengalaman pribadi dari saran umum. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Menjelajahi pilihan karier
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Merangkum kriteria untuk memilih / Membantu dengan membedakan pengalaman
+    pribadi dari saran umum) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+project:
+  id: project
+  title: Menyesuaikan cakupan proyek
+  relationship: rekan kerja
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menyesuaikan cakupan proyek
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menyepakati fitur yang wajib ada / Mengusulkan cakupan yang dapat diselesaikan sesuai jadwal
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menyepakati fitur yang wajib ada
+    persona:
+      name: Tokoh rekaan 11A
+      age: dewasa
+      language: Indonesian
+      role: perencana proyek
+      background: Berusaha memenuhi kebutuhan pengguna sebelum tenggat.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menyepakati fitur yang wajib ada. Berbicara secara alami dalam bahasa Indonesia, satu atau
+        dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak
+        menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menyesuaikan cakupan proyek
+  - speaker: agent
+    goal: Mengusulkan cakupan yang dapat diselesaikan sesuai jadwal
+    persona:
+      name: Tokoh rekaan 11B
+      age: dewasa
+      language: Indonesian
+      role: pengembang
+      background: Mengelola jadwal pengembangan dan waktu pengujian.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mengusulkan cakupan yang dapat diselesaikan sesuai jadwal. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Menyesuaikan cakupan proyek
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menyepakati fitur yang wajib ada / Mengusulkan cakupan yang dapat
+    diselesaikan sesuai jadwal) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+handover:
+  id: handover
+  title: Serah terima pekerjaan
+  relationship: rekan kerja
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Serah terima pekerjaan
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menyampaikan prioritas tanpa ada yang terlewat / Memastikan tenggat dan pembagian tanggung jawab
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menyampaikan prioritas tanpa ada yang terlewat
+    persona:
+      name: Tokoh rekaan 12A
+      age: dewasa
+      language: Indonesian
+      role: rekan yang menyerahkan pekerjaan
+      background: Memahami perkembangan tugas, tetapi waktu untuk menjelaskan terbatas.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menyampaikan prioritas tanpa ada yang terlewat. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Serah terima pekerjaan
+  - speaker: agent
+    goal: Memastikan tenggat dan pembagian tanggung jawab
+    persona:
+      name: Tokoh rekaan 12B
+      age: dewasa
+      language: Indonesian
+      role: rekan yang menerima pekerjaan
+      background: Belum mengetahui latar belakang dan konteksnya.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memastikan tenggat dan pembagian tanggung jawab. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Serah terima pekerjaan
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menyampaikan prioritas tanpa ada yang terlewat / Memastikan tenggat
+    dan pembagian tanggung jawab) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+feedback:
+  id: feedback
+  title: Umpan balik atas pekerjaan
+  relationship: rekan kerja
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Umpan balik atas pekerjaan
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mendapatkan arahan revisi yang konkret / Memisahkan kelebihan dari bagian yang perlu diperbaiki
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mendapatkan arahan revisi yang konkret
+    persona:
+      name: Tokoh rekaan 13A
+      age: dewasa
+      language: Indonesian
+      role: penulis yang membagikan draf
+      background: Memahami tujuan tulisannya, tetapi khawatir dengan umpan balik.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mendapatkan arahan revisi yang konkret. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Umpan balik atas pekerjaan
+  - speaker: agent
+    goal: Memisahkan kelebihan dari bagian yang perlu diperbaiki
+    persona:
+      name: Tokoh rekaan 13B
+      age: dewasa
+      language: Indonesian
+      role: rekan yang meninjau draf
+      background: Mengutamakan struktur yang mudah dipahami pembaca.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memisahkan kelebihan dari bagian yang perlu diperbaiki. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Umpan balik atas pekerjaan
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mendapatkan arahan revisi yang konkret / Memisahkan kelebihan dari
+    bagian yang perlu diperbaiki) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+remote:
+  id: remote
+  title: Mengatur jadwal kerja jarak jauh
+  relationship: rekan kerja di lokasi berbeda
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Mengatur jadwal kerja jarak jauh
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mencari waktu rapat yang cocok / Mendengar inti pembahasan secara singkat dan menetapkan waktunya
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mencari waktu rapat yang cocok
+    persona:
+      name: Tokoh rekaan 14A
+      age: dewasa
+      language: Indonesian
+      role: rekan yang meminta rapat
+      background: Ada hal yang perlu dipastikan hari ini, tetapi jadwalnya fleksibel.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mencari waktu rapat yang cocok. Berbicara secara alami dalam bahasa Indonesia, satu atau dua
+        kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak menyatakan
+        fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Mengatur jadwal kerja jarak jauh
+  - speaker: agent
+    goal: Mendengar inti pembahasan secara singkat dan menetapkan waktunya
+    persona:
+      name: Tokoh rekaan 14B
+      age: dewasa
+      language: Indonesian
+      role: rekan yang sedang bepergian
+      background: Tidak bisa berbicara lama dan sulit membuat catatan.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mendengar inti pembahasan secara singkat dan menetapkan waktunya. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Mengatur jadwal kerja jarak jauh
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mencari waktu rapat yang cocok / Mendengar inti pembahasan secara
+    singkat dan menetapkan waktunya) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+interview:
+  id: interview
+  title: Wawancara kerja
+  relationship: pewawancara dan pelamar
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Wawancara kerja
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Memastikan pengalaman kolaborasi dan alasan di balik keputusan / Menjelaskan peran dan hal yang dipelajari
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Memastikan pengalaman kolaborasi dan alasan di balik keputusan
+    persona:
+      name: Tokoh rekaan 15A
+      age: dewasa
+      language: Indonesian
+      role: pewawancara yang menanyakan pengalaman kerja
+      background: Ingin mendengar contoh pekerjaan yang konkret.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Memastikan pengalaman kolaborasi dan alasan di balik keputusan. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Wawancara kerja
+  - speaker: agent
+    goal: Menjelaskan peran dan hal yang dipelajari
+    persona:
+      name: Tokoh rekaan 15B
+      age: dewasa
+      language: Indonesian
+      role: pelamar kerja
+      background: Memiliki pengalaman praktis, tetapi gugup saat presentasi.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menjelaskan peran dan hal yang dipelajari. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Wawancara kerja
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Memastikan pengalaman kolaborasi dan alasan di balik keputusan /
+    Menjelaskan peran dan hal yang dipelajari) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+design:
+  id: design
+  title: Membahas arah desain
+  relationship: desainer dan klien
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Membahas arah desain
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mengubah kebutuhan menjadi persyaratan desain yang konkret / Menyampaikan selera melalui contoh yang disukai
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mengubah kebutuhan menjadi persyaratan desain yang konkret
+    persona:
+      name: Tokoh rekaan 16A
+      age: dewasa
+      language: Indonesian
+      role: desainer
+      background: Menyiapkan usulan dengan mengutamakan kemudahan penggunaan.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mengubah kebutuhan menjadi persyaratan desain yang konkret. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Membahas arah desain
+  - speaker: agent
+    goal: Menyampaikan selera melalui contoh yang disukai
+    persona:
+      name: Tokoh rekaan 16B
+      age: dewasa
+      language: Indonesian
+      role: klien acara kecil
+      background: Tahu suasana yang diinginkan, tetapi tidak mengenal istilah profesional.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menyampaikan selera melalui contoh yang disukai. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Membahas arah desain
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mengubah kebutuhan menjadi persyaratan desain yang konkret / Menyampaikan
+    selera melalui contoh yang disukai) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+travel:
+  id: travel
+  title: Menanyakan arah jalan
+  relationship: wisatawan dan warga setempat
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menanyakan arah jalan
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mencari rute mudah menuju tujuan / Menjelaskan rute dengan patokan tempat yang mudah dikenali
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mencari rute mudah menuju tujuan
+    persona:
+      name: Tokoh rekaan 17A
+      age: dewasa
+      language: Indonesian
+      role: wisatawan yang baru pertama kali berkunjung
+      background: Tidak mengenal daerah dan koneksi transportasi setempat.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mencari rute mudah menuju tujuan. Berbicara secara alami dalam bahasa Indonesia, satu atau
+        dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak
+        menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menanyakan arah jalan
+  - speaker: agent
+    goal: Menjelaskan rute dengan patokan tempat yang mudah dikenali
+    persona:
+      name: Tokoh rekaan 17B
+      age: dewasa
+      language: Indonesian
+      role: warga yang memberi petunjuk arah
+      background: Mengetahui tempat-tempat utama di lingkungan itu.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menjelaskan rute dengan patokan tempat yang mudah dikenali. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Menanyakan arah jalan
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mencari rute mudah menuju tujuan / Menjelaskan rute dengan patokan
+    tempat yang mudah dikenali) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+hotel:
+  id: hotel
+  title: Permintaan terkait penginapan
+  relationship: tamu dan staf penginapan
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Permintaan terkait penginapan
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menanyakan kemungkinan pindah kamar / Memeriksa permintaan dan menjelaskan pilihan yang tersedia
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menanyakan kemungkinan pindah kamar
+    persona:
+      name: Tokoh rekaan 18A
+      age: dewasa
+      language: Indonesian
+      role: tamu yang menginginkan kamar tenang
+      background: Ingin beristirahat lebih awal dan khawatir dengan kebisingan sekitar.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menanyakan kemungkinan pindah kamar. Berbicara secara alami dalam bahasa Indonesia, satu atau
+        dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak
+        menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Permintaan terkait penginapan
+  - speaker: agent
+    goal: Memeriksa permintaan dan menjelaskan pilihan yang tersedia
+    persona:
+      name: Tokoh rekaan 18B
+      age: dewasa
+      language: Indonesian
+      role: staf penginapan
+      background: Hanya dapat memastikan setelah memeriksa kondisi kamar.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memeriksa permintaan dan menjelaskan pilihan yang tersedia. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Permintaan terkait penginapan
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menanyakan kemungkinan pindah kamar / Memeriksa permintaan dan menjelaskan
+    pilihan yang tersedia) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+museum:
+  id: museum
+  title: Menikmati pameran
+  relationship: pengunjung dan pemandu
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menikmati pameran
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Memahami maksud ekspresi karya / Membantu pengunjung mengamati karya sendiri
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Memahami maksud ekspresi karya
+    persona:
+      name: Tokoh rekaan 19A
+      age: dewasa
+      language: Indonesian
+      role: pengunjung yang ingin tahu
+      background: Tidak banyak memiliki pengetahuan tentang bidang pameran.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Memahami maksud ekspresi karya. Berbicara secara alami dalam bahasa Indonesia, satu atau dua
+        kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak menyatakan
+        fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menikmati pameran
+  - speaker: agent
+    goal: Membantu pengunjung mengamati karya sendiri
+    persona:
+      name: Tokoh rekaan 19B
+      age: dewasa
+      language: Indonesian
+      role: pemandu pameran
+      background: Menggunakan perbandingan sederhana dan pertanyaan pengamatan.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Membantu pengunjung mengamati karya sendiri. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menikmati pameran
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Memahami maksud ekspresi karya / Membantu pengunjung mengamati karya
+    sendiri) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+restaurant:
+  id: restaurant
+  title: Memesan makanan
+  relationship: pelanggan dan staf restoran
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Memesan makanan
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menanyakan rasa dan porsi sebelum memesan / Menanyakan selera dan menjelaskan pilihan yang sesuai
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menanyakan rasa dan porsi sebelum memesan
+    persona:
+      name: Tokoh rekaan 20A
+      age: dewasa
+      language: Indonesian
+      role: pelanggan yang memilih menu
+      background: Banyak menu yang belum dikenalnya.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menanyakan rasa dan porsi sebelum memesan. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Memesan makanan
+  - speaker: agent
+    goal: Menanyakan selera dan menjelaskan pilihan yang sesuai
+    persona:
+      name: Tokoh rekaan 20B
+      age: dewasa
+      language: Indonesian
+      role: staf yang menjelaskan menu
+      background: Mengetahui bahan dan cara memasak, tetapi belum tahu selera pelanggan.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menanyakan selera dan menjelaskan pilihan yang sesuai. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Memesan makanan
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menanyakan rasa dan porsi sebelum memesan / Menanyakan selera dan
+    menjelaskan pilihan yang sesuai) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+cooking:
+  id: cooking
+  title: Memasak bersama
+  relationship: teman memasak
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Memasak bersama
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menjelaskan langkah-langkah agar pemula bisa mengikuti / Menanyakan instruksi yang kurang jelas dan membagi
+      tugas
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menjelaskan langkah-langkah agar pemula bisa mengikuti
+    persona:
+      name: Tokoh rekaan 21A
+      age: dewasa
+      language: Indonesian
+      role: orang yang terbiasa memasak
+      background: Cenderung menjelaskan cara yang sudah dikuasainya dengan cepat.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menjelaskan langkah-langkah agar pemula bisa mengikuti. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Memasak bersama
+  - speaker: agent
+    goal: Menanyakan instruksi yang kurang jelas dan membagi tugas
+    persona:
+      name: Tokoh rekaan 21B
+      age: dewasa
+      language: Indonesian
+      role: pemula memasak
+      background: Belum akrab dengan peralatan dan istilah memasak.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menanyakan instruksi yang kurang jelas dan membagi tugas. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Memasak bersama
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menjelaskan langkah-langkah agar pemula bisa mengikuti / Menanyakan
+    instruksi yang kurang jelas dan membagi tugas) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+shopping:
+  id: shopping
+  title: Membandingkan barang
+  relationship: pembeli dan staf penjualan
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Membandingkan barang
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Memilih tanpa mengeluarkan biaya lebih dari yang diperlukan / Memastikan tujuan penggunaan dan menjelaskan
+      perbedaannya
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Memilih tanpa mengeluarkan biaya lebih dari yang diperlukan
+    persona:
+      name: Tokoh rekaan 22A
+      age: dewasa
+      language: Indonesian
+      role: pembeli yang membandingkan barang
+      background: Sudah menentukan anggaran dan fitur penting.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Memilih tanpa mengeluarkan biaya lebih dari yang diperlukan. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Membandingkan barang
+  - speaker: agent
+    goal: Memastikan tujuan penggunaan dan menjelaskan perbedaannya
+    persona:
+      name: Tokoh rekaan 22B
+      age: dewasa
+      language: Indonesian
+      role: staf penjelas produk
+      background: Membandingkan dan menjelaskan fitur produk fiktif.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memastikan tujuan penggunaan dan menjelaskan perbedaannya. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Membandingkan barang
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Memilih tanpa mengeluarkan biaya lebih dari yang diperlukan / Memastikan
+    tujuan penggunaan dan menjelaskan perbedaannya) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+repair:
+  id: repair
+  title: Menerima permintaan perbaikan
+  relationship: pengguna perangkat dan petugas servis
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menerima permintaan perbaikan
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menjelaskan gejala dengan tepat dan menjadwalkan pemeriksaan / Memastikan gejala dan langkah aman berikutnya
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menjelaskan gejala dengan tepat dan menjadwalkan pemeriksaan
+    persona:
+      name: Tokoh rekaan 23A
+      age: dewasa
+      language: Indonesian
+      role: pengguna perangkat yang bermasalah
+      background: Ingat kapan masalah mulai terjadi.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menjelaskan gejala dengan tepat dan menjadwalkan pemeriksaan. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Menerima permintaan perbaikan
+  - speaker: agent
+    goal: Memastikan gejala dan langkah aman berikutnya
+    persona:
+      name: Tokoh rekaan 23B
+      age: dewasa
+      language: Indonesian
+      role: petugas penerima servis
+      background: Belum dapat memastikan kerusakan sebelum memeriksa perangkat langsung.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memastikan gejala dan langkah aman berikutnya. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menerima permintaan perbaikan
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menjelaskan gejala dengan tepat dan menjadwalkan pemeriksaan / Memastikan
+    gejala dan langkah aman berikutnya) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+delivery:
+  id: delivery
+  title: Menanyakan pengiriman
+  relationship: penerima dan petugas pengiriman
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menanyakan pengiriman
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mengetahui cara penerimaan yang tersedia / Memeriksa syarat penerimaan dan menjelaskan alternatif
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mengetahui cara penerimaan yang tersedia
+    persona:
+      name: Tokoh rekaan 24A
+      age: dewasa
+      language: Indonesian
+      role: penerima yang memastikan waktu kedatangan
+      background: Waktu yang tersedia untuk menerima barang terbatas.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mengetahui cara penerimaan yang tersedia. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menanyakan pengiriman
+  - speaker: agent
+    goal: Memeriksa syarat penerimaan dan menjelaskan alternatif
+    persona:
+      name: Tokoh rekaan 24B
+      age: dewasa
+      language: Indonesian
+      role: petugas pengiriman
+      background: Hanya dapat memberi tahu jadwal yang sudah dipastikan.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memeriksa syarat penerimaan dan menjelaskan alternatif. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Menanyakan pengiriman
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mengetahui cara penerimaan yang tersedia / Memeriksa syarat penerimaan
+    dan menjelaskan alternatif) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+library:
+  id: library
+  title: Rekomendasi buku
+  relationship: pembaca dan pustakawan
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Rekomendasi buku
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menemukan jenis buku yang ringan dibaca / Memberi kriteria pencarian sesuai selera
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menemukan jenis buku yang ringan dibaca
+    persona:
+      name: Tokoh rekaan 25A
+      age: dewasa
+      language: Indonesian
+      role: pembaca yang mencari genre baru
+      background: Dapat menjelaskan selera dari buku yang baru dibaca.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menemukan jenis buku yang ringan dibaca. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rekomendasi buku
+  - speaker: agent
+    goal: Memberi kriteria pencarian sesuai selera
+    persona:
+      name: Tokoh rekaan 25B
+      age: dewasa
+      language: Indonesian
+      role: pustakawan
+      background: Menanyakan tujuan membaca dan preferensi.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memberi kriteria pencarian sesuai selera. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rekomendasi buku
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menemukan jenis buku yang ringan dibaca / Memberi kriteria pencarian
+    sesuai selera) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+bookclub:
+  id: bookclub
+  title: Diskusi buku
+  relationship: anggota klub buku
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Diskusi buku
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menjelaskan tafsir sendiri / Membandingkan alasan di balik tafsir yang berbeda
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menjelaskan tafsir sendiri
+    persona:
+      name: Tokoh rekaan 26A
+      age: dewasa
+      language: Indonesian
+      role: pembaca yang berempati pada tokoh
+      background: Berfokus pada perasaan tokoh saat membaca.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menjelaskan tafsir sendiri. Berbicara secara alami dalam bahasa Indonesia, satu atau dua kalimat
+        setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak menyatakan
+        fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Diskusi buku
+  - speaker: agent
+    goal: Membandingkan alasan di balik tafsir yang berbeda
+    persona:
+      name: Tokoh rekaan 26B
+      age: dewasa
+      language: Indonesian
+      role: pembaca yang menganalisis struktur
+      background: Memperhatikan struktur narasi dan hubungan sebab-akibat peristiwa.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Membandingkan alasan di balik tafsir yang berbeda. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Diskusi buku
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menjelaskan tafsir sendiri / Membandingkan alasan di balik tafsir
+    yang berbeda) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+music:
+  id: music
+  title: Kolaborasi musik
+  relationship: sesama musisi
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Kolaborasi musik
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menentukan tempo dan isyarat mulai bersama / Berbagi dan menyepakati maksud ekspresi
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menentukan tempo dan isyarat mulai bersama
+    persona:
+      name: Tokoh rekaan 27A
+      age: dewasa
+      language: Indonesian
+      role: musisi yang mengutamakan ritme
+      background: Berusaha menyelaraskan permainan lewat latihan berulang.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menentukan tempo dan isyarat mulai bersama. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Kolaborasi musik
+  - speaker: agent
+    goal: Berbagi dan menyepakati maksud ekspresi
+    persona:
+      name: Tokoh rekaan 27B
+      age: dewasa
+      language: Indonesian
+      role: musisi yang mengutamakan ekspresi
+      background: Biasanya membayangkan dinamika dan suasana lebih dulu.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Berbagi dan menyepakati maksud ekspresi. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Kolaborasi musik
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menentukan tempo dan isyarat mulai bersama / Berbagi dan menyepakati
+    maksud ekspresi) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+podcast:
+  id: podcast
+  title: Wawancara podcast
+  relationship: pemandu dan tamu
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Wawancara podcast
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menggali contoh lewat pertanyaan terbuka / Menceritakan pengalaman dengan hidup tanpa melebih-lebihkan
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menggali contoh lewat pertanyaan terbuka
+    persona:
+      name: Tokoh rekaan 28A
+      age: dewasa
+      language: Indonesian
+      role: pemandu wawancara
+      background: Ingin mendengar pengalaman tamu secara konkret.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menggali contoh lewat pertanyaan terbuka. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Wawancara podcast
+  - speaker: agent
+    goal: Menceritakan pengalaman dengan hidup tanpa melebih-lebihkan
+    persona:
+      name: Tokoh rekaan 28B
+      age: dewasa
+      language: Indonesian
+      role: tamu yang memperkenalkan hobinya
+      background: Memiliki banyak pencapaian kecil dan pengalaman mencoba-coba.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menceritakan pengalaman dengan hidup tanpa melebih-lebihkan. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Wawancara podcast
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menggali contoh lewat pertanyaan terbuka / Menceritakan pengalaman
+    dengan hidup tanpa melebih-lebihkan) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+writing:
+  id: writing
+  title: Menulis cerita bersama
+  relationship: rekan penulis
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menulis cerita bersama
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menentukan latar belakang tindakan tokoh / Menghubungkan gagasan menjadi adegan konkret
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menentukan latar belakang tindakan tokoh
+    persona:
+      name: Tokoh rekaan 29A
+      age: dewasa
+      language: Indonesian
+      role: penulis yang merancang latar
+      background: Mengutamakan dunia cerita dan konsistensi logis.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menentukan latar belakang tindakan tokoh. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menulis cerita bersama
+  - speaker: agent
+    goal: Menghubungkan gagasan menjadi adegan konkret
+    persona:
+      name: Tokoh rekaan 29B
+      age: dewasa
+      language: Indonesian
+      role: penulis yang menyusun adegan
+      background: Tertarik pada dialog dan perubahan emosi.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menghubungkan gagasan menjadi adegan konkret. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menulis cerita bersama
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menentukan latar belakang tindakan tokoh / Menghubungkan gagasan
+    menjadi adegan konkret) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+volunteer:
+  id: volunteer
+  title: Relawan acara lokal
+  relationship: sesama relawan
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Relawan acara lokal
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menjelaskan tugas kepada peserta baru / Memastikan tugas dan cara meminta bantuan
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menjelaskan tugas kepada peserta baru
+    persona:
+      name: Tokoh rekaan 30A
+      age: dewasa
+      language: Indonesian
+      role: pengelola acara berpengalaman
+      background: Mengetahui jalur panduan dan pembagian tugas.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menjelaskan tugas kepada peserta baru. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Relawan acara lokal
+  - speaker: agent
+    goal: Memastikan tugas dan cara meminta bantuan
+    persona:
+      name: Tokoh rekaan 30B
+      age: dewasa
+      language: Indonesian
+      role: relawan pemula
+      background: Ingin membantu, tetapi khawatir membuat kesalahan.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memastikan tugas dan cara meminta bantuan. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Relawan acara lokal
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menjelaskan tugas kepada peserta baru / Memastikan tugas dan cara
+    meminta bantuan) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+sports:
+  id: sports
+  title: Rencana olahraga
+  relationship: rekan olahraga
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Rencana olahraga
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Menentukan kegiatan bersama yang bisa dipertahankan / Mengusulkan sasaran yang ringan
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Menentukan kegiatan bersama yang bisa dipertahankan
+    persona:
+      name: Tokoh rekaan 31A
+      age: dewasa
+      language: Indonesian
+      role: orang yang rutin berolahraga
+      background: Menyukai jadwal yang tidak berlebihan.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Menentukan kegiatan bersama yang bisa dipertahankan. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rencana olahraga
+  - speaker: agent
+    goal: Mengusulkan sasaran yang ringan
+    persona:
+      name: Tokoh rekaan 31B
+      age: dewasa
+      language: Indonesian
+      role: orang yang mulai berolahraga lagi
+      background: Belum yakin dengan kondisi fisiknya saat ini.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mengusulkan sasaran yang ringan. Berbicara secara alami dalam bahasa Indonesia, satu atau
+        dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara. Tidak
+        menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rencana olahraga
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Menentukan kegiatan bersama yang bisa dipertahankan / Mengusulkan
+    sasaran yang ringan) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+garden:
+  id: garden
+  title: Merawat tanaman
+  relationship: sesama pencinta tanaman
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Merawat tanaman
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mempelajari tanda yang perlu diamati dan kebiasaan perawatan / Menanyakan kondisi dan menjelaskan cara
+      memeriksanya
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mempelajari tanda yang perlu diamati dan kebiasaan perawatan
+    persona:
+      name: Tokoh rekaan 32A
+      age: dewasa
+      language: Indonesian
+      role: orang yang baru mulai menanam
+      background: Belum tahu seberapa sering tanaman perlu disiram.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mempelajari tanda yang perlu diamati dan kebiasaan perawatan. Berbicara secara alami dalam
+        bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Merawat tanaman
+  - speaker: agent
+    goal: Menanyakan kondisi dan menjelaskan cara memeriksanya
+    persona:
+      name: Tokoh rekaan 32B
+      age: dewasa
+      language: Indonesian
+      role: orang berpengalaman merawat tanaman
+      background: Tahu bahwa perawatan berbeda menurut lingkungan.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menanyakan kondisi dan menjelaskan cara memeriksanya. Berbicara secara alami dalam bahasa
+        Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan
+        lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama
+        percakapan.'
+      circumstances: Merawat tanaman
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mempelajari tanda yang perlu diamati dan kebiasaan perawatan / Menanyakan
+    kondisi dan menjelaskan cara memeriksanya) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+lost_item:
+  id: lost_item
+  title: Menanyakan barang hilang
+  relationship: orang yang kehilangan barang dan petugas informasi
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Menanyakan barang hilang
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mengingat ciri barang dan rute perjalanan / Memastikan ciri barang dan prosedur menghubungi
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mengingat ciri barang dan rute perjalanan
+    persona:
+      name: Tokoh rekaan 33A
+      age: dewasa
+      language: Indonesian
+      role: orang yang kehilangan barang
+      background: Tidak yakin di mana terakhir kali melihat barang itu.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mengingat ciri barang dan rute perjalanan. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menanyakan barang hilang
+  - speaker: agent
+    goal: Memastikan ciri barang dan prosedur menghubungi
+    persona:
+      name: Tokoh rekaan 33B
+      age: dewasa
+      language: Indonesian
+      role: petugas layanan barang hilang
+      background: Tidak dapat mengatakan barang ditemukan sebelum memastikannya.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Memastikan ciri barang dan prosedur menghubungi. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Menanyakan barang hilang
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mengingat ciri barang dan rute perjalanan / Memastikan ciri barang
+    dan prosedur menghubungi) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+apology:
+  id: apology
+  title: Meluruskan kesalahpahaman
+  relationship: teman
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Meluruskan kesalahpahaman
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Meminta maaf tanpa berdalih dan menawarkan cara memperbaiki keadaan / Menjelaskan ketidaknyamanan dan
+      menyepakati aturan untuk janji berikutnya
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Meminta maaf tanpa berdalih dan menawarkan cara memperbaiki keadaan
+    persona:
+      name: Tokoh rekaan 34A
+      age: dewasa
+      language: Indonesian
+      role: teman yang melewatkan janji
+      background: Ada alasan yang dapat dijelaskan, tetapi merasa bersalah karena membuat temannya menunggu.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Meminta maaf tanpa berdalih dan menawarkan cara memperbaiki keadaan. Berbicara secara alami
+        dalam bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum
+        disampaikan lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat
+        berubah selama percakapan.'
+      circumstances: Meluruskan kesalahpahaman
+  - speaker: agent
+    goal: Menjelaskan ketidaknyamanan dan menyepakati aturan untuk janji berikutnya
+    persona:
+      name: Tokoh rekaan 34B
+      age: dewasa
+      language: Indonesian
+      role: teman yang menunggu
+      background: Merasa kecewa karena sudah menunggu lama.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Menjelaskan ketidaknyamanan dan menyepakati aturan untuk janji berikutnya. Berbicara secara
+        alami dalam bahasa Indonesia, satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang
+        belum disampaikan lawan bicara. Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi
+        dapat berubah selama percakapan.'
+      circumstances: Meluruskan kesalahpahaman
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Meminta maaf tanpa berdalih dan menawarkan cara memperbaiki keadaan
+    / Menjelaskan ketidaknyamanan dan menyepakati aturan untuk janji berikutnya) atau menyepakati langkah lanjutan
+    yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+celebration:
+  id: celebration
+  title: Merayakan pencapaian kecil
+  relationship: rekan kerja
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Merayakan pencapaian kecil
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Berbagi pengalaman dan sasaran berikutnya / Mengakui usaha dan merayakan tanpa memberi tekanan
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Berbagi pengalaman dan sasaran berikutnya
+    persona:
+      name: Tokoh rekaan 35A
+      age: dewasa
+      language: Indonesian
+      role: orang yang mencapai sasaran kecil
+      background: Sudah berusaha tekun, tetapi tidak menganggap pencapaiannya luar biasa.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Berbagi pengalaman dan sasaran berikutnya. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Merayakan pencapaian kecil
+  - speaker: agent
+    goal: Mengakui usaha dan merayakan tanpa memberi tekanan
+    persona:
+      name: Tokoh rekaan 35B
+      age: dewasa
+      language: Indonesian
+      role: rekan yang memberi selamat
+      background: Mengingat usaha konkret yang dilakukan temannya.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mengakui usaha dan merayakan tanpa memberi tekanan. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Merayakan pencapaian kecil
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Berbagi pengalaman dan sasaran berikutnya / Mengakui usaha dan merayakan
+    tanpa memberi tekanan) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.
+community:
+  id: community
+  title: Rapat tentang ruang bersama
+  relationship: anggota komunitas
+  context:
+    location: ruang percakapan yang sesuai dengan situasi
+    environment: tatap muka
+    circumstances: Rapat tentang ruang bersama
+  scenario:
+    facts_policy: Tetapkan fakta yang diperlukan, seperti harga, waktu, dan nama tempat, sebelum percakapan, lalu
+      sampaikan secara konsisten kepada kedua pihak.
+    goal: Mendapatkan waktu untuk berkonsentrasi / Mendapatkan waktu untuk kegiatan kelompok
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mendapatkan waktu untuk berkonsentrasi
+    persona:
+      name: Tokoh rekaan 36A
+      age: dewasa
+      language: Indonesian
+      role: warga yang menginginkan ruang bersama yang tenang
+      background: Menggunakan ruang untuk membaca dan bekerja.
+      personality: Menjelaskan kebutuhannya secara spesifik dan bertanya tentang hal yang belum diketahui.
+      rules: 'Tujuan: Mendapatkan waktu untuk berkonsentrasi. Berbicara secara alami dalam bahasa Indonesia, satu
+        atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rapat tentang ruang bersama
+  - speaker: agent
+    goal: Mendapatkan waktu untuk kegiatan kelompok
+    persona:
+      name: Tokoh rekaan 36B
+      age: dewasa
+      language: Indonesian
+      role: warga yang membutuhkan waktu untuk kelompok
+      background: Membutuhkan tempat agar orang-orang dapat berkumpul.
+      personality: Memastikan tujuan lawan bicara dan bersama-sama mempertimbangkan pilihan yang memungkinkan.
+      rules: 'Tujuan: Mendapatkan waktu untuk kegiatan kelompok. Berbicara secara alami dalam bahasa Indonesia,
+        satu atau dua kalimat setiap giliran. Tidak mengetahui informasi pribadi yang belum disampaikan lawan bicara.
+        Tidak menyatakan fakta yang belum terverifikasi sebagai kepastian. Emosi dapat berubah selama percakapan.'
+      circumstances: Rapat tentang ruang bersama
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Kedua pihak mempertahankan peran dan batas pengetahuannya masing-masing.
+  - Kedua pihak memajukan tujuan masing-masing (Mendapatkan waktu untuk berkonsentrasi / Mendapatkan waktu untuk
+    kegiatan kelompok) atau menyepakati langkah lanjutan yang realistis.
+  - Menanggapi ucapan lawan bicara dengan wajar dan relevan dalam bahasa Indonesia.
+  - Tidak ada uraian penalaran, token khusus, atau pengulangan mekanis.

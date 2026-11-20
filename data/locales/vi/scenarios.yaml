@@ -1,0 +1,1989 @@
+weekend:
+  id: weekend
+  title: Lên kế hoạch cuối tuần cùng bạn
+  relationship: bạn bè
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Lên kế hoạch cuối tuần cùng bạn
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Cùng lên kế hoạch đi dạo nửa ngày / Thống nhất một kế hoạch nghỉ ngơi với ít di chuyển
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Cùng lên kế hoạch đi dạo nửa ngày
+    persona:
+      name: Nhân vật giả định 1A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bạn đề xuất hoạt động ngoài trời
+      background: Có nhiều kinh nghiệm leo núi và thích khám phá những nơi mới.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Cùng lên kế hoạch đi dạo nửa ngày. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch cuối tuần cùng bạn
+  - speaker: agent
+    goal: Thống nhất một kế hoạch nghỉ ngơi với ít di chuyển
+    persona:
+      name: Nhân vật giả định 1B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bạn thích hoạt động trong nhà
+      background: Tuần này có nhiều việc nên muốn giữ sức.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Thống nhất một kế hoạch nghỉ ngơi với ít di chuyển. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch cuối tuần cùng bạn
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Cùng lên kế hoạch đi dạo nửa ngày / Thống nhất một kế hoạch nghỉ ngơi
+    với ít di chuyển) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+reunion:
+  id: reunion
+  title: Ngày gặp lại bạn cũ
+  relationship: bạn cũ
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Ngày gặp lại bạn cũ
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Chia sẻ chuyện gần đây và đề nghị gặp lại / Tìm hiểu lý do người kia liên lạc và hỏi thăm cuộc sống
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chia sẻ chuyện gần đây và đề nghị gặp lại
+    persona:
+      name: Nhân vật giả định 2A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bạn chủ động nối lại liên lạc
+      background: Ít liên lạc hơn sau khi chuyển đến một khu vực khác.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Chia sẻ chuyện gần đây và đề nghị gặp lại. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Ngày gặp lại bạn cũ
+  - speaker: agent
+    goal: Tìm hiểu lý do người kia liên lạc và hỏi thăm cuộc sống
+    persona:
+      name: Nhân vật giả định 2B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bạn đã chờ tin
+      background: Vui khi nhớ chuyện cũ nhưng tò mò vì sao người kia đột ngột liên lạc.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Tìm hiểu lý do người kia liên lạc và hỏi thăm cuộc sống. Nói tiếng Việt tự nhiên, mỗi lượt
+        một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được
+        kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Ngày gặp lại bạn cũ
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Chia sẻ chuyện gần đây và đề nghị gặp lại / Tìm hiểu lý do người kia
+    liên lạc và hỏi thăm cuộc sống) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+roommates:
+  id: roommates
+  title: Thỏa thuận về sinh hoạt chung
+  relationship: bạn cùng nhà
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Thỏa thuận về sinh hoạt chung
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Thống nhất giờ yên tĩnh vào ban đêm / Tìm cách quan tâm lẫn nhau mà vẫn giữ nhịp sinh hoạt
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Thống nhất giờ yên tĩnh vào ban đêm
+    persona:
+      name: Nhân vật giả định 3A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người cùng nhà cần buổi tối yên tĩnh
+      background: Làm việc tại nhà và thường đi ngủ sớm.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Thống nhất giờ yên tĩnh vào ban đêm. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thỏa thuận về sinh hoạt chung
+  - speaker: agent
+    goal: Tìm cách quan tâm lẫn nhau mà vẫn giữ nhịp sinh hoạt
+    persona:
+      name: Nhân vật giả định 3B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người cùng nhà hay về muộn
+      background: Làm việc đến muộn và nấu ăn sau khi về nhà.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Tìm cách quan tâm lẫn nhau mà vẫn giữ nhịp sinh hoạt. Nói tiếng Việt tự nhiên, mỗi lượt
+        một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được
+        kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thỏa thuận về sinh hoạt chung
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Thống nhất giờ yên tĩnh vào ban đêm / Tìm cách quan tâm lẫn nhau mà vẫn
+    giữ nhịp sinh hoạt) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+family_trip:
+  id: family_trip
+  title: Lên kế hoạch cho chuyến đi gia đình
+  relationship: người thân trong gia đình
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Lên kế hoạch cho chuyến đi gia đình
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Lập lịch trình vừa sức / Dành đủ thời gian tự do
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Lập lịch trình vừa sức
+    persona:
+      name: Nhân vật giả định 4A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người thân chuẩn bị lịch trình
+      background: Đã tìm hiểu lịch trình và các lựa chọn chỗ ở.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Lập lịch trình vừa sức. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết thông
+        tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể thay
+        đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch cho chuyến đi gia đình
+  - speaker: agent
+    goal: Dành đủ thời gian tự do
+    persona:
+      name: Nhân vật giả định 4B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người thân thích du lịch ngẫu hứng
+      background: Cảm thấy áp lực nếu lịch trình quá dày.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Dành đủ thời gian tự do. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết
+        thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể
+        thay đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch cho chuyến đi gia đình
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Lập lịch trình vừa sức / Dành đủ thời gian tự do) hoặc thống nhất một
+    bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+siblings:
+  id: siblings
+  title: Chuẩn bị sự kiện gia đình
+  relationship: anh chị em
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Chuẩn bị sự kiện gia đình
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Chia đều công việc chuẩn bị / Đề xuất thời gian có thể tham gia và cách đóng góp khác
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Chia đều công việc chuẩn bị
+    persona:
+      name: Nhân vật giả định 5A
+      age: người trưởng thành
+      language: Vietnamese
+      role: anh chị em phụ trách chuẩn bị sự kiện
+      background: Cảm thấy phần lớn công việc chuẩn bị dồn lên mình.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Chia đều công việc chuẩn bị. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết
+        thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể
+        thay đổi trong cuộc trò chuyện.'
+      circumstances: Chuẩn bị sự kiện gia đình
+  - speaker: agent
+    goal: Đề xuất thời gian có thể tham gia và cách đóng góp khác
+    persona:
+      name: Nhân vật giả định 5B
+      age: người trưởng thành
+      language: Vietnamese
+      role: anh chị em không có nhiều thời gian
+      background: Khó tham gia chuẩn bị trực tiếp lâu vì công việc.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Đề xuất thời gian có thể tham gia và cách đóng góp khác. Nói tiếng Việt tự nhiên, mỗi lượt
+        một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được
+        kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Chuẩn bị sự kiện gia đình
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Chia đều công việc chuẩn bị / Đề xuất thời gian có thể tham gia và cách
+    đóng góp khác) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+neighbors:
+  id: neighbors
+  title: Thỏa thuận về tiếng ồn với hàng xóm
+  relationship: hàng xóm
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Thỏa thuận về tiếng ồn với hàng xóm
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Hỏi khi nào tiếng ồn sẽ chấm dứt / Giải thích lịch sửa chữa và điều chỉnh cho phù hợp
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Hỏi khi nào tiếng ồn sẽ chấm dứt
+    persona:
+      name: Nhân vật giả định 6A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người hàng xóm bị tiếng ồn làm phiền
+      background: Gần đây tiếng sửa chữa buổi tối khiến họ khó tập trung.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Hỏi khi nào tiếng ồn sẽ chấm dứt. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thỏa thuận về tiếng ồn với hàng xóm
+  - speaker: agent
+    goal: Giải thích lịch sửa chữa và điều chỉnh cho phù hợp
+    persona:
+      name: Nhân vật giả định 6B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người hàng xóm đang sửa nhà
+      background: Việc sửa chữa là cần thiết nhưng không biết đã làm phiền hàng xóm đến mức nào.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Giải thích lịch sửa chữa và điều chỉnh cho phù hợp. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thỏa thuận về tiếng ồn với hàng xóm
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Hỏi khi nào tiếng ồn sẽ chấm dứt / Giải thích lịch sửa chữa và điều chỉnh
+    cho phù hợp) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+study:
+  id: study
+  title: Lên kế hoạch học nhóm
+  relationship: bạn học cùng nhóm
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Lên kế hoạch học nhóm
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Xác định tiến độ học tập / Dành đủ thời gian luyện tập
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Xác định tiến độ học tập
+    persona:
+      name: Nhân vật giả định 7A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người học thích lên kế hoạch
+      background: Lập thời gian biểu ôn tập và học theo đó.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Xác định tiến độ học tập. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết
+        thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể
+        thay đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch học nhóm
+  - speaker: agent
+    goal: Dành đủ thời gian luyện tập
+    persona:
+      name: Nhân vật giả định 7B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người học thiên về thực hành
+      background: Hiểu bài hơn khi trực tiếp giải bài tập.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Dành đủ thời gian luyện tập. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết
+        thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể
+        thay đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch học nhóm
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Xác định tiến độ học tập / Dành đủ thời gian luyện tập) hoặc thống nhất
+    một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+tutoring:
+  id: tutoring
+  title: Giải thích một khái niệm
+  relationship: giáo viên và người học trưởng thành
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Giải thích một khái niệm
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Kiểm tra xem người học đã hiểu chưa / Hỏi phần chưa rõ và kiểm tra bằng ví dụ
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Kiểm tra xem người học đã hiểu chưa
+    persona:
+      name: Nhân vật giả định 8A
+      age: người trưởng thành
+      language: Vietnamese
+      role: giáo viên khuyến khích đặt câu hỏi
+      background: Giải thích khái niệm toán học bằng ví dụ đời thường.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Kiểm tra xem người học đã hiểu chưa. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Giải thích một khái niệm
+  - speaker: agent
+    goal: Hỏi phần chưa rõ và kiểm tra bằng ví dụ
+    persona:
+      name: Nhân vật giả định 8B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người trưởng thành còn bối rối về phân số
+      background: Đã học thuộc công thức nhưng khó áp dụng.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Hỏi phần chưa rõ và kiểm tra bằng ví dụ. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Giải thích một khái niệm
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Kiểm tra xem người học đã hiểu chưa / Hỏi phần chưa rõ và kiểm tra bằng
+    ví dụ) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+language:
+  id: language
+  title: Trao đổi ngôn ngữ
+  relationship: bạn học ngôn ngữ
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Trao đổi ngôn ngữ
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tự diễn đạt trải nghiệm hằng ngày / Gợi ý cách nói tự nhiên một cách thoải mái
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tự diễn đạt trải nghiệm hằng ngày
+    persona:
+      name: Nhân vật giả định 9A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người học đang luyện nói
+      background: Biết từ vựng nhưng chưa tự tin khi nói câu dài.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tự diễn đạt trải nghiệm hằng ngày. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Trao đổi ngôn ngữ
+  - speaker: agent
+    goal: Gợi ý cách nói tự nhiên một cách thoải mái
+    persona:
+      name: Nhân vật giả định 9B
+      age: người trưởng thành
+      language: Vietnamese
+      role: bạn trao đổi ngôn ngữ
+      background: Cố gắng dành thời gian để đối phương tự nói.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Gợi ý cách nói tự nhiên một cách thoải mái. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Trao đổi ngôn ngữ
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tự diễn đạt trải nghiệm hằng ngày / Gợi ý cách nói tự nhiên một cách
+    thoải mái) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+mentor:
+  id: mentor
+  title: Khám phá định hướng nghề nghiệp
+  relationship: người hướng dẫn và người được hướng dẫn
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Khám phá định hướng nghề nghiệp
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Sắp xếp các tiêu chí lựa chọn / Hỗ trợ bằng cách phân biệt kinh nghiệm cá nhân với lời khuyên chung
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Sắp xếp các tiêu chí lựa chọn
+    persona:
+      name: Nhân vật giả định 10A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người trưởng thành đang cân nhắc nghề nghiệp
+      background: Đang phân vân giữa công việc hiện tại và một lĩnh vực mới.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Sắp xếp các tiêu chí lựa chọn. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Khám phá định hướng nghề nghiệp
+  - speaker: agent
+    goal: Hỗ trợ bằng cách phân biệt kinh nghiệm cá nhân với lời khuyên chung
+    persona:
+      name: Nhân vật giả định 10B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người hướng dẫn chia sẻ kinh nghiệm
+      background: Từng chuyển sang làm việc trong một lĩnh vực khác.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Hỗ trợ bằng cách phân biệt kinh nghiệm cá nhân với lời khuyên chung. Nói tiếng Việt tự nhiên,
+        mỗi lượt một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều
+        chưa được kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Khám phá định hướng nghề nghiệp
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Sắp xếp các tiêu chí lựa chọn / Hỗ trợ bằng cách phân biệt kinh nghiệm
+    cá nhân với lời khuyên chung) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+project:
+  id: project
+  title: Điều chỉnh phạm vi dự án
+  relationship: đồng nghiệp
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Điều chỉnh phạm vi dự án
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Thống nhất các tính năng thiết yếu / Đề xuất phạm vi có thể hoàn thành đúng hạn
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Thống nhất các tính năng thiết yếu
+    persona:
+      name: Nhân vật giả định 11A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người phụ trách kế hoạch
+      background: Cố gắng đáp ứng yêu cầu của người dùng trước hạn chót.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Thống nhất các tính năng thiết yếu. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Điều chỉnh phạm vi dự án
+  - speaker: agent
+    goal: Đề xuất phạm vi có thể hoàn thành đúng hạn
+    persona:
+      name: Nhân vật giả định 11B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người phụ trách phát triển
+      background: Quản lý tiến độ phát triển và thời gian kiểm thử.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Đề xuất phạm vi có thể hoàn thành đúng hạn. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Điều chỉnh phạm vi dự án
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Thống nhất các tính năng thiết yếu / Đề xuất phạm vi có thể hoàn thành
+    đúng hạn) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+handover:
+  id: handover
+  title: Bàn giao công việc
+  relationship: đồng nghiệp
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Bàn giao công việc
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Truyền đạt các ưu tiên mà không bỏ sót / Xác nhận thời hạn và phạm vi trách nhiệm
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Truyền đạt các ưu tiên mà không bỏ sót
+    persona:
+      name: Nhân vật giả định 12A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bàn giao công việc
+      background: Nắm rõ tiến độ nhưng có ít thời gian giải thích.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Truyền đạt các ưu tiên mà không bỏ sót. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Bàn giao công việc
+  - speaker: agent
+    goal: Xác nhận thời hạn và phạm vi trách nhiệm
+    persona:
+      name: Nhân vật giả định 12B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người tiếp nhận công việc
+      background: Chưa biết bối cảnh và thông tin nền.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Xác nhận thời hạn và phạm vi trách nhiệm. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Bàn giao công việc
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Truyền đạt các ưu tiên mà không bỏ sót / Xác nhận thời hạn và phạm vi
+    trách nhiệm) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+feedback:
+  id: feedback
+  title: Góp ý về công việc
+  relationship: đồng nghiệp
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Góp ý về công việc
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Nhận hướng dẫn chỉnh sửa cụ thể / Phân biệt điểm mạnh và điểm cần chỉnh sửa
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Nhận hướng dẫn chỉnh sửa cụ thể
+    persona:
+      name: Nhân vật giả định 13A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người chia sẻ bản nháp
+      background: Hiểu rõ ý định của mình nhưng lo lắng về phản hồi.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Nhận hướng dẫn chỉnh sửa cụ thể. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Góp ý về công việc
+  - speaker: agent
+    goal: Phân biệt điểm mạnh và điểm cần chỉnh sửa
+    persona:
+      name: Nhân vật giả định 13B
+      age: người trưởng thành
+      language: Vietnamese
+      role: đồng nghiệp xem bản nháp
+      background: Coi trọng cấu trúc giúp người đọc dễ hiểu.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Phân biệt điểm mạnh và điểm cần chỉnh sửa. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Góp ý về công việc
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Nhận hướng dẫn chỉnh sửa cụ thể / Phân biệt điểm mạnh và điểm cần chỉnh
+    sửa) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+remote:
+  id: remote
+  title: Sắp xếp lịch làm việc từ xa
+  relationship: đồng nghiệp ở các địa điểm khác nhau
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Sắp xếp lịch làm việc từ xa
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tìm thời gian họp phù hợp / Nghe nhanh ý chính và chốt thời gian
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tìm thời gian họp phù hợp
+    persona:
+      name: Nhân vật giả định 14A
+      age: người trưởng thành
+      language: Vietnamese
+      role: đồng nghiệp đề nghị cuộc họp
+      background: Có việc cần xác nhận trong ngày nhưng có thể linh động giờ.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tìm thời gian họp phù hợp. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết
+        thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể
+        thay đổi trong cuộc trò chuyện.'
+      circumstances: Sắp xếp lịch làm việc từ xa
+  - speaker: agent
+    goal: Nghe nhanh ý chính và chốt thời gian
+    persona:
+      name: Nhân vật giả định 14B
+      age: người trưởng thành
+      language: Vietnamese
+      role: đồng nghiệp đang di chuyển
+      background: Không thể nói lâu và khó ghi chép.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Nghe nhanh ý chính và chốt thời gian. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Sắp xếp lịch làm việc từ xa
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tìm thời gian họp phù hợp / Nghe nhanh ý chính và chốt thời gian) hoặc
+    thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+interview:
+  id: interview
+  title: Phỏng vấn tuyển dụng
+  relationship: người phỏng vấn và ứng viên
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Phỏng vấn tuyển dụng
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tìm hiểu kinh nghiệm hợp tác và căn cứ cho quyết định / Giải thích vai trò và điều đã học được
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tìm hiểu kinh nghiệm hợp tác và căn cứ cho quyết định
+    persona:
+      name: Nhân vật giả định 15A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người phỏng vấn hỏi về kinh nghiệm làm việc
+      background: Muốn nghe một ví dụ công việc cụ thể.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tìm hiểu kinh nghiệm hợp tác và căn cứ cho quyết định. Nói tiếng Việt tự nhiên, mỗi lượt
+        một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được
+        kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Phỏng vấn tuyển dụng
+  - speaker: agent
+    goal: Giải thích vai trò và điều đã học được
+    persona:
+      name: Nhân vật giả định 15B
+      age: người trưởng thành
+      language: Vietnamese
+      role: ứng viên
+      background: Có kinh nghiệm thực tế nhưng hồi hộp khi trình bày.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Giải thích vai trò và điều đã học được. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Phỏng vấn tuyển dụng
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tìm hiểu kinh nghiệm hợp tác và căn cứ cho quyết định / Giải thích vai
+    trò và điều đã học được) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+design:
+  id: design
+  title: Trao đổi về định hướng thiết kế
+  relationship: nhà thiết kế và khách hàng
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Trao đổi về định hướng thiết kế
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Chuyển yêu cầu thành tiêu chí thiết kế cụ thể / Truyền đạt sở thích bằng những ví dụ yêu thích
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chuyển yêu cầu thành tiêu chí thiết kế cụ thể
+    persona:
+      name: Nhân vật giả định 16A
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhà thiết kế
+      background: Chuẩn bị đề xuất chú trọng tính dễ sử dụng.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Chuyển yêu cầu thành tiêu chí thiết kế cụ thể. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Trao đổi về định hướng thiết kế
+  - speaker: agent
+    goal: Truyền đạt sở thích bằng những ví dụ yêu thích
+    persona:
+      name: Nhân vật giả định 16B
+      age: người trưởng thành
+      language: Vietnamese
+      role: khách hàng tổ chức sự kiện nhỏ
+      background: Biết cảm giác mình muốn nhưng không quen thuật ngữ chuyên môn.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Truyền đạt sở thích bằng những ví dụ yêu thích. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Trao đổi về định hướng thiết kế
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Chuyển yêu cầu thành tiêu chí thiết kế cụ thể / Truyền đạt sở thích bằng
+    những ví dụ yêu thích) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+travel:
+  id: travel
+  title: Hỏi đường
+  relationship: du khách và người địa phương
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Hỏi đường
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tìm đường dễ đi đến điểm đến / Giải thích đường đi dựa trên các địa danh dễ nhận biết
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tìm đường dễ đi đến điểm đến
+    persona:
+      name: Nhân vật giả định 17A
+      age: người trưởng thành
+      language: Vietnamese
+      role: du khách lần đầu đến đây
+      background: Không biết địa lý khu vực và các tuyến giao thông kết nối.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tìm đường dễ đi đến điểm đến. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Hỏi đường
+  - speaker: agent
+    goal: Giải thích đường đi dựa trên các địa danh dễ nhận biết
+    persona:
+      name: Nhân vật giả định 17B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người địa phương chỉ đường
+      background: Biết các địa điểm chính trong khu vực.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Giải thích đường đi dựa trên các địa danh dễ nhận biết. Nói tiếng Việt tự nhiên, mỗi lượt
+        một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được
+        kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Hỏi đường
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tìm đường dễ đi đến điểm đến / Giải thích đường đi dựa trên các địa danh
+    dễ nhận biết) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+hotel:
+  id: hotel
+  title: Yêu cầu với chỗ lưu trú
+  relationship: khách lưu trú và nhân viên
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Yêu cầu với chỗ lưu trú
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Hỏi xem có thể đổi phòng không / Xác nhận yêu cầu và giải thích các lựa chọn có thể
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Hỏi xem có thể đổi phòng không
+    persona:
+      name: Nhân vật giả định 18A
+      age: người trưởng thành
+      language: Vietnamese
+      role: khách muốn phòng yên tĩnh
+      background: Muốn nghỉ sớm và lo tiếng ồn xung quanh.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Hỏi xem có thể đổi phòng không. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Yêu cầu với chỗ lưu trú
+  - speaker: agent
+    goal: Xác nhận yêu cầu và giải thích các lựa chọn có thể
+    persona:
+      name: Nhân vật giả định 18B
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhân viên chỗ lưu trú
+      background: Chỉ có thể xác nhận sau khi kiểm tra tình trạng phòng.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Xác nhận yêu cầu và giải thích các lựa chọn có thể. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Yêu cầu với chỗ lưu trú
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Hỏi xem có thể đổi phòng không / Xác nhận yêu cầu và giải thích các lựa
+    chọn có thể) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+museum:
+  id: museum
+  title: Thưởng thức triển lãm
+  relationship: khách tham quan và hướng dẫn viên
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Thưởng thức triển lãm
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Hiểu ý đồ thể hiện của tác phẩm / Giúp khách tự quan sát tác phẩm
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Hiểu ý đồ thể hiện của tác phẩm
+    persona:
+      name: Nhân vật giả định 19A
+      age: người trưởng thành
+      language: Vietnamese
+      role: khách tham quan tò mò
+      background: Ít kiến thức nền về lĩnh vực triển lãm.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Hiểu ý đồ thể hiện của tác phẩm. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thưởng thức triển lãm
+  - speaker: agent
+    goal: Giúp khách tự quan sát tác phẩm
+    persona:
+      name: Nhân vật giả định 19B
+      age: người trưởng thành
+      language: Vietnamese
+      role: hướng dẫn viên triển lãm
+      background: Dùng phép so sánh dễ hiểu và câu hỏi gợi quan sát.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Giúp khách tự quan sát tác phẩm. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thưởng thức triển lãm
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Hiểu ý đồ thể hiện của tác phẩm / Giúp khách tự quan sát tác phẩm) hoặc
+    thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+restaurant:
+  id: restaurant
+  title: Gọi món
+  relationship: khách và nhân viên nhà hàng
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Gọi món
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Hỏi về hương vị và khẩu phần trước khi gọi / Hỏi sở thích và giải thích lựa chọn phù hợp
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Hỏi về hương vị và khẩu phần trước khi gọi
+    persona:
+      name: Nhân vật giả định 20A
+      age: người trưởng thành
+      language: Vietnamese
+      role: khách đang chọn món
+      background: Có nhiều món trong thực đơn chưa quen thuộc.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Hỏi về hương vị và khẩu phần trước khi gọi. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Gọi món
+  - speaker: agent
+    goal: Hỏi sở thích và giải thích lựa chọn phù hợp
+    persona:
+      name: Nhân vật giả định 20B
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhân viên giới thiệu thực đơn
+      background: Biết nguyên liệu và cách chế biến nhưng chưa biết khẩu vị của khách.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Hỏi sở thích và giải thích lựa chọn phù hợp. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Gọi món
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Hỏi về hương vị và khẩu phần trước khi gọi / Hỏi sở thích và giải thích
+    lựa chọn phù hợp) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+cooking:
+  id: cooking
+  title: Cùng nhau nấu ăn
+  relationship: bạn cùng nấu ăn
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Cùng nhau nấu ăn
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Giải thích các bước để người mới có thể làm theo / Hỏi lại hướng dẫn chưa rõ và chia nhau công việc
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Giải thích các bước để người mới có thể làm theo
+    persona:
+      name: Nhân vật giả định 21A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người nấu ăn thành thạo
+      background: Thường giải thích nhanh những cách làm đã quen.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Giải thích các bước để người mới có thể làm theo. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Cùng nhau nấu ăn
+  - speaker: agent
+    goal: Hỏi lại hướng dẫn chưa rõ và chia nhau công việc
+    persona:
+      name: Nhân vật giả định 21B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người mới học nấu ăn
+      background: Chưa quen dụng cụ và thuật ngữ nấu ăn.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Hỏi lại hướng dẫn chưa rõ và chia nhau công việc. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Cùng nhau nấu ăn
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Giải thích các bước để người mới có thể làm theo / Hỏi lại hướng dẫn
+    chưa rõ và chia nhau công việc) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+shopping:
+  id: shopping
+  title: So sánh sản phẩm
+  relationship: người mua và nhân viên bán hàng
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: So sánh sản phẩm
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Chọn món hàng mà không chi quá nhu cầu / Hỏi mục đích sử dụng và giải thích điểm khác biệt
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chọn món hàng mà không chi quá nhu cầu
+    persona:
+      name: Nhân vật giả định 22A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người mua đang so sánh sản phẩm
+      background: Đã xác định ngân sách và tính năng cần thiết.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Chọn món hàng mà không chi quá nhu cầu. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: So sánh sản phẩm
+  - speaker: agent
+    goal: Hỏi mục đích sử dụng và giải thích điểm khác biệt
+    persona:
+      name: Nhân vật giả định 22B
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhân viên tư vấn sản phẩm
+      background: So sánh và giải thích đặc điểm của các sản phẩm giả định.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Hỏi mục đích sử dụng và giải thích điểm khác biệt. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: So sánh sản phẩm
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Chọn món hàng mà không chi quá nhu cầu / Hỏi mục đích sử dụng và giải
+    thích điểm khác biệt) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+repair:
+  id: repair
+  title: Tiếp nhận yêu cầu sửa chữa
+  relationship: người dùng thiết bị và nhân viên sửa chữa
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Tiếp nhận yêu cầu sửa chữa
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Mô tả chính xác sự cố và hẹn lịch kiểm tra / Xác nhận triệu chứng và bước tiếp theo an toàn
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Mô tả chính xác sự cố và hẹn lịch kiểm tra
+    persona:
+      name: Nhân vật giả định 23A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người dùng thiết bị gặp trục trặc
+      background: Nhớ được vấn đề bắt đầu xảy ra khi nào.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Mô tả chính xác sự cố và hẹn lịch kiểm tra. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Tiếp nhận yêu cầu sửa chữa
+  - speaker: agent
+    goal: Xác nhận triệu chứng và bước tiếp theo an toàn
+    persona:
+      name: Nhân vật giả định 23B
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhân viên tiếp nhận sửa chữa
+      background: Không thể kết luận thiết bị hỏng gì trước khi kiểm tra trực tiếp.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Xác nhận triệu chứng và bước tiếp theo an toàn. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Tiếp nhận yêu cầu sửa chữa
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Mô tả chính xác sự cố và hẹn lịch kiểm tra / Xác nhận triệu chứng và
+    bước tiếp theo an toàn) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+delivery:
+  id: delivery
+  title: Hỏi về giao hàng
+  relationship: người nhận và nhân viên giao hàng
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Hỏi về giao hàng
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tìm hiểu các cách nhận hàng có thể thực hiện / Xác nhận điều kiện nhận và giải thích phương án thay thế
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tìm hiểu các cách nhận hàng có thể thực hiện
+    persona:
+      name: Nhân vật giả định 24A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người nhận hỏi giờ giao đến
+      background: Chỉ có thể nhận hàng trong khung giờ hạn chế.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tìm hiểu các cách nhận hàng có thể thực hiện. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Hỏi về giao hàng
+  - speaker: agent
+    goal: Xác nhận điều kiện nhận và giải thích phương án thay thế
+    persona:
+      name: Nhân vật giả định 24B
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhân viên giao hàng
+      background: Chỉ có thể thông báo lịch trình đã được xác nhận.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Xác nhận điều kiện nhận và giải thích phương án thay thế. Nói tiếng Việt tự nhiên, mỗi lượt
+        một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được
+        kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Hỏi về giao hàng
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tìm hiểu các cách nhận hàng có thể thực hiện / Xác nhận điều kiện nhận
+    và giải thích phương án thay thế) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+library:
+  id: library
+  title: Gợi ý sách
+  relationship: người đọc và thủ thư
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Gợi ý sách
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tìm thể loại sách dễ đọc / Đưa ra tiêu chí tìm kiếm phù hợp sở thích
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tìm thể loại sách dễ đọc
+    persona:
+      name: Nhân vật giả định 25A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người đọc muốn thử thể loại mới
+      background: Có thể kể về những cuốn sách mình đọc gần đây.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tìm thể loại sách dễ đọc. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết
+        thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể
+        thay đổi trong cuộc trò chuyện.'
+      circumstances: Gợi ý sách
+  - speaker: agent
+    goal: Đưa ra tiêu chí tìm kiếm phù hợp sở thích
+    persona:
+      name: Nhân vật giả định 25B
+      age: người trưởng thành
+      language: Vietnamese
+      role: thủ thư
+      background: Hỏi về mục đích đọc và sở thích.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Đưa ra tiêu chí tìm kiếm phù hợp sở thích. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Gợi ý sách
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tìm thể loại sách dễ đọc / Đưa ra tiêu chí tìm kiếm phù hợp sở thích)
+    hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+bookclub:
+  id: bookclub
+  title: Thảo luận sách
+  relationship: thành viên câu lạc bộ đọc sách
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Thảo luận sách
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Giải thích cách hiểu của mình / So sánh căn cứ của những cách diễn giải khác nhau
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Giải thích cách hiểu của mình
+    persona:
+      name: Nhân vật giả định 26A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người đọc đồng cảm với nhân vật
+      background: Tập trung vào cảm xúc của các nhân vật khi đọc.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Giải thích cách hiểu của mình. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thảo luận sách
+  - speaker: agent
+    goal: So sánh căn cứ của những cách diễn giải khác nhau
+    persona:
+      name: Nhân vật giả định 26B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người đọc phân tích cấu trúc
+      background: Chú ý đến cấu trúc truyện và quan hệ nhân quả giữa các sự kiện.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: So sánh căn cứ của những cách diễn giải khác nhau. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Thảo luận sách
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Giải thích cách hiểu của mình / So sánh căn cứ của những cách diễn giải
+    khác nhau) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+music:
+  id: music
+  title: Cộng tác âm nhạc
+  relationship: nhạc công
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Cộng tác âm nhạc
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Thống nhất nhịp độ và tín hiệu bắt đầu / Chia sẻ và thống nhất ý đồ biểu đạt
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Thống nhất nhịp độ và tín hiệu bắt đầu
+    persona:
+      name: Nhân vật giả định 27A
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhạc công chú trọng nhịp điệu
+      background: Cố gắng phối hợp bằng cách tập đi tập lại.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Thống nhất nhịp độ và tín hiệu bắt đầu. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Cộng tác âm nhạc
+  - speaker: agent
+    goal: Chia sẻ và thống nhất ý đồ biểu đạt
+    persona:
+      name: Nhân vật giả định 27B
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhạc công chú trọng biểu cảm
+      background: Thường hình dung sắc thái và không khí trước.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Chia sẻ và thống nhất ý đồ biểu đạt. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Cộng tác âm nhạc
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Thống nhất nhịp độ và tín hiệu bắt đầu / Chia sẻ và thống nhất ý đồ biểu
+    đạt) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+podcast:
+  id: podcast
+  title: Phỏng vấn podcast
+  relationship: người dẫn chương trình và khách mời
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Phỏng vấn podcast
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Khơi gợi ví dụ bằng câu hỏi mở / Kể trải nghiệm sinh động nhưng không phóng đại
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Khơi gợi ví dụ bằng câu hỏi mở
+    persona:
+      name: Nhân vật giả định 28A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người dẫn phỏng vấn
+      background: Muốn nghe chi tiết trải nghiệm của khách mời.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Khơi gợi ví dụ bằng câu hỏi mở. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không
+        biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có
+        thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Phỏng vấn podcast
+  - speaker: agent
+    goal: Kể trải nghiệm sinh động nhưng không phóng đại
+    persona:
+      name: Nhân vật giả định 28B
+      age: người trưởng thành
+      language: Vietnamese
+      role: khách mời kể về sở thích
+      background: Có nhiều thành tựu nhỏ và cả những lần thử sai.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Kể trải nghiệm sinh động nhưng không phóng đại. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Phỏng vấn podcast
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Khơi gợi ví dụ bằng câu hỏi mở / Kể trải nghiệm sinh động nhưng không
+    phóng đại) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+writing:
+  id: writing
+  title: Cùng sáng tác câu chuyện
+  relationship: các đồng tác giả
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Cùng sáng tác câu chuyện
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Xây dựng bối cảnh cho hành động của nhân vật / Kết nối ý tưởng thành một cảnh cụ thể
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Xây dựng bối cảnh cho hành động của nhân vật
+    persona:
+      name: Nhân vật giả định 29A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người viết xây dựng bối cảnh
+      background: Coi trọng thế giới truyện và tính nhất quán logic.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Xây dựng bối cảnh cho hành động của nhân vật. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Cùng sáng tác câu chuyện
+  - speaker: agent
+    goal: Kết nối ý tưởng thành một cảnh cụ thể
+    persona:
+      name: Nhân vật giả định 29B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người viết xây dựng cảnh
+      background: Quan tâm đến lời thoại và những bước ngoặt cảm xúc.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Kết nối ý tưởng thành một cảnh cụ thể. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Cùng sáng tác câu chuyện
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Xây dựng bối cảnh cho hành động của nhân vật / Kết nối ý tưởng thành
+    một cảnh cụ thể) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+volunteer:
+  id: volunteer
+  title: Tình nguyện tại sự kiện địa phương
+  relationship: các tình nguyện viên
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Tình nguyện tại sự kiện địa phương
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Giải thích công việc cho người mới tham gia / Xác nhận nhiệm vụ và cách xin trợ giúp
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Giải thích công việc cho người mới tham gia
+    persona:
+      name: Nhân vật giả định 30A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người có kinh nghiệm điều phối sự kiện
+      background: Nắm rõ lối đi hướng dẫn và cách phân công nhiệm vụ.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Giải thích công việc cho người mới tham gia. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Tình nguyện tại sự kiện địa phương
+  - speaker: agent
+    goal: Xác nhận nhiệm vụ và cách xin trợ giúp
+    persona:
+      name: Nhân vật giả định 30B
+      age: người trưởng thành
+      language: Vietnamese
+      role: tình nguyện viên mới
+      background: Muốn giúp đỡ nhưng lo mình sẽ mắc lỗi.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Xác nhận nhiệm vụ và cách xin trợ giúp. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Tình nguyện tại sự kiện địa phương
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Giải thích công việc cho người mới tham gia / Xác nhận nhiệm vụ và cách
+    xin trợ giúp) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+sports:
+  id: sports
+  title: Lên kế hoạch tập luyện
+  relationship: bạn tập thể thao
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Lên kế hoạch tập luyện
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Chọn hoạt động có thể duy trì cùng nhau / Đề xuất mục tiêu nhẹ nhàng
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chọn hoạt động có thể duy trì cùng nhau
+    persona:
+      name: Nhân vật giả định 31A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người tập thể dục đều đặn
+      background: Thích lịch tập vừa sức.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Chọn hoạt động có thể duy trì cùng nhau. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch tập luyện
+  - speaker: agent
+    goal: Đề xuất mục tiêu nhẹ nhàng
+    persona:
+      name: Nhân vật giả định 31B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bắt đầu tập luyện trở lại
+      background: Chưa tự tin về thể lực hiện tại.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Đề xuất mục tiêu nhẹ nhàng. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu. Không biết
+        thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm xúc có thể
+        thay đổi trong cuộc trò chuyện.'
+      circumstances: Lên kế hoạch tập luyện
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Chọn hoạt động có thể duy trì cùng nhau / Đề xuất mục tiêu nhẹ nhàng)
+    hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+garden:
+  id: garden
+  title: Chăm sóc cây
+  relationship: người yêu cây
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Chăm sóc cây
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tìm hiểu dấu hiệu cần quan sát và thói quen chăm sóc / Hỏi tình trạng cây và giải thích cách kiểm tra
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tìm hiểu dấu hiệu cần quan sát và thói quen chăm sóc
+    persona:
+      name: Nhân vật giả định 32A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người mới trồng cây
+      background: Chưa biết rõ tần suất tưới nước.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tìm hiểu dấu hiệu cần quan sát và thói quen chăm sóc. Nói tiếng Việt tự nhiên, mỗi lượt
+        một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được
+        kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Chăm sóc cây
+  - speaker: agent
+    goal: Hỏi tình trạng cây và giải thích cách kiểm tra
+    persona:
+      name: Nhân vật giả định 32B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người có kinh nghiệm trồng cây
+      background: Biết cách chăm sóc thay đổi tùy môi trường.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Hỏi tình trạng cây và giải thích cách kiểm tra. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Chăm sóc cây
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tìm hiểu dấu hiệu cần quan sát và thói quen chăm sóc / Hỏi tình trạng
+    cây và giải thích cách kiểm tra) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+lost_item:
+  id: lost_item
+  title: Hỏi về đồ thất lạc
+  relationship: người làm mất đồ và nhân viên hỗ trợ
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Hỏi về đồ thất lạc
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Nhớ lại đặc điểm món đồ và lộ trình đã đi / Xác nhận đặc điểm đồ vật và thủ tục liên hệ
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Nhớ lại đặc điểm món đồ và lộ trình đã đi
+    persona:
+      name: Nhân vật giả định 33A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người làm mất đồ
+      background: Không chắc nơi cuối cùng mình nhìn thấy món đồ.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Nhớ lại đặc điểm món đồ và lộ trình đã đi. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Hỏi về đồ thất lạc
+  - speaker: agent
+    goal: Xác nhận đặc điểm đồ vật và thủ tục liên hệ
+    persona:
+      name: Nhân vật giả định 33B
+      age: người trưởng thành
+      language: Vietnamese
+      role: nhân viên phụ trách đồ thất lạc
+      background: Không thể nói đã tìm thấy đồ nếu chưa xác minh.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Xác nhận đặc điểm đồ vật và thủ tục liên hệ. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Hỏi về đồ thất lạc
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Nhớ lại đặc điểm món đồ và lộ trình đã đi / Xác nhận đặc điểm đồ vật
+    và thủ tục liên hệ) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+apology:
+  id: apology
+  title: Giải quyết hiểu lầm
+  relationship: bạn bè
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Giải quyết hiểu lầm
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Xin lỗi không biện minh và đề xuất cách khắc phục / Nói rõ điều gây khó chịu và thống nhất nguyên tắc
+      cho lần hẹn sau
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Xin lỗi không biện minh và đề xuất cách khắc phục
+    persona:
+      name: Nhân vật giả định 34A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bạn lỡ cuộc hẹn
+      background: Có lý do để giải thích nhưng vẫn áy náy vì khiến bạn phải chờ.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Xin lỗi không biện minh và đề xuất cách khắc phục. Nói tiếng Việt tự nhiên, mỗi lượt một
+        hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm
+        chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Giải quyết hiểu lầm
+  - speaker: agent
+    goal: Nói rõ điều gây khó chịu và thống nhất nguyên tắc cho lần hẹn sau
+    persona:
+      name: Nhân vật giả định 34B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người bạn đã chờ
+      background: Buồn vì đã phải chờ lâu.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Nói rõ điều gây khó chịu và thống nhất nguyên tắc cho lần hẹn sau. Nói tiếng Việt tự nhiên,
+        mỗi lượt một hoặc hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều
+        chưa được kiểm chứng. Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Giải quyết hiểu lầm
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Xin lỗi không biện minh và đề xuất cách khắc phục / Nói rõ điều gây khó
+    chịu và thống nhất nguyên tắc cho lần hẹn sau) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+celebration:
+  id: celebration
+  title: Chúc mừng một thành tựu nhỏ
+  relationship: đồng nghiệp
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Chúc mừng một thành tựu nhỏ
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Chia sẻ trải nghiệm và mục tiêu tiếp theo / Ghi nhận nỗ lực và chúc mừng một cách thoải mái
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chia sẻ trải nghiệm và mục tiêu tiếp theo
+    persona:
+      name: Nhân vật giả định 35A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người vừa đạt mục tiêu nhỏ
+      background: Đã cố gắng bền bỉ nhưng không xem thành quả là quá lớn.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Chia sẻ trải nghiệm và mục tiêu tiếp theo. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai
+        câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Chúc mừng một thành tựu nhỏ
+  - speaker: agent
+    goal: Ghi nhận nỗ lực và chúc mừng một cách thoải mái
+    persona:
+      name: Nhân vật giả định 35B
+      age: người trưởng thành
+      language: Vietnamese
+      role: đồng nghiệp chúc mừng
+      background: Nhớ rõ những nỗ lực cụ thể của người kia.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Ghi nhận nỗ lực và chúc mừng một cách thoải mái. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Chúc mừng một thành tựu nhỏ
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Chia sẻ trải nghiệm và mục tiêu tiếp theo / Ghi nhận nỗ lực và chúc mừng
+    một cách thoải mái) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.
+community:
+  id: community
+  title: Họp về không gian chung
+  relationship: các thành viên cộng đồng
+  context:
+    location: không gian trò chuyện phù hợp với tình huống
+    environment: trực tiếp
+    circumstances: Họp về không gian chung
+  scenario:
+    facts_policy: Hãy xác định trước những thông tin cần thiết như giá cả, thời gian và địa danh, rồi cung cấp nhất
+      quán cho cả hai bên.
+    goal: Tìm khung giờ yên tĩnh để tập trung / Tìm khung giờ dành cho các buổi sinh hoạt nhóm
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tìm khung giờ yên tĩnh để tập trung
+    persona:
+      name: Nhân vật giả định 36A
+      age: người trưởng thành
+      language: Vietnamese
+      role: người dân muốn có không gian chung yên tĩnh
+      background: Dùng không gian để đọc sách và làm việc.
+      personality: Nói rõ nhu cầu của mình và hỏi về điều chưa biết.
+      rules: 'Mục tiêu: Tìm khung giờ yên tĩnh để tập trung. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc hai câu.
+        Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng. Cảm
+        xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Họp về không gian chung
+  - speaker: agent
+    goal: Tìm khung giờ dành cho các buổi sinh hoạt nhóm
+    persona:
+      name: Nhân vật giả định 36B
+      age: người trưởng thành
+      language: Vietnamese
+      role: người dân muốn có thời gian cho nhóm sinh hoạt
+      background: Cần một nơi để mọi người gặp gỡ và giao lưu.
+      personality: Xác nhận mục tiêu của đối phương và cùng xem xét các lựa chọn khả thi.
+      rules: 'Mục tiêu: Tìm khung giờ dành cho các buổi sinh hoạt nhóm. Nói tiếng Việt tự nhiên, mỗi lượt một hoặc
+        hai câu. Không biết thông tin cá nhân mà đối phương chưa chia sẻ. Không khẳng định điều chưa được kiểm chứng.
+        Cảm xúc có thể thay đổi trong cuộc trò chuyện.'
+      circumstances: Họp về không gian chung
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Cả hai bên giữ đúng vai trò và giới hạn hiểu biết của mình.
+  - Cả hai bên thúc đẩy mục tiêu của mình (Tìm khung giờ yên tĩnh để tập trung / Tìm khung giờ dành cho các buổi
+    sinh hoạt nhóm) hoặc thống nhất một bước tiếp theo thực tế.
+  - Trả lời tự nhiên và phù hợp bằng tiếng Việt dựa trên lời người kia.
+  - Không có lời độc thoại suy luận, mã thông báo đặc biệt hoặc lặp lại máy móc.

@@ -1,0 +1,1772 @@
+weekend:
+  id: weekend
+  title: 友人との週末の計画
+  relationship: 友人同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 友人との週末の計画
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 半日散歩の計画を一緒に立てる／移動の少ない休息プランに合意する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 半日散歩の計画を一緒に立てる
+    persona:
+      name: 架空人物1A
+      age: 成人
+      language: Japanese
+      role: 屋外での活動を提案する友人
+      background: 登山経験が豊富で、新しい場所を探すのが好き
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：半日散歩の計画を一緒に立てる。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 友人との週末の計画
+  - speaker: agent
+    goal: 移動の少ない休息プランに合意する
+    persona:
+      name: 架空人物1B
+      age: 成人
+      language: Japanese
+      role: 屋内で過ごすのが好きな友人
+      background: 今週は仕事が多く、体力を温存したい
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：移動の少ない休息プランに合意する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 友人との週末の計画
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（半日散歩の計画を一緒に立てる／移動の少ない休息プランに合意する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+reunion:
+  id: reunion
+  title: 久しぶりの友人との再会
+  relationship: 長年の友人同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 久しぶりの友人との再会
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 最近の暮らしを話し、次に会うことを提案する／連絡した理由を聞き、近況を話す
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 最近の暮らしを話し、次に会うことを提案する
+    persona:
+      name: 架空人物2A
+      age: 成人
+      language: Japanese
+      role: 再び連絡を取り始めた友人
+      background: 別の地域に引っ越してから連絡が減っていた
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：最近の暮らしを話し、次に会うことを提案する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 久しぶりの友人との再会
+  - speaker: agent
+    goal: 連絡した理由を聞き、近況を話す
+    persona:
+      name: 架空人物2B
+      age: 成人
+      language: Japanese
+      role: 連絡を待っていた友人
+      background: 昔の思い出は懐かしいが、突然連絡してきた理由が気になる
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：連絡した理由を聞き、近況を話す。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 久しぶりの友人との再会
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（最近の暮らしを話し、次に会うことを提案する／連絡した理由を聞き、近況を話す）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+roommates:
+  id: roommates
+  title: 共同生活のルール
+  relationship: ルームメイト同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 共同生活のルール
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 夜間の騒音が出る時間を調整する／生活リズムを保ちながら配慮する方法を探す
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: 夜間の騒音が出る時間を調整する
+    persona:
+      name: 架空人物3A
+      age: 成人
+      language: Japanese
+      role: 静かな夜を必要としているルームメイト
+      background: 在宅勤務をし、早めに就寝する
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：夜間の騒音が出る時間を調整する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 共同生活のルール
+  - speaker: agent
+    goal: 生活リズムを保ちながら配慮する方法を探す
+    persona:
+      name: 架空人物3B
+      age: 成人
+      language: Japanese
+      role: 帰宅が遅いルームメイト
+      background: 勤務時間が遅く、帰宅後に料理をする
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：生活リズムを保ちながら配慮する方法を探す。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 共同生活のルール
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（夜間の騒音が出る時間を調整する／生活リズムを保ちながら配慮する方法を探す）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+family_trip:
+  id: family_trip
+  title: 家族旅行の計画
+  relationship: 家族同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 家族旅行の計画
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 無理のない日程を作る／自由時間を確保する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 無理のない日程を作る
+    persona:
+      name: 架空人物4A
+      age: 成人
+      language: Japanese
+      role: 旅行の日程を準備する家族
+      background: 旅行の日程と宿泊先の候補を調べた
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：無理のない日程を作る。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 家族旅行の計画
+  - speaker: agent
+    goal: 自由時間を確保する
+    persona:
+      name: 架空人物4B
+      age: 成人
+      language: Japanese
+      role: 即興の旅が好きな家族
+      background: 予定が詰まりすぎると負担に感じる
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：自由時間を確保する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 家族旅行の計画
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（無理のない日程を作る／自由時間を確保する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+siblings:
+  id: siblings
+  title: 家族行事の準備
+  relationship: 兄弟姉妹同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 家族行事の準備
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 準備の役割を公平に分担する／参加できる時間と別の貢献方法を提案する
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: 準備の役割を公平に分担する
+    persona:
+      name: 架空人物5A
+      age: 成人
+      language: Japanese
+      role: 行事の準備を担当するきょうだい
+      background: 準備作業が自分に偏っていると感じている
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：準備の役割を公平に分担する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 家族行事の準備
+  - speaker: agent
+    goal: 参加できる時間と別の貢献方法を提案する
+    persona:
+      name: 架空人物5B
+      age: 成人
+      language: Japanese
+      role: 時間に余裕のないきょうだい
+      background: 仕事のため、現地での準備に長く参加するのが難しい
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：参加できる時間と別の貢献方法を提案する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 家族行事の準備
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（準備の役割を公平に分担する／参加できる時間と別の貢献方法を提案する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+neighbors:
+  id: neighbors
+  title: 近隣の騒音を調整する
+  relationship: 近隣住民同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 近隣の騒音を調整する
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 騒音が終わる時間を確認する／作業日程を説明して調整する
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: 騒音が終わる時間を確認する
+    persona:
+      name: 架空人物6A
+      age: 成人
+      language: Japanese
+      role: 騒音に困っている近隣住民
+      background: 最近、夕方の作業音で集中しにくい
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：騒音が終わる時間を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 近隣の騒音を調整する
+  - speaker: agent
+    goal: 作業日程を説明して調整する
+    persona:
+      name: 架空人物6B
+      age: 成人
+      language: Japanese
+      role: 家の修理をしている近隣住民
+      background: 修理は必要だが、近隣住民がどれほど困っているか知らなかった
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：作業日程を説明して調整する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 近隣の騒音を調整する
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（騒音が終わる時間を確認する／作業日程を説明して調整する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+study:
+  id: study
+  title: 一緒に学習計画を立てる
+  relationship: 勉強仲間同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 一緒に学習計画を立てる
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 学習の進度を決める／十分な演習時間を確保する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 学習の進度を決める
+    persona:
+      name: 架空人物7A
+      age: 成人
+      language: Japanese
+      role: 計画的に学ぶ人
+      background: 復習スケジュールを作って勉強する
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：学習の進度を決める。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 一緒に学習計画を立てる
+  - speaker: agent
+    goal: 十分な演習時間を確保する
+    persona:
+      name: 架空人物7B
+      age: 成人
+      language: Japanese
+      role: 実践中心で学ぶ人
+      background: 自分で問題を解くと理解しやすい
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：十分な演習時間を確保する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 一緒に学習計画を立てる
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（学習の進度を決める／十分な演習時間を確保する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+tutoring:
+  id: tutoring
+  title: 概念の説明
+  relationship: 教師と成人学習者
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 概念の説明
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 学習者の理解を確認する／分からない点を質問し、例題で確認する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 学習者の理解を確認する
+    persona:
+      name: 架空人物8A
+      age: 成人
+      language: Japanese
+      role: 質問を促す教師
+      background: 数学の概念を日常の例で説明する
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：学習者の理解を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 概念の説明
+  - speaker: agent
+    goal: 分からない点を質問し、例題で確認する
+    persona:
+      name: 架空人物8B
+      age: 成人
+      language: Japanese
+      role: 分数の概念に戸惑っている成人学習者
+      background: 公式は覚えたが、応用するのが難しい
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：分からない点を質問し、例題で確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 概念の説明
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（学習者の理解を確認する／分からない点を質問し、例題で確認する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+language:
+  id: language
+  title: 言語交換
+  relationship: 言語学習パートナー同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 言語交換
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 日常の経験を自分の言葉で説明する／気負わず自然な表現を教える
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 日常の経験を自分の言葉で説明する
+    persona:
+      name: 架空人物9A
+      age: 成人
+      language: Japanese
+      role: 会話を練習している学習者
+      background: 単語は知っているが、長い文を話す自信がない
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：日常の経験を自分の言葉で説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 言語交換
+  - speaker: agent
+    goal: 気負わず自然な表現を教える
+    persona:
+      name: 架空人物9B
+      age: 成人
+      language: Japanese
+      role: 言語交換パートナー
+      background: 相手が自分で話す時間を作ろうとする
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：気負わず自然な表現を教える。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 言語交換
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（日常の経験を自分の言葉で説明する／気負わず自然な表現を教える）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+mentor:
+  id: mentor
+  title: キャリアについて考える
+  relationship: メンターとメンティー
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: キャリアについて考える
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 選択の基準を整理する／個人の経験と一般的な助言を区別して支援する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 選択の基準を整理する
+    persona:
+      name: 架空人物10A
+      age: 成人
+      language: Japanese
+      role: キャリアに悩む成人
+      background: 現在の仕事と新しい分野のどちらに進むか悩んでいる
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：選択の基準を整理する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: キャリアについて考える
+  - speaker: agent
+    goal: 個人の経験と一般的な助言を区別して支援する
+    persona:
+      name: 架空人物10B
+      age: 成人
+      language: Japanese
+      role: 経験を共有するメンター
+      background: 別の分野に転職した経験がある
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：個人の経験と一般的な助言を区別して支援する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: キャリアについて考える
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（選択の基準を整理する／個人の経験と一般的な助言を区別して支援する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+project:
+  id: project
+  title: プロジェクトの範囲を調整する
+  relationship: 同僚同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: プロジェクトの範囲を調整する
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 必須機能について合意する／日程内に実現可能な範囲を提案する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 必須機能について合意する
+    persona:
+      name: 架空人物11A
+      age: 成人
+      language: Japanese
+      role: 企画担当者
+      background: 締め切り前にユーザーの要望を反映しようとしている
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：必須機能について合意する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: プロジェクトの範囲を調整する
+  - speaker: agent
+    goal: 日程内に実現可能な範囲を提案する
+    persona:
+      name: 架空人物11B
+      age: 成人
+      language: Japanese
+      role: 開発担当者
+      background: 開発日程とテスト時間を管理している
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：日程内に実現可能な範囲を提案する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: プロジェクトの範囲を調整する
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（必須機能について合意する／日程内に実現可能な範囲を提案する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+handover:
+  id: handover
+  title: 業務の引き継ぎ
+  relationship: 同僚同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 業務の引き継ぎ
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 漏れなく優先順位を伝える／期限と担当範囲を確認する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 漏れなく優先順位を伝える
+    persona:
+      name: 架空人物12A
+      age: 成人
+      language: Japanese
+      role: 業務を引き継ぐ担当者
+      background: 進捗をよく把握しているが、説明時間が短い
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：漏れなく優先順位を伝える。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 業務の引き継ぎ
+  - speaker: agent
+    goal: 期限と担当範囲を確認する
+    persona:
+      name: 架空人物12B
+      age: 成人
+      language: Japanese
+      role: 業務を引き継ぐ担当者
+      background: 背景や経緯をまだ把握していない
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：期限と担当範囲を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 業務の引き継ぎ
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（漏れなく優先順位を伝える／期限と担当範囲を確認する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+feedback:
+  id: feedback
+  title: 仕事のフィードバック
+  relationship: 同僚同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 仕事のフィードバック
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 具体的な修正方針を受け取る／良い点と改善点を分けて伝える
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 具体的な修正方針を受け取る
+    persona:
+      name: 架空人物13A
+      age: 成人
+      language: Japanese
+      role: 草稿を共有した執筆者
+      background: 書く意図は明確だがフィードバックが気がかり
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：具体的な修正方針を受け取る。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 仕事のフィードバック
+  - speaker: agent
+    goal: 良い点と改善点を分けて伝える
+    persona:
+      name: 架空人物13B
+      age: 成人
+      language: Japanese
+      role: 草稿を確認する同僚
+      background: 読者に分かりやすい構成を重視する
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：良い点と改善点を分けて伝える。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 仕事のフィードバック
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（具体的な修正方針を受け取る／良い点と改善点を分けて伝える）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+remote:
+  id: remote
+  title: リモート会議の日程調整
+  relationship: 別の地域にいる同僚同士
+  context:
+    location: 離れた場所
+    environment: 電話
+    circumstances: リモート会議の日程調整
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 都合のよい会議時間を探す／要点を手短に聞いて時間を確定する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 都合のよい会議時間を探す
+    persona:
+      name: 架空人物14A
+      age: 成人
+      language: Japanese
+      role: 会議を依頼する同僚
+      background: 当日確認したいことがあるが日程の調整は可能
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：都合のよい会議時間を探す。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: リモート会議の日程調整
+  - speaker: agent
+    goal: 要点を手短に聞いて時間を確定する
+    persona:
+      name: 架空人物14B
+      age: 成人
+      language: Japanese
+      role: 移動中の同僚
+      background: 長く話せずメモを取るのも難しい
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：要点を手短に聞いて時間を確定する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: リモート会議の日程調整
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（都合のよい会議時間を探す／要点を手短に聞いて時間を確定する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+interview:
+  id: interview
+  title: 職務面接
+  relationship: 面接官と応募者
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 職務面接
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 協働経験と判断の根拠を確認する／自分の役割と学んだことを説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 協働経験と判断の根拠を確認する
+    persona:
+      name: 架空人物15A
+      age: 成人
+      language: Japanese
+      role: 職務経験を尋ねる面接官
+      background: 具体的な業務事例を知りたい
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：協働経験と判断の根拠を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 職務面接
+  - speaker: agent
+    goal: 自分の役割と学んだことを説明する
+    persona:
+      name: 架空人物15B
+      age: 成人
+      language: Japanese
+      role: 応募者
+      background: 実務経験はあるが話すことに緊張する
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：自分の役割と学んだことを説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 職務面接
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（協働経験と判断の根拠を確認する／自分の役割と学んだことを説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+design:
+  id: design
+  title: デザインの方向性を相談する
+  relationship: デザイナーと依頼者
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: デザインの方向性を相談する
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 要望を具体的なデザイン条件に落とし込む／好みの事例を使って好みを伝える
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 要望を具体的なデザイン条件に落とし込む
+    persona:
+      name: 架空人物16A
+      age: 成人
+      language: Japanese
+      role: デザイナー
+      background: 使いやすさを重視して提案を準備している
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：要望を具体的なデザイン条件に落とし込む。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: デザインの方向性を相談する
+  - speaker: agent
+    goal: 好みの事例を使って好みを伝える
+    persona:
+      name: 架空人物16B
+      age: 成人
+      language: Japanese
+      role: 小規模イベントの依頼者
+      background: 望む雰囲気はあるが専門用語は分からない
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：好みの事例を使って好みを伝える。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: デザインの方向性を相談する
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（要望を具体的なデザイン条件に落とし込む／好みの事例を使って好みを伝える）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+travel:
+  id: travel
+  title: 道案内
+  relationship: 旅行者と地域住民
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 道案内
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 目的地までの分かりやすい道順を尋ねる／目印を中心に道順を説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 目的地までの分かりやすい道順を尋ねる
+    persona:
+      name: 架空人物17A
+      age: 成人
+      language: Japanese
+      role: 初めて訪れた旅行者
+      background: 地域の地理や交通の接続が分からない
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：目的地までの分かりやすい道順を尋ねる。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 道案内
+  - speaker: agent
+    goal: 目印を中心に道順を説明する
+    persona:
+      name: 架空人物17B
+      age: 成人
+      language: Japanese
+      role: 道を案内する住民
+      background: 地域の主な場所を知っている
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：目印を中心に道順を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 道案内
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（目的地までの分かりやすい道順を尋ねる／目印を中心に道順を説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+hotel:
+  id: hotel
+  title: 宿泊先への要望
+  relationship: 宿泊客と宿のスタッフ
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 宿泊先への要望
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 可能な部屋の変更を確認する／要望を確認し可能な選択肢を説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 可能な部屋の変更を確認する
+    persona:
+      name: 架空人物18A
+      age: 成人
+      language: Japanese
+      role: 静かな部屋を希望する宿泊客
+      background: 早く休みたいので周囲の騒音が気になる
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：可能な部屋の変更を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 宿泊先への要望
+  - speaker: agent
+    goal: 要望を確認し可能な選択肢を説明する
+    persona:
+      name: 架空人物18B
+      age: 成人
+      language: Japanese
+      role: 宿のスタッフ
+      background: 客室の状況を確認してからでないと確約できない
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：要望を確認し可能な選択肢を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 宿泊先への要望
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（可能な部屋の変更を確認する／要望を確認し可能な選択肢を説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+museum:
+  id: museum
+  title: 展示鑑賞
+  relationship: 来館者と解説者
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 展示鑑賞
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 作品の表現意図を理解する／来館者が自分で観察できるよう促す
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 作品の表現意図を理解する
+    persona:
+      name: 架空人物19A
+      age: 成人
+      language: Japanese
+      role: 好奇心旺盛な来館者
+      background: 展示分野の予備知識が少ない
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：作品の表現意図を理解する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 展示鑑賞
+  - speaker: agent
+    goal: 来館者が自分で観察できるよう促す
+    persona:
+      name: 架空人物19B
+      age: 成人
+      language: Japanese
+      role: 展示解説者
+      background: 分かりやすいたとえと観察を促す質問を使う
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：来館者が自分で観察できるよう促す。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 展示鑑賞
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（作品の表現意図を理解する／来館者が自分で観察できるよう促す）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+restaurant:
+  id: restaurant
+  title: 食事を注文する
+  relationship: 客と店員
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 食事を注文する
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 味と量を確認して注文する／好みを尋ねて合う選択肢を説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 味と量を確認して注文する
+    persona:
+      name: 架空人物20A
+      age: 成人
+      language: Japanese
+      role: メニューを選ぶ客
+      background: 知らないメニューが多い
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：味と量を確認して注文する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 食事を注文する
+  - speaker: agent
+    goal: 好みを尋ねて合う選択肢を説明する
+    persona:
+      name: 架空人物20B
+      age: 成人
+      language: Japanese
+      role: メニューを説明する店員
+      background: 材料や調理法は分かるが客の好みは知らない
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：好みを尋ねて合う選択肢を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 食事を注文する
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（味と量を確認して注文する／好みを尋ねて合う選択肢を説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+cooking:
+  id: cooking
+  title: 一緒に料理する
+  relationship: 料理仲間同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 一緒に料理する
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 初心者にもできるよう手順を説明する／曖昧な説明を質問し役割を引き受ける
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 初心者にもできるよう手順を説明する
+    persona:
+      name: 架空人物21A
+      age: 成人
+      language: Japanese
+      role: 料理に慣れている人
+      background: 慣れた手順を手早く説明する傾向がある
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：初心者にもできるよう手順を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 一緒に料理する
+  - speaker: agent
+    goal: 曖昧な説明を質問し役割を引き受ける
+    persona:
+      name: 架空人物21B
+      age: 成人
+      language: Japanese
+      role: 料理初心者
+      background: 調理器具や料理用語に馴染みがない
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：曖昧な説明を質問し役割を引き受ける。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 一緒に料理する
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（初心者にもできるよう手順を説明する／曖昧な説明を質問し役割を引き受ける）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+shopping:
+  id: shopping
+  title: 商品を比較する
+  relationship: 購入者と販売スタッフ
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 商品を比較する
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 必要以上にお金をかけずに選ぶ／用途を確認し違いを説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 必要以上にお金をかけずに選ぶ
+    persona:
+      name: 架空人物22A
+      age: 成人
+      language: Japanese
+      role: 商品を比較する購入者
+      background: 予算と必須機能を決めている
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：必要以上にお金をかけずに選ぶ。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 商品を比較する
+  - speaker: agent
+    goal: 用途を確認し違いを説明する
+    persona:
+      name: 架空人物22B
+      age: 成人
+      language: Japanese
+      role: 商品説明担当者
+      background: 架空の商品特徴を比較して説明する
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：用途を確認し違いを説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 商品を比較する
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（必要以上にお金をかけずに選ぶ／用途を確認し違いを説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+repair:
+  id: repair
+  title: 修理の受付
+  relationship: 機器の利用者と修理担当者
+  context:
+    location: 離れた場所
+    environment: 電話
+    circumstances: 修理の受付
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 症状を正確に伝え点検日程を決める／症状と安全な次の手順を確認する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 症状を正確に伝え点検日程を決める
+    persona:
+      name: 架空人物23A
+      age: 成人
+      language: Japanese
+      role: 不具合のある機器の利用者
+      background: いつ問題が起きるか覚えている
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：症状を正確に伝え点検日程を決める。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 修理の受付
+  - speaker: agent
+    goal: 症状と安全な次の手順を確認する
+    persona:
+      name: 架空人物23B
+      age: 成人
+      language: Japanese
+      role: 修理受付担当者
+      background: 実物を点検する前に故障と断定できない
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：症状と安全な次の手順を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 修理の受付
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（症状を正確に伝え点検日程を決める／症状と安全な次の手順を確認する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+delivery:
+  id: delivery
+  title: 配送についての問い合わせ
+  relationship: 受取人と配送担当者
+  context:
+    location: 離れた場所
+    environment: 電話
+    circumstances: 配送についての問い合わせ
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め双方に一貫して提示する。
+    goal: 可能な受け取り方法を確認する／受け取り条件を確認し代替案を説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 可能な受け取り方法を確認する
+    persona:
+      name: 架空人物24A
+      age: 成人
+      language: Japanese
+      role: 到着時間を確認する受取人
+      background: 受け取り可能な時間が限られている
+      personality: 自分の希望を具体的に伝え分からないことは質問する
+      rules: 目標：可能な受け取り方法を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 配送についての問い合わせ
+  - speaker: agent
+    goal: 受け取り条件を確認し代替案を説明する
+    persona:
+      name: 架空人物24B
+      age: 成人
+      language: Japanese
+      role: 配送担当者
+      background: 確認済みの日程のみ案内できる
+      personality: 相手の目標を確認し可能な選択肢を一緒に検討する
+      rules: 目標：受け取り条件を確認し代替案を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 配送についての問い合わせ
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（可能な受け取り方法を確認する／受け取り条件を確認し代替案を説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+library:
+  id: library
+  title: 本のおすすめ
+  relationship: 読者と司書
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 本のおすすめ
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 読みやすい本のジャンルを探す／好みに合う検索条件を提案する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 読みやすい本のジャンルを探す
+    persona:
+      name: 架空人物25A
+      age: 成人
+      language: Japanese
+      role: 新しいジャンルを探している読者
+      background: 最近読んだ本の好みを説明できる
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：読みやすい本のジャンルを探す。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 本のおすすめ
+  - speaker: agent
+    goal: 好みに合う検索条件を提案する
+    persona:
+      name: 架空人物25B
+      age: 成人
+      language: Japanese
+      role: 司書
+      background: 読書の目的や好みを尋ねる
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：好みに合う検索条件を提案する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 本のおすすめ
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（読みやすい本のジャンルを探す／好みに合う検索条件を提案する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+bookclub:
+  id: bookclub
+  title: 読書会
+  relationship: 読者と司書
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 読書会
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 自分の解釈を説明する／別の解釈の根拠を比較する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 自分の解釈を説明する
+    persona:
+      name: 架空人物26A
+      age: 成人
+      language: Japanese
+      role: 登場人物に共感した読者
+      background: 登場人物の感情に注目して読む
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：自分の解釈を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 読書会
+  - speaker: agent
+    goal: 別の解釈の根拠を比較する
+    persona:
+      name: 架空人物26B
+      age: 成人
+      language: Japanese
+      role: 構成を分析する読者
+      background: 物語の構成と出来事の因果関係を重視する
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：別の解釈の根拠を比較する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 読書会
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（自分の解釈を説明する／別の解釈の根拠を比較する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+music:
+  id: music
+  title: 音楽の共同制作
+  relationship: 演奏者同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 音楽の共同制作
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 合奏のテンポと開始の合図を決める／表現の意図を共有して合意する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 合奏のテンポと開始の合図を決める
+    persona:
+      name: 架空人物27A
+      age: 成人
+      language: Japanese
+      role: リズムを重視する演奏者
+      background: 繰り返し練習して息を合わせようとする
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：合奏のテンポと開始の合図を決める。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 音楽の共同制作
+  - speaker: agent
+    goal: 表現の意図を共有して合意する
+    persona:
+      name: 架空人物27B
+      age: 成人
+      language: Japanese
+      role: 表現を重視する演奏者
+      background: 強弱や雰囲気をまず思い描く
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：表現の意図を共有して合意する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 音楽の共同制作
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（合奏のテンポと開始の合図を決める／表現の意図を共有して合意する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+podcast:
+  id: podcast
+  title: ポッドキャストのインタビュー
+  relationship: 司会者と出演者
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: ポッドキャストのインタビュー
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 自由回答できる質問で具体例を引き出す／経験を誇張せず生き生きと説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 自由回答できる質問で具体例を引き出す
+    persona:
+      name: 架空人物28A
+      age: 成人
+      language: Japanese
+      role: インタビュアー
+      background: 出演者の経験を具体的に聞きたい
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：自由回答できる質問で具体例を引き出す。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: ポッドキャストのインタビュー
+  - speaker: agent
+    goal: 経験を誇張せず生き生きと説明する
+    persona:
+      name: 架空人物28B
+      age: 成人
+      language: Japanese
+      role: 趣味を紹介する出演者
+      background: 小さな達成や試行錯誤を重ねてきた
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：経験を誇張せず生き生きと説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: ポッドキャストのインタビュー
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（自由回答できる質問で具体例を引き出す／経験を誇張せず生き生きと説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+writing:
+  id: writing
+  title: 物語を共同で創作する
+  relationship: 共同執筆者同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 物語を共同で創作する
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 登場人物の行動の背景を設定する／設定を具体的な場面につなげる
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 登場人物の行動の背景を設定する
+    persona:
+      name: 架空人物29A
+      age: 成人
+      language: Japanese
+      role: 設定を考える作家
+      background: 世界観と論理的一貫性を重視する
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：登場人物の行動の背景を設定する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 物語を共同で創作する
+  - speaker: agent
+    goal: 設定を具体的な場面につなげる
+    persona:
+      name: 架空人物29B
+      age: 成人
+      language: Japanese
+      role: 場面を描く作家
+      background: 台詞や感情の変化に関心がある
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：設定を具体的な場面につなげる。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 物語を共同で創作する
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（登場人物の行動の背景を設定する／設定を具体的な場面につなげる）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+volunteer:
+  id: volunteer
+  title: 地域イベントのボランティア
+  relationship: ボランティア同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 地域イベントのボランティア
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 初参加の人に作業を説明する／やることと助けを求める方法を確認する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 初参加の人に作業を説明する
+    persona:
+      name: 架空人物30A
+      age: 成人
+      language: Japanese
+      role: イベント運営の経験者
+      background: 案内の動線と役割分担を把握している
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：初参加の人に作業を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 地域イベントのボランティア
+  - speaker: agent
+    goal: やることと助けを求める方法を確認する
+    persona:
+      name: 架空人物30B
+      age: 成人
+      language: Japanese
+      role: 初参加のボランティア
+      background: 手伝いたいが、間違えるのが心配
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：やることと助けを求める方法を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 地域イベントのボランティア
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（初参加の人に作業を説明する／やることと助けを求める方法を確認する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+sports:
+  id: sports
+  title: 運動の計画
+  relationship: 運動仲間同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 運動の計画
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 一緒に無理なく続けられる活動を決める／負担の少ない目標を提案する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 一緒に無理なく続けられる活動を決める
+    persona:
+      name: 架空人物31A
+      age: 成人
+      language: Japanese
+      role: 定期的に運動している人
+      background: 無理のない予定を好む
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：一緒に無理なく続けられる活動を決める。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 運動の計画
+  - speaker: agent
+    goal: 負担の少ない目標を提案する
+    persona:
+      name: 架空人物31B
+      age: 成人
+      language: Japanese
+      role: 運動を再開する人
+      background: 今の体力に自信がない
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：負担の少ない目標を提案する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 運動の計画
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（一緒に無理なく続けられる活動を決める／負担の少ない目標を提案する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+garden:
+  id: garden
+  title: 植物の世話
+  relationship: 植物好き同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 植物の世話
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 観察すべきサインと世話の習慣を知る／状態を尋ね、確認方法を説明する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 観察すべきサインと世話の習慣を知る
+    persona:
+      name: 架空人物32A
+      age: 成人
+      language: Japanese
+      role: 初めて植物を育てる人
+      background: 水やりの頻度がまだよく分からない
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：観察すべきサインと世話の習慣を知る。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 植物の世話
+  - speaker: agent
+    goal: 状態を尋ね、確認方法を説明する
+    persona:
+      name: 架空人物32B
+      age: 成人
+      language: Japanese
+      role: 植物を育てた経験がある人
+      background: 環境によって世話の仕方が異なると知っている
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：状態を尋ね、確認方法を説明する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 植物の世話
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（観察すべきサインと世話の習慣を知る／状態を尋ね、確認方法を説明する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+lost_item:
+  id: lost_item
+  title: 落とし物の問い合わせ
+  relationship: 落とし主と案内担当者
+  context:
+    location: 離れた場所
+    environment: 電話
+    circumstances: 落とし物の問い合わせ
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 特徴と移動経路を整理する／品物の特徴と連絡手順を確認する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 特徴と移動経路を整理する
+    persona:
+      name: 架空人物33A
+      age: 成人
+      language: Japanese
+      role: 物をなくした人
+      background: 最後に見た場所がはっきりしない
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：特徴と移動経路を整理する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 落とし物の問い合わせ
+  - speaker: agent
+    goal: 品物の特徴と連絡手順を確認する
+    persona:
+      name: 架空人物33B
+      age: 成人
+      language: Japanese
+      role: 落とし物の案内担当者
+      background: 確認が取れていない品物を見つかったとは言えない
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：品物の特徴と連絡手順を確認する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 落とし物の問い合わせ
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（特徴と移動経路を整理する／品物の特徴と連絡手順を確認する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+apology:
+  id: apology
+  title: 誤解を解く
+  relationship: 友人同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 誤解を解く
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 言い訳せずに謝り、埋め合わせの方法を提案する／不快だったことを伝え、次回の約束の基準を決める
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: 言い訳せずに謝り、埋め合わせの方法を提案する
+    persona:
+      name: 架空人物34A
+      age: 成人
+      language: Japanese
+      role: 約束をすっぽかした友人
+      background: 事情を説明したいが、相手に申し訳なく思っている
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：言い訳せずに謝り、埋め合わせの方法を提案する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 誤解を解く
+  - speaker: agent
+    goal: 不快だったことを伝え、次回の約束の基準を決める
+    persona:
+      name: 架空人物34B
+      age: 成人
+      language: Japanese
+      role: 待っていた友人
+      background: 長く待たされて悲しく感じている
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：不快だったことを伝え、次回の約束の基準を決める。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 誤解を解く
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（言い訳せずに謝り、埋め合わせの方法を提案する／不快だったことを伝え、次回の約束の基準を決める）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+celebration:
+  id: celebration
+  title: 小さな達成を祝う
+  relationship: 同僚同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 小さな達成を祝う
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 経験と次の目標を共有する／努力を認め、気負わずに祝う
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 経験と次の目標を共有する
+    persona:
+      name: 架空人物35A
+      age: 成人
+      language: Japanese
+      role: 小さな目標を達成した人
+      background: 努力を続けてきたが、達成を大きなことだと思っていない
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：経験と次の目標を共有する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 小さな達成を祝う
+  - speaker: agent
+    goal: 努力を認め、気負わずに祝う
+    persona:
+      name: 架空人物35B
+      age: 成人
+      language: Japanese
+      role: 達成を祝う同僚
+      background: 相手の努力を具体的に覚えている
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：努力を認め、気負わずに祝う。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 小さな達成を祝う
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（経験と次の目標を共有する／努力を認め、気負わずに祝う）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない
+community:
+  id: community
+  title: 共有スペースについての話し合い
+  relationship: 住民グループの参加者同士
+  context:
+    location: 状況に合った会話の場
+    environment: 対面
+    circumstances: 共有スペースについての話し合い
+  scenario:
+    facts_policy: 価格・時間・地名など必要な事実は生成前に決め、双方に一貫して提示する。
+    goal: 集中できる時間帯を確保する／集まりに使える時間帯を確保する
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: 集中できる時間帯を確保する
+    persona:
+      name: 架空人物36A
+      age: 成人
+      language: Japanese
+      role: 静かな共有スペースを望む住民
+      background: 読書や作業にそのスペースを使う
+      personality: 自分の希望を具体的に伝え、分からないことは質問する
+      rules: 目標：集中できる時間帯を確保する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 共有スペースについての話し合い
+  - speaker: agent
+    goal: 集まりに使える時間帯を確保する
+    persona:
+      name: 架空人物36B
+      age: 成人
+      language: Japanese
+      role: 活動グループを開きたい住民
+      background: 人々が交流できる場所を必要としている
+      personality: 相手の目標を確認し、可能な選択肢を一緒に検討する
+      rules: 目標：集まりに使える時間帯を確保する。自然な日本語で一度に一、二文を話す。相手が伝えていない個人情報は知らない。確認できていない事実を断定しない。感情は会話の進行に応じて変化する。
+      circumstances: 共有スペースについての話し合い
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - 双方がそれぞれの役割と知識の範囲を保つ
+  - 双方の目標（集中できる時間帯を確保する／集まりに使える時間帯を確保する）を進めるか、現実的な次の行動に合意する
+  - 相手の発言に沿った自然な日本語で応答する
+  - 推論文、特殊トークン、機械的な繰り返しがない

@@ -1,0 +1,1989 @@
+weekend:
+  id: weekend
+  title: Piani per il fine settimana
+  relationship: tra amici
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Piani per il fine settimana
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Pianificare insieme una passeggiata di mezza giornata / Concordare un programma rilassante con pochi spostamenti
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Pianificare insieme una passeggiata di mezza giornata
+    persona:
+      name: Personaggio fittizio 1A
+      age: adulto
+      language: Italian
+      role: amico che propone un’attività all’aperto
+      background: Ha molta esperienza di escursionismo e ama esplorare posti nuovi
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Pianificare insieme una passeggiata di mezza giornata. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Piani per il fine settimana
+  - speaker: agent
+    goal: Concordare un programma rilassante con pochi spostamenti
+    persona:
+      name: Personaggio fittizio 1B
+      age: adulto
+      language: Italian
+      role: amico che preferisce attività al chiuso
+      background: Ha una settimana di lavoro intensa e vuole risparmiare energie
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Concordare un programma rilassante con pochi spostamenti. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Piani per il fine settimana
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Pianificare insieme una passeggiata di mezza giornata / Concordare un programma
+    rilassante con pochi spostamenti) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+reunion:
+  id: reunion
+  title: Ritrovarsi con un vecchio amico
+  relationship: tra vecchi amici
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Ritrovarsi con un vecchio amico
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Raccontarsi le novità e proporre di rivedersi / Ascoltare il motivo del contatto e aggiornarsi
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Raccontarsi le novità e proporre di rivedersi
+    persona:
+      name: Personaggio fittizio 2A
+      age: adulto
+      language: Italian
+      role: amico che ha ripreso i contatti
+      background: Si è trasferito in un’altra zona e i contatti si sono diradati
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Raccontarsi le novità e proporre di rivedersi. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Ritrovarsi con un vecchio amico
+  - speaker: agent
+    goal: Ascoltare il motivo del contatto e aggiornarsi
+    persona:
+      name: Personaggio fittizio 2B
+      age: adulto
+      language: Italian
+      role: amico che aspettava di essere ricontattato
+      background: È felice dei ricordi condivisi, ma si chiede perché l’altro si faccia vivo all’improvviso
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Ascoltare il motivo del contatto e aggiornarsi. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Ritrovarsi con un vecchio amico
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Raccontarsi le novità e proporre di rivedersi / Ascoltare il motivo del
+    contatto e aggiornarsi) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+roommates:
+  id: roommates
+  title: Regole per la convivenza
+  relationship: tra coinquilini
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Regole per la convivenza
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Concordare gli orari per il rumore serale / Trovare un modo per essere rispettosi senza stravolgere i propri ritmi
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Concordare gli orari per il rumore serale
+    persona:
+      name: Personaggio fittizio 3A
+      age: adulto
+      language: Italian
+      role: coinquilino che ha bisogno di serate tranquille
+      background: Lavora da casa e va a dormire presto
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Concordare gli orari per il rumore serale. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Regole per la convivenza
+  - speaker: agent
+    goal: Trovare un modo per essere rispettosi senza stravolgere i propri ritmi
+    persona:
+      name: Personaggio fittizio 3B
+      age: adulto
+      language: Italian
+      role: coinquilino che rientra tardi
+      background: Lavora fino a tardi e cucina quando torna a casa
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Trovare un modo per essere rispettosi senza stravolgere i propri ritmi. Parla in italiano naturale, una o due
+        frasi per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non
+        verificati. Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Regole per la convivenza
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Concordare gli orari per il rumore serale / Trovare un modo per essere
+    rispettosi senza stravolgere i propri ritmi) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+family_trip:
+  id: family_trip
+  title: Organizzare un viaggio in famiglia
+  relationship: tra familiari
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Organizzare un viaggio in famiglia
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Creare un programma senza ritmi eccessivi / Tenere del tempo libero a disposizione
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Creare un programma senza ritmi eccessivi
+    persona:
+      name: Personaggio fittizio 4A
+      age: adulto
+      language: Italian
+      role: familiare che prepara l’itinerario
+      background: Ha cercato itinerari e possibili alloggi
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Creare un programma senza ritmi eccessivi. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Organizzare un viaggio in famiglia
+  - speaker: agent
+    goal: Tenere del tempo libero a disposizione
+    persona:
+      name: Personaggio fittizio 4B
+      age: adulto
+      language: Italian
+      role: familiare che ama viaggiare all’improvviso
+      background: Si sente sotto pressione quando il programma è troppo fitto
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Tenere del tempo libero a disposizione. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Organizzare un viaggio in famiglia
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Creare un programma senza ritmi eccessivi / Tenere del tempo libero a disposizione)
+    o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+siblings:
+  id: siblings
+  title: Preparativi per una festa di famiglia
+  relationship: tra fratelli e sorelle
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Preparativi per una festa di famiglia
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Dividere equamente i compiti per i preparativi / Indicare quando può esserci e come contribuire in altro modo
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Dividere equamente i compiti per i preparativi
+    persona:
+      name: Personaggio fittizio 5A
+      age: adulto
+      language: Italian
+      role: fratello o sorella che si occupa dei preparativi
+      background: Ha l’impressione che tutto il lavoro sia ricaduto su di sé
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Dividere equamente i compiti per i preparativi. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Preparativi per una festa di famiglia
+  - speaker: agent
+    goal: Indicare quando può esserci e come contribuire in altro modo
+    persona:
+      name: Personaggio fittizio 5B
+      age: adulto
+      language: Italian
+      role: fratello o sorella con poco tempo
+      background: Per via del lavoro non può partecipare a lungo ai preparativi sul posto
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Indicare quando può esserci e come contribuire in altro modo. Parla in italiano naturale, una o due frasi per
+        volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Preparativi per una festa di famiglia
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Dividere equamente i compiti per i preparativi / Indicare quando può esserci
+    e come contribuire in altro modo) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+neighbors:
+  id: neighbors
+  title: Accordarsi sui rumori del vicinato
+  relationship: tra vicini
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Accordarsi sui rumori del vicinato
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Chiedere a che ora finirà il rumore / Spiegare e concordare gli orari dei lavori
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Chiedere a che ora finirà il rumore
+    persona:
+      name: Personaggio fittizio 6A
+      age: adulto
+      language: Italian
+      role: vicino disturbato dal rumore
+      background: Di recente fa fatica a concentrarsi per i lavori rumorosi la sera
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Chiedere a che ora finirà il rumore. Parla in italiano naturale, una o due frasi per volta. Non conosce informazioni
+        personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono cambiare nel
+        corso della conversazione.'
+      circumstances: Accordarsi sui rumori del vicinato
+  - speaker: agent
+    goal: Spiegare e concordare gli orari dei lavori
+    persona:
+      name: Personaggio fittizio 6B
+      age: adulto
+      language: Italian
+      role: vicino che sta facendo lavori in casa
+      background: I lavori sono necessari, ma non sapeva quanto disturbassero il vicino
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Spiegare e concordare gli orari dei lavori. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Accordarsi sui rumori del vicinato
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Chiedere a che ora finirà il rumore / Spiegare e concordare gli orari dei
+    lavori) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+study:
+  id: study
+  title: Piano di studio condiviso
+  relationship: tra compagni di studio
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Piano di studio condiviso
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Stabilire il ritmo dello studio / Riservare abbastanza tempo per esercitarsi
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Stabilire il ritmo dello studio
+    persona:
+      name: Personaggio fittizio 7A
+      age: adulto
+      language: Italian
+      role: studente organizzato
+      background: Studia seguendo un programma di ripasso
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Stabilire il ritmo dello studio. Parla in italiano naturale, una o due frasi per volta. Non conosce informazioni
+        personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono cambiare nel
+        corso della conversazione.'
+      circumstances: Piano di studio condiviso
+  - speaker: agent
+    goal: Riservare abbastanza tempo per esercitarsi
+    persona:
+      name: Personaggio fittizio 7B
+      age: adulto
+      language: Italian
+      role: studente orientato alla pratica
+      background: Capisce meglio quando risolve gli esercizi da sé
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Riservare abbastanza tempo per esercitarsi. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Piano di studio condiviso
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Stabilire il ritmo dello studio / Riservare abbastanza tempo per esercitarsi)
+    o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+tutoring:
+  id: tutoring
+  title: Spiegare un concetto
+  relationship: tra insegnante e studente adulto
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Spiegare un concetto
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Verificare che lo studente abbia capito / Chiedere chiarimenti e verificare con esempi
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Verificare che lo studente abbia capito
+    persona:
+      name: Personaggio fittizio 8A
+      age: adulto
+      language: Italian
+      role: insegnante che incoraggia le domande
+      background: Spiega i concetti matematici con esempi quotidiani
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Verificare che lo studente abbia capito. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Spiegare un concetto
+  - speaker: agent
+    goal: Chiedere chiarimenti e verificare con esempi
+    persona:
+      name: Personaggio fittizio 8B
+      age: adulto
+      language: Italian
+      role: studente adulto in difficoltà con le frazioni
+      background: Conosce le formule a memoria ma fatica ad applicarle
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Chiedere chiarimenti e verificare con esempi. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Spiegare un concetto
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Verificare che lo studente abbia capito / Chiedere chiarimenti e verificare
+    con esempi) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+language:
+  id: language
+  title: Scambio linguistico
+  relationship: tra partner di scambio linguistico
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Scambio linguistico
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Raccontare esperienze quotidiane con parole proprie / Insegnare espressioni naturali senza mettere a disagio
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Raccontare esperienze quotidiane con parole proprie
+    persona:
+      name: Personaggio fittizio 9A
+      age: adulto
+      language: Italian
+      role: studente che si esercita a parlare
+      background: Conosce le parole ma non si sente sicuro con le frasi lunghe
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Raccontare esperienze quotidiane con parole proprie. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Scambio linguistico
+  - speaker: agent
+    goal: Insegnare espressioni naturali senza mettere a disagio
+    persona:
+      name: Personaggio fittizio 9B
+      age: adulto
+      language: Italian
+      role: partner di scambio linguistico
+      background: Cerca di lasciare all’altra persona il tempo per parlare
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Insegnare espressioni naturali senza mettere a disagio. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Scambio linguistico
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Raccontare esperienze quotidiane con parole proprie / Insegnare espressioni
+    naturali senza mettere a disagio) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+mentor:
+  id: mentor
+  title: Esplorare un percorso professionale
+  relationship: tra mentore e mentee
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Esplorare un percorso professionale
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Chiarire i criteri per scegliere / Aiutare distinguendo l’esperienza personale dai consigli generali
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chiarire i criteri per scegliere
+    persona:
+      name: Personaggio fittizio 10A
+      age: adulto
+      language: Italian
+      role: adulto che sta valutando il proprio percorso
+      background: È indeciso tra il lavoro attuale e un nuovo settore
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Chiarire i criteri per scegliere. Parla in italiano naturale, una o due frasi per volta. Non conosce informazioni
+        personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono cambiare nel
+        corso della conversazione.'
+      circumstances: Esplorare un percorso professionale
+  - speaker: agent
+    goal: Aiutare distinguendo l’esperienza personale dai consigli generali
+    persona:
+      name: Personaggio fittizio 10B
+      age: adulto
+      language: Italian
+      role: mentore che condivide la propria esperienza
+      background: Ha esperienza nel passaggio a un altro settore
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Aiutare distinguendo l’esperienza personale dai consigli generali. Parla in italiano naturale, una o due frasi
+        per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Esplorare un percorso professionale
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Chiarire i criteri per scegliere / Aiutare distinguendo l’esperienza personale
+    dai consigli generali) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+project:
+  id: project
+  title: Definire l’ambito del progetto
+  relationship: tra colleghi
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Definire l’ambito del progetto
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Accordarsi sulle funzionalità indispensabili / Proporre cosa si può realizzare nei tempi previsti
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Accordarsi sulle funzionalità indispensabili
+    persona:
+      name: Personaggio fittizio 11A
+      age: adulto
+      language: Italian
+      role: responsabile della pianificazione
+      background: Vuole soddisfare le esigenze degli utenti prima della scadenza
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Accordarsi sulle funzionalità indispensabili. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Definire l’ambito del progetto
+  - speaker: agent
+    goal: Proporre cosa si può realizzare nei tempi previsti
+    persona:
+      name: Personaggio fittizio 11B
+      age: adulto
+      language: Italian
+      role: responsabile dello sviluppo
+      background: Gestisce i tempi di sviluppo e quelli per i test
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Proporre cosa si può realizzare nei tempi previsti. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Definire l’ambito del progetto
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Accordarsi sulle funzionalità indispensabili / Proporre cosa si può realizzare
+    nei tempi previsti) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+handover:
+  id: handover
+  title: Passaggio di consegne
+  relationship: tra colleghi
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Passaggio di consegne
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Comunicare le priorità senza tralasciare nulla / Verificare scadenze e responsabilità
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Comunicare le priorità senza tralasciare nulla
+    persona:
+      name: Personaggio fittizio 12A
+      age: adulto
+      language: Italian
+      role: persona che passa il lavoro
+      background: Conosce bene lo stato di avanzamento ma ha poco tempo per spiegarlo
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Comunicare le priorità senza tralasciare nulla. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Passaggio di consegne
+  - speaker: agent
+    goal: Verificare scadenze e responsabilità
+    persona:
+      name: Personaggio fittizio 12B
+      age: adulto
+      language: Italian
+      role: persona che prende in carico il lavoro
+      background: Non conosce ancora il contesto
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Verificare scadenze e responsabilità. Parla in italiano naturale, una o due frasi per volta. Non conosce informazioni
+        personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono cambiare nel
+        corso della conversazione.'
+      circumstances: Passaggio di consegne
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Comunicare le priorità senza tralasciare nulla / Verificare scadenze e
+    responsabilità) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+feedback:
+  id: feedback
+  title: Feedback su una bozza
+  relationship: tra colleghi
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Feedback su una bozza
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Ricevere indicazioni concrete per le revisioni / Distinguere i punti forti da quelli da rivedere
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ricevere indicazioni concrete per le revisioni
+    persona:
+      name: Personaggio fittizio 13A
+      age: adulto
+      language: Italian
+      role: autore che ha condiviso una bozza
+      background: Sa cosa voleva scrivere, ma teme il feedback
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Ricevere indicazioni concrete per le revisioni. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Feedback su una bozza
+  - speaker: agent
+    goal: Distinguere i punti forti da quelli da rivedere
+    persona:
+      name: Personaggio fittizio 13B
+      age: adulto
+      language: Italian
+      role: collega che esamina la bozza
+      background: Tiene alla chiarezza della struttura per chi legge
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Distinguere i punti forti da quelli da rivedere. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Feedback su una bozza
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Ricevere indicazioni concrete per le revisioni / Distinguere i punti forti
+    da quelli da rivedere) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+remote:
+  id: remote
+  title: Organizzare una riunione a distanza
+  relationship: tra colleghi in zone diverse
+  context:
+    location: Luoghi diversi
+    environment: al telefono
+    circumstances: Organizzare una riunione a distanza
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Trovare un orario per la riunione / Ascoltare i punti essenziali e fissare l’orario
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Trovare un orario per la riunione
+    persona:
+      name: Personaggio fittizio 14A
+      age: adulto
+      language: Italian
+      role: collega che chiede una riunione
+      background: Ha qualcosa da verificare oggi, ma può adattarsi con gli orari
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Trovare un orario per la riunione. Parla in italiano naturale, una o due frasi per volta. Non conosce informazioni
+        personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono cambiare nel
+        corso della conversazione.'
+      circumstances: Organizzare una riunione a distanza
+  - speaker: agent
+    goal: Ascoltare i punti essenziali e fissare l’orario
+    persona:
+      name: Personaggio fittizio 14B
+      age: adulto
+      language: Italian
+      role: collega in viaggio
+      background: Non può parlare a lungo e fa fatica a prendere appunti
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Ascoltare i punti essenziali e fissare l’orario. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Organizzare una riunione a distanza
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Trovare un orario per la riunione / Ascoltare i punti essenziali e fissare
+    l’orario) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+interview:
+  id: interview
+  title: Colloquio di lavoro
+  relationship: tra selezionatore e candidato
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Colloquio di lavoro
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Verificare l’esperienza di collaborazione e le ragioni delle decisioni / Spiegare il proprio ruolo e cosa ha imparato
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Verificare l’esperienza di collaborazione e le ragioni delle decisioni
+    persona:
+      name: Personaggio fittizio 15A
+      age: adulto
+      language: Italian
+      role: selezionatore che chiede esperienze professionali
+      background: Vuole conoscere esempi concreti di lavoro
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Verificare l’esperienza di collaborazione e le ragioni delle decisioni. Parla in italiano naturale, una o due
+        frasi per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non
+        verificati. Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Colloquio di lavoro
+  - speaker: agent
+    goal: Spiegare il proprio ruolo e cosa ha imparato
+    persona:
+      name: Personaggio fittizio 15B
+      age: adulto
+      language: Italian
+      role: candidato
+      background: Ha esperienza pratica ma è nervoso quando deve presentarla
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Spiegare il proprio ruolo e cosa ha imparato. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Colloquio di lavoro
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Verificare l’esperienza di collaborazione e le ragioni delle decisioni
+    / Spiegare il proprio ruolo e cosa ha imparato) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+design:
+  id: design
+  title: Concordare la direzione del design
+  relationship: tra designer e cliente
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Concordare la direzione del design
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Tradurre le richieste in requisiti di design concreti / Esprimere i propri gusti con esempi preferiti
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Tradurre le richieste in requisiti di design concreti
+    persona:
+      name: Personaggio fittizio 16A
+      age: adulto
+      language: Italian
+      role: designer
+      background: Prepara proposte dando priorità alla facilità d’uso
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Tradurre le richieste in requisiti di design concreti. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Concordare la direzione del design
+  - speaker: agent
+    goal: Esprimere i propri gusti con esempi preferiti
+    persona:
+      name: Personaggio fittizio 16B
+      age: adulto
+      language: Italian
+      role: cliente per un piccolo evento
+      background: Ha in mente l’atmosfera desiderata ma non conosce i termini tecnici
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Esprimere i propri gusti con esempi preferiti. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Concordare la direzione del design
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Tradurre le richieste in requisiti di design concreti / Esprimere i propri
+    gusti con esempi preferiti) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+travel:
+  id: travel
+  title: Chiedere indicazioni
+  relationship: tra viaggiatore e residente
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Chiedere indicazioni
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Chiedere un percorso semplice per la destinazione / Spiegare il percorso usando punti di riferimento
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chiedere un percorso semplice per la destinazione
+    persona:
+      name: Personaggio fittizio 17A
+      age: adulto
+      language: Italian
+      role: viaggiatore alla prima visita
+      background: Non conosce la zona né i collegamenti dei trasporti
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Chiedere un percorso semplice per la destinazione. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Chiedere indicazioni
+  - speaker: agent
+    goal: Spiegare il percorso usando punti di riferimento
+    persona:
+      name: Personaggio fittizio 17B
+      age: adulto
+      language: Italian
+      role: residente che dà indicazioni
+      background: Conosce i luoghi principali del quartiere
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Spiegare il percorso usando punti di riferimento. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Chiedere indicazioni
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Chiedere un percorso semplice per la destinazione / Spiegare il percorso
+    usando punti di riferimento) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+hotel:
+  id: hotel
+  title: Richiesta in albergo
+  relationship: tra ospite e personale dell’alloggio
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Richiesta in albergo
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Chiedere se è possibile cambiare stanza / Verificare la richiesta e spiegare le alternative possibili
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chiedere se è possibile cambiare stanza
+    persona:
+      name: Personaggio fittizio 18A
+      age: adulto
+      language: Italian
+      role: ospite che desidera una stanza tranquilla
+      background: Vuole riposare presto e teme il rumore intorno
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Chiedere se è possibile cambiare stanza. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Richiesta in albergo
+  - speaker: agent
+    goal: Verificare la richiesta e spiegare le alternative possibili
+    persona:
+      name: Personaggio fittizio 18B
+      age: adulto
+      language: Italian
+      role: addetto dell’alloggio
+      background: Può confermare solo dopo aver verificato la disponibilità delle camere
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Verificare la richiesta e spiegare le alternative possibili. Parla in italiano naturale, una o due frasi per
+        volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Richiesta in albergo
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Chiedere se è possibile cambiare stanza / Verificare la richiesta e spiegare
+    le alternative possibili) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+museum:
+  id: museum
+  title: Visita a una mostra
+  relationship: tra visitatore e guida
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Visita a una mostra
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Capire l’intento espressivo dell’opera / Aiutare il visitatore a osservare direttamente
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Capire l’intento espressivo dell’opera
+    persona:
+      name: Personaggio fittizio 19A
+      age: adulto
+      language: Italian
+      role: visitatore curioso
+      background: Ha poche conoscenze di base sul tema della mostra
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Capire l’intento espressivo dell’opera. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Visita a una mostra
+  - speaker: agent
+    goal: Aiutare il visitatore a osservare direttamente
+    persona:
+      name: Personaggio fittizio 19B
+      age: adulto
+      language: Italian
+      role: guida della mostra
+      background: Usa paragoni semplici e domande che invitano a osservare
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Aiutare il visitatore a osservare direttamente. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Visita a una mostra
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Capire l’intento espressivo dell’opera / Aiutare il visitatore a osservare
+    direttamente) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+restaurant:
+  id: restaurant
+  title: Ordinare al ristorante
+  relationship: tra cliente e personale
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Ordinare al ristorante
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Verificare sapore e porzione prima di ordinare / Chiedere le preferenze e illustrare le opzioni adatte
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Verificare sapore e porzione prima di ordinare
+    persona:
+      name: Personaggio fittizio 20A
+      age: adulto
+      language: Italian
+      role: cliente che sceglie dal menù
+      background: Molti piatti gli sono poco familiari
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Verificare sapore e porzione prima di ordinare. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Ordinare al ristorante
+  - speaker: agent
+    goal: Chiedere le preferenze e illustrare le opzioni adatte
+    persona:
+      name: Personaggio fittizio 20B
+      age: adulto
+      language: Italian
+      role: addetto che spiega il menù
+      background: Conosce ingredienti e preparazione, ma non i gusti del cliente
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Chiedere le preferenze e illustrare le opzioni adatte. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Ordinare al ristorante
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Verificare sapore e porzione prima di ordinare / Chiedere le preferenze
+    e illustrare le opzioni adatte) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+cooking:
+  id: cooking
+  title: Cucinare insieme
+  relationship: tra compagni di cucina
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Cucinare insieme
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Spiegare i passaggi in modo che un principiante possa seguirli / Fare domande sulle istruzioni poco chiare e assumersi un
+      compito
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Spiegare i passaggi in modo che un principiante possa seguirli
+    persona:
+      name: Personaggio fittizio 21A
+      age: adulto
+      language: Italian
+      role: persona esperta in cucina
+      background: Tende a spiegare rapidamente i passaggi che conosce bene
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Spiegare i passaggi in modo che un principiante possa seguirli. Parla in italiano naturale, una o due frasi
+        per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Cucinare insieme
+  - speaker: agent
+    goal: Fare domande sulle istruzioni poco chiare e assumersi un compito
+    persona:
+      name: Personaggio fittizio 21B
+      age: adulto
+      language: Italian
+      role: principiante in cucina
+      background: Non conosce bene gli utensili e i termini di cucina
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Fare domande sulle istruzioni poco chiare e assumersi un compito. Parla in italiano naturale, una o due frasi
+        per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Cucinare insieme
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Spiegare i passaggi in modo che un principiante possa seguirli / Fare domande
+    sulle istruzioni poco chiare e assumersi un compito) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+shopping:
+  id: shopping
+  title: Confrontare prodotti
+  relationship: tra acquirente e addetto alle vendite
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Confrontare prodotti
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Scegliere senza spendere più del necessario / Capire l’uso previsto e spiegare le differenze
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Scegliere senza spendere più del necessario
+    persona:
+      name: Personaggio fittizio 22A
+      age: adulto
+      language: Italian
+      role: acquirente che confronta prodotti
+      background: Ha già stabilito il budget e le funzioni indispensabili
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Scegliere senza spendere più del necessario. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Confrontare prodotti
+  - speaker: agent
+    goal: Capire l’uso previsto e spiegare le differenze
+    persona:
+      name: Personaggio fittizio 22B
+      age: adulto
+      language: Italian
+      role: addetto che illustra i prodotti
+      background: Confronta e spiega caratteristiche di prodotti di fantasia
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Capire l’uso previsto e spiegare le differenze. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Confrontare prodotti
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Scegliere senza spendere più del necessario / Capire l’uso previsto e spiegare
+    le differenze) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+repair:
+  id: repair
+  title: Richiesta di riparazione
+  relationship: tra utente e addetto alle riparazioni
+  context:
+    location: Luoghi diversi
+    environment: al telefono
+    circumstances: Richiesta di riparazione
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Descrivere con precisione il problema e fissare una verifica / Verificare i sintomi e i passi successivi in sicurezza
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Descrivere con precisione il problema e fissare una verifica
+    persona:
+      name: Personaggio fittizio 23A
+      age: adulto
+      language: Italian
+      role: utente con un dispositivo che non funziona bene
+      background: Ricorda quando si presenta il problema
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Descrivere con precisione il problema e fissare una verifica. Parla in italiano naturale, una o due frasi per
+        volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Richiesta di riparazione
+  - speaker: agent
+    goal: Verificare i sintomi e i passi successivi in sicurezza
+    persona:
+      name: Personaggio fittizio 23B
+      age: adulto
+      language: Italian
+      role: addetto alla presa in carico delle riparazioni
+      background: Non può confermare un guasto prima di aver controllato il dispositivo
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Verificare i sintomi e i passi successivi in sicurezza. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Richiesta di riparazione
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Descrivere con precisione il problema e fissare una verifica / Verificare
+    i sintomi e i passi successivi in sicurezza) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+delivery:
+  id: delivery
+  title: Informazioni sulla consegna
+  relationship: tra destinatario e addetto alle consegne
+  context:
+    location: Luoghi diversi
+    environment: al telefono
+    circumstances: Informazioni sulla consegna
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Chiedere quali modalità di ritiro sono disponibili / Verificare le condizioni di ritiro e proporre alternative
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Chiedere quali modalità di ritiro sono disponibili
+    persona:
+      name: Personaggio fittizio 24A
+      age: adulto
+      language: Italian
+      role: destinatario che verifica l’orario di arrivo
+      background: Ha una disponibilità limitata per ritirare il pacco
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Chiedere quali modalità di ritiro sono disponibili. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Informazioni sulla consegna
+  - speaker: agent
+    goal: Verificare le condizioni di ritiro e proporre alternative
+    persona:
+      name: Personaggio fittizio 24B
+      age: adulto
+      language: Italian
+      role: addetto alle consegne
+      background: Può comunicare solo gli orari confermati
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Verificare le condizioni di ritiro e proporre alternative. Parla in italiano naturale, una o due frasi per
+        volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Informazioni sulla consegna
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Chiedere quali modalità di ritiro sono disponibili / Verificare le condizioni
+    di ritiro e proporre alternative) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+library:
+  id: library
+  title: Consigli di lettura
+  relationship: tra lettore e bibliotecario
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Consigli di lettura
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Trovare generi di libri facili da leggere / Suggerire criteri di ricerca adatti ai gusti
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Trovare generi di libri facili da leggere
+    persona:
+      name: Personaggio fittizio 25A
+      age: adulto
+      language: Italian
+      role: lettore alla ricerca di un nuovo genere
+      background: Sa descrivere i suoi gusti in base ai libri letti di recente
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Trovare generi di libri facili da leggere. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Consigli di lettura
+  - speaker: agent
+    goal: Suggerire criteri di ricerca adatti ai gusti
+    persona:
+      name: Personaggio fittizio 25B
+      age: adulto
+      language: Italian
+      role: bibliotecario
+      background: Chiede lo scopo della lettura e le preferenze
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Suggerire criteri di ricerca adatti ai gusti. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Consigli di lettura
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Trovare generi di libri facili da leggere / Suggerire criteri di ricerca
+    adatti ai gusti) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+bookclub:
+  id: bookclub
+  title: Discussione su un libro
+  relationship: tra partecipanti a un gruppo di lettura
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Discussione su un libro
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Spiegare la propria interpretazione / Confrontare le ragioni di interpretazioni diverse
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Spiegare la propria interpretazione
+    persona:
+      name: Personaggio fittizio 26A
+      age: adulto
+      language: Italian
+      role: lettore che si è immedesimato nei personaggi
+      background: Legge concentrandosi sulle emozioni dei personaggi
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Spiegare la propria interpretazione. Parla in italiano naturale, una o due frasi per volta. Non conosce informazioni
+        personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono cambiare nel
+        corso della conversazione.'
+      circumstances: Discussione su un libro
+  - speaker: agent
+    goal: Confrontare le ragioni di interpretazioni diverse
+    persona:
+      name: Personaggio fittizio 26B
+      age: adulto
+      language: Italian
+      role: lettore che analizza la struttura
+      background: Dà importanza alla struttura narrativa e ai nessi causali degli eventi
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Confrontare le ragioni di interpretazioni diverse. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Discussione su un libro
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Spiegare la propria interpretazione / Confrontare le ragioni di interpretazioni
+    diverse) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+music:
+  id: music
+  title: Collaborazione musicale
+  relationship: tra musicisti
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Collaborazione musicale
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Stabilire il tempo e il segnale di attacco / Condividere e concordare l’intento espressivo
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Stabilire il tempo e il segnale di attacco
+    persona:
+      name: Personaggio fittizio 27A
+      age: adulto
+      language: Italian
+      role: musicista attento al ritmo
+      background: Cerca di coordinarsi con prove ripetute
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Stabilire il tempo e il segnale di attacco. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Collaborazione musicale
+  - speaker: agent
+    goal: Condividere e concordare l’intento espressivo
+    persona:
+      name: Personaggio fittizio 27B
+      age: adulto
+      language: Italian
+      role: musicista attento all’espressività
+      background: Immagina prima le dinamiche e l’atmosfera
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Condividere e concordare l’intento espressivo. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Collaborazione musicale
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Stabilire il tempo e il segnale di attacco / Condividere e concordare l’intento
+    espressivo) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+podcast:
+  id: podcast
+  title: Intervista per un podcast
+  relationship: tra conduttore e ospite
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Intervista per un podcast
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Far emergere esempi con domande aperte / Raccontare l’esperienza in modo vivido e senza esagerazioni
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Far emergere esempi con domande aperte
+    persona:
+      name: Personaggio fittizio 28A
+      age: adulto
+      language: Italian
+      role: intervistatore
+      background: Vuole ascoltare in modo concreto l’esperienza dell’ospite
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Far emergere esempi con domande aperte. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Intervista per un podcast
+  - speaker: agent
+    goal: Raccontare l’esperienza in modo vivido e senza esagerazioni
+    persona:
+      name: Personaggio fittizio 28B
+      age: adulto
+      language: Italian
+      role: ospite che racconta un hobby
+      background: Ha avuto piccoli successi e diversi tentativi
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Raccontare l’esperienza in modo vivido e senza esagerazioni. Parla in italiano naturale, una o due frasi per
+        volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Intervista per un podcast
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Far emergere esempi con domande aperte / Raccontare l’esperienza in modo
+    vivido e senza esagerazioni) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+writing:
+  id: writing
+  title: Scrivere una storia insieme
+  relationship: tra coautori
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Scrivere una storia insieme
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Definire le motivazioni dietro le azioni dei personaggi / Collegare le ambientazioni a scene concrete
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Definire le motivazioni dietro le azioni dei personaggi
+    persona:
+      name: Personaggio fittizio 29A
+      age: adulto
+      language: Italian
+      role: autore che crea le ambientazioni
+      background: Tiene alla coerenza logica e del mondo narrativo
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Definire le motivazioni dietro le azioni dei personaggi. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Scrivere una storia insieme
+  - speaker: agent
+    goal: Collegare le ambientazioni a scene concrete
+    persona:
+      name: Personaggio fittizio 29B
+      age: adulto
+      language: Italian
+      role: autore che costruisce le scene
+      background: Gli interessano i dialoghi e i cambiamenti emotivi
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Collegare le ambientazioni a scene concrete. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Scrivere una storia insieme
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Definire le motivazioni dietro le azioni dei personaggi / Collegare le
+    ambientazioni a scene concrete) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+volunteer:
+  id: volunteer
+  title: Volontariato a un evento locale
+  relationship: tra volontari
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Volontariato a un evento locale
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Spiegare il lavoro a chi partecipa per la prima volta / Chiarire i compiti e come chiedere aiuto
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Spiegare il lavoro a chi partecipa per la prima volta
+    persona:
+      name: Personaggio fittizio 30A
+      age: adulto
+      language: Italian
+      role: persona esperta nell’organizzazione di eventi
+      background: Conosce i percorsi di accoglienza e la distribuzione dei ruoli
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Spiegare il lavoro a chi partecipa per la prima volta. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Volontariato a un evento locale
+  - speaker: agent
+    goal: Chiarire i compiti e come chiedere aiuto
+    persona:
+      name: Personaggio fittizio 30B
+      age: adulto
+      language: Italian
+      role: volontario alla prima esperienza
+      background: Vuole dare una mano ma teme di sbagliare
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Chiarire i compiti e come chiedere aiuto. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Volontariato a un evento locale
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Spiegare il lavoro a chi partecipa per la prima volta / Chiarire i compiti
+    e come chiedere aiuto) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+sports:
+  id: sports
+  title: Programma di attività fisica
+  relationship: tra compagni di allenamento
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Programma di attività fisica
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Scegliere insieme un’attività sostenibile / Proporre un obiettivo poco impegnativo
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Scegliere insieme un’attività sostenibile
+    persona:
+      name: Personaggio fittizio 31A
+      age: adulto
+      language: Italian
+      role: persona che si allena regolarmente
+      background: Preferisce un programma che non sia troppo impegnativo
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Scegliere insieme un’attività sostenibile. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Programma di attività fisica
+  - speaker: agent
+    goal: Proporre un obiettivo poco impegnativo
+    persona:
+      name: Personaggio fittizio 31B
+      age: adulto
+      language: Italian
+      role: persona che riprende ad allenarsi
+      background: Non ha molta fiducia nella propria forma fisica attuale
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Proporre un obiettivo poco impegnativo. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Programma di attività fisica
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Scegliere insieme un’attività sostenibile / Proporre un obiettivo poco
+    impegnativo) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+garden:
+  id: garden
+  title: Prendersi cura delle piante
+  relationship: tra appassionati di piante
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Prendersi cura delle piante
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Capire quali segnali osservare e come prendersi cura della pianta / Chiedere come sta la pianta e spiegare come verificarlo
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Capire quali segnali osservare e come prendersi cura della pianta
+    persona:
+      name: Personaggio fittizio 32A
+      age: adulto
+      language: Italian
+      role: persona alle prime armi con le piante
+      background: Non sa ancora bene ogni quanto annaffiare
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Capire quali segnali osservare e come prendersi cura della pianta. Parla in italiano naturale, una o due frasi
+        per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Prendersi cura delle piante
+  - speaker: agent
+    goal: Chiedere come sta la pianta e spiegare come verificarlo
+    persona:
+      name: Personaggio fittizio 32B
+      age: adulto
+      language: Italian
+      role: persona con esperienza nella coltivazione
+      background: Sa che la cura varia in base all’ambiente
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Chiedere come sta la pianta e spiegare come verificarlo. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Prendersi cura delle piante
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Capire quali segnali osservare e come prendersi cura della pianta / Chiedere
+    come sta la pianta e spiegare come verificarlo) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+lost_item:
+  id: lost_item
+  title: Chiedere di un oggetto smarrito
+  relationship: tra persona che ha smarrito un oggetto e addetto
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Chiedere di un oggetto smarrito
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Descrivere l’oggetto e ricostruire gli spostamenti / Verificare le caratteristiche dell’oggetto e come ricontattare
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Descrivere l’oggetto e ricostruire gli spostamenti
+    persona:
+      name: Personaggio fittizio 33A
+      age: adulto
+      language: Italian
+      role: persona che ha perso un oggetto
+      background: Non ricorda con certezza dove l’ha visto l’ultima volta
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Descrivere l’oggetto e ricostruire gli spostamenti. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Chiedere di un oggetto smarrito
+  - speaker: agent
+    goal: Verificare le caratteristiche dell’oggetto e come ricontattare
+    persona:
+      name: Personaggio fittizio 33B
+      age: adulto
+      language: Italian
+      role: addetto agli oggetti smarriti
+      background: Non può dire di aver trovato un oggetto senza averlo verificato
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Verificare le caratteristiche dell’oggetto e come ricontattare. Parla in italiano naturale, una o due frasi
+        per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Chiedere di un oggetto smarrito
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Descrivere l’oggetto e ricostruire gli spostamenti / Verificare le caratteristiche
+    dell’oggetto e come ricontattare) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+apology:
+  id: apology
+  title: Chiarire un malinteso
+  relationship: tra amici
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Chiarire un malinteso
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Scusarsi senza cercare scuse e proporre come rimediare / Spiegare il disagio e concordare come gestire il prossimo appuntamento
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Scusarsi senza cercare scuse e proporre come rimediare
+    persona:
+      name: Personaggio fittizio 34A
+      age: adulto
+      language: Italian
+      role: amico che ha mancato un appuntamento
+      background: Ha una spiegazione ma si sente in colpa verso l’altra persona
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Scusarsi senza cercare scuse e proporre come rimediare. Parla in italiano naturale, una o due frasi per volta.
+        Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Chiarire un malinteso
+  - speaker: agent
+    goal: Spiegare il disagio e concordare come gestire il prossimo appuntamento
+    persona:
+      name: Personaggio fittizio 34B
+      age: adulto
+      language: Italian
+      role: amico che ha aspettato
+      background: È dispiaciuto per la lunga attesa
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Spiegare il disagio e concordare come gestire il prossimo appuntamento. Parla in italiano naturale, una o due
+        frasi per volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non
+        verificati. Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Chiarire un malinteso
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Scusarsi senza cercare scuse e proporre come rimediare / Spiegare il disagio
+    e concordare come gestire il prossimo appuntamento) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+celebration:
+  id: celebration
+  title: Festeggiare un piccolo traguardo
+  relationship: tra colleghi
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Festeggiare un piccolo traguardo
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Raccontare l’esperienza e il prossimo obiettivo / Riconoscere l’impegno e festeggiare senza mettere pressione
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Raccontare l’esperienza e il prossimo obiettivo
+    persona:
+      name: Personaggio fittizio 35A
+      age: adulto
+      language: Italian
+      role: persona che ha raggiunto un piccolo obiettivo
+      background: Si è impegnata con costanza ma non considera il risultato importante
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Raccontare l’esperienza e il prossimo obiettivo. Parla in italiano naturale, una o due frasi per volta. Non
+        conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni
+        possono cambiare nel corso della conversazione.'
+      circumstances: Festeggiare un piccolo traguardo
+  - speaker: agent
+    goal: Riconoscere l’impegno e festeggiare senza mettere pressione
+    persona:
+      name: Personaggio fittizio 35B
+      age: adulto
+      language: Italian
+      role: collega che celebra il risultato
+      background: Ricorda in modo preciso gli sforzi dell’altra persona
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Riconoscere l’impegno e festeggiare senza mettere pressione. Parla in italiano naturale, una o due frasi per
+        volta. Non conosce informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati.
+        Le emozioni possono cambiare nel corso della conversazione.'
+      circumstances: Festeggiare un piccolo traguardo
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Raccontare l’esperienza e il prossimo obiettivo / Riconoscere l’impegno
+    e festeggiare senza mettere pressione) o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.
+community:
+  id: community
+  title: Riunione sullo spazio condiviso
+  relationship: tra partecipanti a un gruppo di residenti
+  context:
+    location: Luogo adatto alla situazione
+    environment: di persona
+    circumstances: Riunione sullo spazio condiviso
+  scenario:
+    facts_policy: I fatti necessari, come prezzi, orari e nomi dei luoghi, vanno stabiliti prima della generazione e forniti in modo
+      coerente a entrambe le parti.
+    goal: Riservare fasce orarie per concentrarsi / Riservare orari per le riunioni
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Riservare fasce orarie per concentrarsi
+    persona:
+      name: Personaggio fittizio 36A
+      age: adulto
+      language: Italian
+      role: residente che desidera uno spazio tranquillo
+      background: Usa lo spazio per leggere e lavorare
+      personality: Spiega in modo concreto ciò di cui ha bisogno e fa domande quando qualcosa non è chiaro.
+      rules: 'Obiettivo: Riservare fasce orarie per concentrarsi. Parla in italiano naturale, una o due frasi per volta. Non conosce
+        informazioni personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono
+        cambiare nel corso della conversazione.'
+      circumstances: Riunione sullo spazio condiviso
+  - speaker: agent
+    goal: Riservare orari per le riunioni
+    persona:
+      name: Personaggio fittizio 36B
+      age: adulto
+      language: Italian
+      role: residente che vuole organizzare attività di gruppo
+      background: Ha bisogno di un luogo in cui le persone possano incontrarsi
+      personality: Verifica l’obiettivo dell’altra persona e valuta insieme a lei le opzioni possibili.
+      rules: 'Obiettivo: Riservare orari per le riunioni. Parla in italiano naturale, una o due frasi per volta. Non conosce informazioni
+        personali che l’altra persona non ha condiviso. Non presenta come certi fatti non verificati. Le emozioni possono cambiare nel
+        corso della conversazione.'
+      circumstances: Riunione sullo spazio condiviso
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Entrambe le persone mantengono il proprio ruolo e rispettano i limiti delle proprie conoscenze.
+  - Le persone fanno progressi verso i rispettivi obiettivi (Riservare fasce orarie per concentrarsi / Riservare orari per le riunioni)
+    o concordano un passo successivo realistico.
+  - Le risposte sono naturali in italiano e pertinenti a ciò che ha detto l’altra persona.
+  - Non compaiono testo di ragionamento, token speciali o ripetizioni meccaniche.

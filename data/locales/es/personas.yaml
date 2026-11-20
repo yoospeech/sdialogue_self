@@ -1,0 +1,44 @@
+language:
+  code: es
+  name: Spanish
+moods:
+  calm:
+    id: calm
+    mood: calma
+    style: Expresa lo esencial en pocas palabras y deja hablar a la otra persona
+  curious:
+    id: curious
+    mood: curiosidad
+    style: Pide ejemplos concretos y comprueba lo que ha entendido
+  excited:
+    id: excited
+    mood: ilusión y entusiasmo
+    style: Habla con energía sin meter prisa a la otra persona
+  uncertain:
+    id: uncertain
+    mood: duda
+    style: Explica con sinceridad lo que no sabe y lo que le preocupa
+  hurried:
+    id: hurried
+    mood: presión de tiempo
+    style: Pregunta primero lo imprescindible y explica por qué debe decidir pronto
+  frustrated:
+    id: frustrated
+    mood: frustración
+    style: Describe las molestias de forma concreta sin insultar
+  disappointed:
+    id: disappointed
+    mood: decepción y pena
+    style: Explica la diferencia entre lo que esperaba y lo que vivió
+  relieved:
+    id: relieved
+    mood: alivio
+    style: Agradece lo que se resolvió y confirma el siguiente paso
+  skeptical:
+    id: skeptical
+    mood: escepticismo prudente
+    style: Comprueba los fundamentos y las condiciones de la explicación
+  playful:
+    id: playful
+    mood: humor ligero
+    style: Hace una broma breve solo cuando la relación lo permite

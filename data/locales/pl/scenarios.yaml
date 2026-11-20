@@ -1,0 +1,1993 @@
+weekend:
+  id: weekend
+  title: Plany na weekend z przyjacielem
+  relationship: przyjaciele
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Plany na weekend z przyjacielem
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Wspólnie zaplanować półdniowy spacer / Uzgodnić plan odpoczynku z niewielką liczbą przejazdów
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Wspólnie zaplanować półdniowy spacer
+    persona:
+      name: Postać fikcyjna 1A
+      age: osoba dorosła
+      language: Polish
+      role: przyjaciel proponujący aktywność na świeżym powietrzu
+      background: Ma duże doświadczenie w wędrówkach i lubi odkrywać nowe miejsca.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Wspólnie zaplanować półdniowy spacer. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Plany na weekend z przyjacielem
+  - speaker: agent
+    goal: Uzgodnić plan odpoczynku z niewielką liczbą przejazdów
+    persona:
+      name: Postać fikcyjna 1B
+      age: osoba dorosła
+      language: Polish
+      role: przyjaciel preferujący zajęcia w domu
+      background: W tym tygodniu ma dużo pracy i chce oszczędzać siły.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Uzgodnić plan odpoczynku z niewielką liczbą przejazdów. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Plany na weekend z przyjacielem
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Wspólnie zaplanować półdniowy spacer / Uzgodnić plan odpoczynku z niewielką
+    liczbą przejazdów) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+reunion:
+  id: reunion
+  title: Spotkanie po latach
+  relationship: dawni przyjaciele
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Spotkanie po latach
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Opowiedzieć o ostatnim czasie i zaproponować kolejne spotkanie / Poznać powód kontaktu i wymienić się
+      nowinami
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Opowiedzieć o ostatnim czasie i zaproponować kolejne spotkanie
+    persona:
+      name: Postać fikcyjna 2A
+      age: osoba dorosła
+      language: Polish
+      role: przyjaciel, który odnowił kontakt
+      background: Po przeprowadzce do innego regionu kontakt stał się rzadszy.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Opowiedzieć o ostatnim czasie i zaproponować kolejne spotkanie. Mówi naturalnie po polsku, po
+        jednym lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie
+        przedstawia niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Spotkanie po latach
+  - speaker: agent
+    goal: Poznać powód kontaktu i wymienić się nowinami
+    persona:
+      name: Postać fikcyjna 2B
+      age: osoba dorosła
+      language: Polish
+      role: przyjaciel, który czekał na wiadomość
+      background: Cieszą go wspomnienia, ale zastanawia się, dlaczego druga osoba nagle napisała.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Poznać powód kontaktu i wymienić się nowinami. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Spotkanie po latach
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Opowiedzieć o ostatnim czasie i zaproponować kolejne spotkanie / Poznać powód
+    kontaktu i wymienić się nowinami) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+roommates:
+  id: roommates
+  title: Zasady wspólnego mieszkania
+  relationship: współlokatorzy
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Zasady wspólnego mieszkania
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Uzgodnić godziny ciszy nocnej / Znaleźć sposób na wzajemną troskę bez rezygnacji z własnego rytmu dnia
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Uzgodnić godziny ciszy nocnej
+    persona:
+      name: Postać fikcyjna 3A
+      age: osoba dorosła
+      language: Polish
+      role: współlokator potrzebujący spokojnych wieczorów
+      background: Pracuje z domu i wcześnie kładzie się spać.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Uzgodnić godziny ciszy nocnej. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Zasady wspólnego mieszkania
+  - speaker: agent
+    goal: Znaleźć sposób na wzajemną troskę bez rezygnacji z własnego rytmu dnia
+    persona:
+      name: Postać fikcyjna 3B
+      age: osoba dorosła
+      language: Polish
+      role: współlokator wracający późno
+      background: Kończy pracę późno i po powrocie gotuje.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Znaleźć sposób na wzajemną troskę bez rezygnacji z własnego rytmu dnia. Mówi naturalnie po polsku,
+        po jednym lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie
+        przedstawia niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Zasady wspólnego mieszkania
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Uzgodnić godziny ciszy nocnej / Znaleźć sposób na wzajemną troskę bez rezygnacji
+    z własnego rytmu dnia) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+family_trip:
+  id: family_trip
+  title: Planowanie rodzinnego wyjazdu
+  relationship: członkowie rodziny
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Planowanie rodzinnego wyjazdu
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Ułożyć plan, który nie będzie zbyt męczący / Zostawić wystarczająco dużo wolnego czasu
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ułożyć plan, który nie będzie zbyt męczący
+    persona:
+      name: Postać fikcyjna 4A
+      age: osoba dorosła
+      language: Polish
+      role: członek rodziny przygotowujący plan
+      background: Sprawdził już plan podróży i możliwe miejsca noclegowe.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Ułożyć plan, który nie będzie zbyt męczący. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Planowanie rodzinnego wyjazdu
+  - speaker: agent
+    goal: Zostawić wystarczająco dużo wolnego czasu
+    persona:
+      name: Postać fikcyjna 4B
+      age: osoba dorosła
+      language: Polish
+      role: członek rodziny lubiący spontaniczne wyjazdy
+      background: Zbyt napięty plan jest dla niego przytłaczający.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Zostawić wystarczająco dużo wolnego czasu. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Planowanie rodzinnego wyjazdu
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Ułożyć plan, który nie będzie zbyt męczący / Zostawić wystarczająco dużo wolnego
+    czasu) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+siblings:
+  id: siblings
+  title: Przygotowania do rodzinnej uroczystości
+  relationship: rodzeństwo
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Przygotowania do rodzinnej uroczystości
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Sprawiedliwie podzielić obowiązki związane z przygotowaniami / Podać dostępne terminy i inne sposoby pomocy
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Sprawiedliwie podzielić obowiązki związane z przygotowaniami
+    persona:
+      name: Postać fikcyjna 5A
+      age: osoba dorosła
+      language: Polish
+      role: rodzeństwo odpowiedzialne za przygotowania
+      background: Ma poczucie, że większość przygotowań spadła na niego.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Sprawiedliwie podzielić obowiązki związane z przygotowaniami. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Przygotowania do rodzinnej uroczystości
+  - speaker: agent
+    goal: Podać dostępne terminy i inne sposoby pomocy
+    persona:
+      name: Postać fikcyjna 5B
+      age: osoba dorosła
+      language: Polish
+      role: rodzeństwo, któremu brakuje czasu
+      background: Praca utrudnia mu dłuższy udział w przygotowaniach na miejscu.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Podać dostępne terminy i inne sposoby pomocy. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Przygotowania do rodzinnej uroczystości
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Sprawiedliwie podzielić obowiązki związane z przygotowaniami / Podać dostępne
+    terminy i inne sposoby pomocy) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+neighbors:
+  id: neighbors
+  title: Uzgodnienie sprawy hałasu z sąsiadem
+  relationship: sąsiedzi
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Uzgodnienie sprawy hałasu z sąsiadem
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Ustalić, kiedy hałas się skończy / Wyjaśnić harmonogram prac i go dopasować
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Ustalić, kiedy hałas się skończy
+    persona:
+      name: Postać fikcyjna 6A
+      age: osoba dorosła
+      language: Polish
+      role: sąsiad, któremu przeszkadza hałas
+      background: Ostatnio wieczorny hałas związany z pracami utrudnia mu skupienie.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Ustalić, kiedy hałas się skończy. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Uzgodnienie sprawy hałasu z sąsiadem
+  - speaker: agent
+    goal: Wyjaśnić harmonogram prac i go dopasować
+    persona:
+      name: Postać fikcyjna 6B
+      age: osoba dorosła
+      language: Polish
+      role: sąsiad remontujący dom
+      background: Remont jest konieczny, ale nie wiedział, jak bardzo przeszkadza sąsiadowi.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Wyjaśnić harmonogram prac i go dopasować. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Uzgodnienie sprawy hałasu z sąsiadem
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Ustalić, kiedy hałas się skończy / Wyjaśnić harmonogram prac i go dopasować)
+    lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+study:
+  id: study
+  title: Wspólny plan nauki
+  relationship: osoby uczące się razem
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wspólny plan nauki
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Ustalić tempo nauki / Zapewnić wystarczająco dużo czasu na ćwiczenia
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ustalić tempo nauki
+    persona:
+      name: Postać fikcyjna 7A
+      age: osoba dorosła
+      language: Polish
+      role: osoba lubiąca planować naukę
+      background: Przygotowuje harmonogram powtórek i się go trzyma.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Ustalić tempo nauki. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz. Nie zna prywatnych
+        informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów jako pewnych. Emocje
+        mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wspólny plan nauki
+  - speaker: agent
+    goal: Zapewnić wystarczająco dużo czasu na ćwiczenia
+    persona:
+      name: Postać fikcyjna 7B
+      age: osoba dorosła
+      language: Polish
+      role: osoba stawiająca na praktykę
+      background: Najlepiej rozumie materiał, gdy samodzielnie rozwiązuje zadania.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Zapewnić wystarczająco dużo czasu na ćwiczenia. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wspólny plan nauki
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Ustalić tempo nauki / Zapewnić wystarczająco dużo czasu na ćwiczenia) lub
+    uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+tutoring:
+  id: tutoring
+  title: Wyjaśnianie pojęcia
+  relationship: nauczyciel i dorosły uczeń
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wyjaśnianie pojęcia
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Sprawdzić, czy uczeń rozumie materiał / Zapytać o niejasne kwestie i sprawdzić je na przykładach
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Sprawdzić, czy uczeń rozumie materiał
+    persona:
+      name: Postać fikcyjna 8A
+      age: osoba dorosła
+      language: Polish
+      role: nauczyciel zachęcający do pytań
+      background: Wyjaśnia pojęcia matematyczne za pomocą przykładów z życia.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Sprawdzić, czy uczeń rozumie materiał. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wyjaśnianie pojęcia
+  - speaker: agent
+    goal: Zapytać o niejasne kwestie i sprawdzić je na przykładach
+    persona:
+      name: Postać fikcyjna 8B
+      age: osoba dorosła
+      language: Polish
+      role: dorosły uczeń mający trudności z ułamkami
+      background: Zna wzory na pamięć, ale trudno mu je zastosować.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Zapytać o niejasne kwestie i sprawdzić je na przykładach. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wyjaśnianie pojęcia
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Sprawdzić, czy uczeń rozumie materiał / Zapytać o niejasne kwestie i sprawdzić
+    je na przykładach) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+language:
+  id: language
+  title: Wymiana językowa
+  relationship: partnerzy do nauki języka
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wymiana językowa
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Opowiedzieć własnymi słowami o codziennych doświadczeniach / Swobodnie podpowiadać naturalne wyrażenia
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Opowiedzieć własnymi słowami o codziennych doświadczeniach
+    persona:
+      name: Postać fikcyjna 9A
+      age: osoba dorosła
+      language: Polish
+      role: osoba ćwicząca mówienie
+      background: Zna słownictwo, ale nie czuje się pewnie, mówiąc dłuższymi zdaniami.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Opowiedzieć własnymi słowami o codziennych doświadczeniach. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wymiana językowa
+  - speaker: agent
+    goal: Swobodnie podpowiadać naturalne wyrażenia
+    persona:
+      name: Postać fikcyjna 9B
+      age: osoba dorosła
+      language: Polish
+      role: partner do wymiany językowej
+      background: Stara się dawać drugiej osobie czas na samodzielne wypowiedzi.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Swobodnie podpowiadać naturalne wyrażenia. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wymiana językowa
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Opowiedzieć własnymi słowami o codziennych doświadczeniach / Swobodnie podpowiadać
+    naturalne wyrażenia) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+mentor:
+  id: mentor
+  title: Poznawanie ścieżek kariery
+  relationship: mentor i podopieczny
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Poznawanie ścieżek kariery
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Uporządkować kryteria wyboru / Pomóc, odróżniając osobiste doświadczenia od ogólnych rad
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Uporządkować kryteria wyboru
+    persona:
+      name: Postać fikcyjna 10A
+      age: osoba dorosła
+      language: Polish
+      role: dorosła osoba rozważająca zmianę kariery
+      background: Waha się między obecną pracą a nową branżą.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Uporządkować kryteria wyboru. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Poznawanie ścieżek kariery
+  - speaker: agent
+    goal: Pomóc, odróżniając osobiste doświadczenia od ogólnych rad
+    persona:
+      name: Postać fikcyjna 10B
+      age: osoba dorosła
+      language: Polish
+      role: mentor dzielący się doświadczeniem
+      background: Ma za sobą przejście do pracy w innej branży.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Pomóc, odróżniając osobiste doświadczenia od ogólnych rad. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Poznawanie ścieżek kariery
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Uporządkować kryteria wyboru / Pomóc, odróżniając osobiste doświadczenia od
+    ogólnych rad) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+project:
+  id: project
+  title: Doprecyzowanie zakresu projektu
+  relationship: współpracownicy
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Doprecyzowanie zakresu projektu
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Uzgodnić niezbędne funkcje / Zapropować zakres możliwy do wykonania w terminie
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Uzgodnić niezbędne funkcje
+    persona:
+      name: Postać fikcyjna 11A
+      age: osoba dorosła
+      language: Polish
+      role: osoba planująca projekt
+      background: Stara się uwzględnić potrzeby użytkowników przed terminem.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Uzgodnić niezbędne funkcje. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz. Nie
+        zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Doprecyzowanie zakresu projektu
+  - speaker: agent
+    goal: Zapropować zakres możliwy do wykonania w terminie
+    persona:
+      name: Postać fikcyjna 11B
+      age: osoba dorosła
+      language: Polish
+      role: programista
+      background: Pilnuje harmonogramu prac i czasu na testy.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Zapropować zakres możliwy do wykonania w terminie. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Doprecyzowanie zakresu projektu
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Uzgodnić niezbędne funkcje / Zapropować zakres możliwy do wykonania w terminie)
+    lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+handover:
+  id: handover
+  title: Przekazanie obowiązków
+  relationship: współpracownicy
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Przekazanie obowiązków
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Przekazać priorytety bez pominięć / Potwierdzić terminy i zakres odpowiedzialności
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Przekazać priorytety bez pominięć
+    persona:
+      name: Postać fikcyjna 12A
+      age: osoba dorosła
+      language: Polish
+      role: osoba przekazująca zadania
+      background: Dobrze zna postępy, ale ma mało czasu na wyjaśnienia.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Przekazać priorytety bez pominięć. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Przekazanie obowiązków
+  - speaker: agent
+    goal: Potwierdzić terminy i zakres odpowiedzialności
+    persona:
+      name: Postać fikcyjna 12B
+      age: osoba dorosła
+      language: Polish
+      role: osoba przejmująca zadania
+      background: Nie zna jeszcze kontekstu i wcześniejszych ustaleń.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Potwierdzić terminy i zakres odpowiedzialności. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Przekazanie obowiązków
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Przekazać priorytety bez pominięć / Potwierdzić terminy i zakres odpowiedzialności)
+    lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+feedback:
+  id: feedback
+  title: Informacja zwrotna o pracy
+  relationship: współpracownicy
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Informacja zwrotna o pracy
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Uzyskać konkretne wskazówki do poprawek / Oddzielić mocne strony od elementów do poprawy
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Uzyskać konkretne wskazówki do poprawek
+    persona:
+      name: Postać fikcyjna 13A
+      age: osoba dorosła
+      language: Polish
+      role: autor udostępniający wersję roboczą
+      background: Zna zamysł tekstu, ale obawia się opinii.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Uzyskać konkretne wskazówki do poprawek. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Informacja zwrotna o pracy
+  - speaker: agent
+    goal: Oddzielić mocne strony od elementów do poprawy
+    persona:
+      name: Postać fikcyjna 13B
+      age: osoba dorosła
+      language: Polish
+      role: współpracownik sprawdzający wersję roboczą
+      background: Ceni układ, który ułatwia czytelnikowi zrozumienie tekstu.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Oddzielić mocne strony od elementów do poprawy. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Informacja zwrotna o pracy
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Uzyskać konkretne wskazówki do poprawek / Oddzielić mocne strony od elementów
+    do poprawy) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+remote:
+  id: remote
+  title: Uzgadnianie zdalnego terminu
+  relationship: współpracownicy w różnych miejscach
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Uzgadnianie zdalnego terminu
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Znaleźć dogodny termin spotkania / Krótko omówić najważniejsze kwestie i ustalić termin
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Znaleźć dogodny termin spotkania
+    persona:
+      name: Postać fikcyjna 14A
+      age: osoba dorosła
+      language: Polish
+      role: współpracownik proszący o spotkanie
+      background: Musi coś wyjaśnić jeszcze dziś, ale może dopasować godzinę.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Znaleźć dogodny termin spotkania. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Uzgadnianie zdalnego terminu
+  - speaker: agent
+    goal: Krótko omówić najważniejsze kwestie i ustalić termin
+    persona:
+      name: Postać fikcyjna 14B
+      age: osoba dorosła
+      language: Polish
+      role: współpracownik w drodze
+      background: Nie może długo rozmawiać i trudno mu robić notatki.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Krótko omówić najważniejsze kwestie i ustalić termin. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Uzgadnianie zdalnego terminu
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Znaleźć dogodny termin spotkania / Krótko omówić najważniejsze kwestie i ustalić
+    termin) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+interview:
+  id: interview
+  title: Rozmowa kwalifikacyjna
+  relationship: rekruter i kandydat
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Rozmowa kwalifikacyjna
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Poznać doświadczenie we współpracy i uzasadnienie decyzji / Opowiedzieć o swojej roli i wyciągniętych
+      wnioskach
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Poznać doświadczenie we współpracy i uzasadnienie decyzji
+    persona:
+      name: Postać fikcyjna 15A
+      age: osoba dorosła
+      language: Polish
+      role: rekruter pytający o doświadczenie zawodowe
+      background: Chce poznać konkretny przykład z pracy.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Poznać doświadczenie we współpracy i uzasadnienie decyzji. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Rozmowa kwalifikacyjna
+  - speaker: agent
+    goal: Opowiedzieć o swojej roli i wyciągniętych wnioskach
+    persona:
+      name: Postać fikcyjna 15B
+      age: osoba dorosła
+      language: Polish
+      role: kandydat do pracy
+      background: Ma praktyczne doświadczenie, ale stresuje się podczas prezentacji.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Opowiedzieć o swojej roli i wyciągniętych wnioskach. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Rozmowa kwalifikacyjna
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Poznać doświadczenie we współpracy i uzasadnienie decyzji / Opowiedzieć o
+    swojej roli i wyciągniętych wnioskach) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+design:
+  id: design
+  title: Uzgadnianie kierunku projektu
+  relationship: projektant i klient
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Uzgadnianie kierunku projektu
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Przełożyć potrzeby na konkretne wymagania projektowe / Przedstawić preferencje za pomocą lubianych przykładów
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Przełożyć potrzeby na konkretne wymagania projektowe
+    persona:
+      name: Postać fikcyjna 16A
+      age: osoba dorosła
+      language: Polish
+      role: projektant
+      background: Przygotowuje propozycję z naciskiem na wygodę użytkowania.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Przełożyć potrzeby na konkretne wymagania projektowe. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Uzgadnianie kierunku projektu
+  - speaker: agent
+    goal: Przedstawić preferencje za pomocą lubianych przykładów
+    persona:
+      name: Postać fikcyjna 16B
+      age: osoba dorosła
+      language: Polish
+      role: klient organizujący małe wydarzenie
+      background: Wie, jaki efekt chce uzyskać, ale nie zna fachowych terminów.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Przedstawić preferencje za pomocą lubianych przykładów. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Uzgadnianie kierunku projektu
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Przełożyć potrzeby na konkretne wymagania projektowe / Przedstawić preferencje
+    za pomocą lubianych przykładów) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+travel:
+  id: travel
+  title: Pytanie o drogę
+  relationship: podróżny i mieszkaniec
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Pytanie o drogę
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Poznać łatwą trasę do celu / Opisać trasę, wskazując charakterystyczne miejsca
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Poznać łatwą trasę do celu
+    persona:
+      name: Postać fikcyjna 17A
+      age: osoba dorosła
+      language: Polish
+      role: podróżny odwiedzający okolicę po raz pierwszy
+      background: Nie zna okolicy ani połączeń komunikacyjnych.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Poznać łatwą trasę do celu. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz. Nie
+        zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pytanie o drogę
+  - speaker: agent
+    goal: Opisać trasę, wskazując charakterystyczne miejsca
+    persona:
+      name: Postać fikcyjna 17B
+      age: osoba dorosła
+      language: Polish
+      role: mieszkaniec wskazujący drogę
+      background: Zna najważniejsze miejsca w okolicy.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Opisać trasę, wskazując charakterystyczne miejsca. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pytanie o drogę
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Poznać łatwą trasę do celu / Opisać trasę, wskazując charakterystyczne miejsca)
+    lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+hotel:
+  id: hotel
+  title: Prośba dotycząca noclegu
+  relationship: gość i pracownik obiektu noclegowego
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Prośba dotycząca noclegu
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Dowiedzieć się, czy można zmienić pokój / Sprawdzić prośbę i przedstawić możliwe opcje
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Dowiedzieć się, czy można zmienić pokój
+    persona:
+      name: Postać fikcyjna 18A
+      age: osoba dorosła
+      language: Polish
+      role: gość, który chce cichy pokój
+      background: Chce wcześniej odpocząć i martwi się hałasem w pobliżu.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Dowiedzieć się, czy można zmienić pokój. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Prośba dotycząca noclegu
+  - speaker: agent
+    goal: Sprawdzić prośbę i przedstawić możliwe opcje
+    persona:
+      name: Postać fikcyjna 18B
+      age: osoba dorosła
+      language: Polish
+      role: pracownik obiektu noclegowego
+      background: Może potwierdzić dostępność dopiero po sprawdzeniu stanu pokoi.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Sprawdzić prośbę i przedstawić możliwe opcje. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Prośba dotycząca noclegu
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Dowiedzieć się, czy można zmienić pokój / Sprawdzić prośbę i przedstawić możliwe
+    opcje) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+museum:
+  id: museum
+  title: Oglądanie wystawy
+  relationship: zwiedzający i przewodnik
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Oglądanie wystawy
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Zrozumieć zamysł artystyczny dzieła / Pomóc zwiedzającemu samodzielnie przyjrzeć się dziełu
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Zrozumieć zamysł artystyczny dzieła
+    persona:
+      name: Postać fikcyjna 19A
+      age: osoba dorosła
+      language: Polish
+      role: ciekawski zwiedzający
+      background: Ma niewielką wiedzę o tematyce wystawy.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Zrozumieć zamysł artystyczny dzieła. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Oglądanie wystawy
+  - speaker: agent
+    goal: Pomóc zwiedzającemu samodzielnie przyjrzeć się dziełu
+    persona:
+      name: Postać fikcyjna 19B
+      age: osoba dorosła
+      language: Polish
+      role: przewodnik po wystawie
+      background: Używa prostych porównań i pytań zachęcających do obserwacji.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Pomóc zwiedzającemu samodzielnie przyjrzeć się dziełu. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Oglądanie wystawy
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Zrozumieć zamysł artystyczny dzieła / Pomóc zwiedzającemu samodzielnie przyjrzeć
+    się dziełu) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+restaurant:
+  id: restaurant
+  title: Zamawianie posiłku
+  relationship: gość i pracownik
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Zamawianie posiłku
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Przed zamówieniem zapytać o smak i wielkość porcji / Poznać preferencje i wyjaśnić odpowiednie opcje
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Przed zamówieniem zapytać o smak i wielkość porcji
+    persona:
+      name: Postać fikcyjna 20A
+      age: osoba dorosła
+      language: Polish
+      role: gość wybierający danie
+      background: Wiele pozycji w menu jest mu nieznanych.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Przed zamówieniem zapytać o smak i wielkość porcji. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Zamawianie posiłku
+  - speaker: agent
+    goal: Poznać preferencje i wyjaśnić odpowiednie opcje
+    persona:
+      name: Postać fikcyjna 20B
+      age: osoba dorosła
+      language: Polish
+      role: pracownik objaśniający menu
+      background: Zna składniki i sposób przygotowania, ale nie zna upodobań gościa.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Poznać preferencje i wyjaśnić odpowiednie opcje. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Zamawianie posiłku
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Przed zamówieniem zapytać o smak i wielkość porcji / Poznać preferencje i
+    wyjaśnić odpowiednie opcje) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+cooking:
+  id: cooking
+  title: Wspólne gotowanie
+  relationship: osoby gotujące razem
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wspólne gotowanie
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Wyjaśnić kroki tak, by początkujący mógł je wykonać / Dopytać o niejasne instrukcje i podzielić się zadaniami
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Wyjaśnić kroki tak, by początkujący mógł je wykonać
+    persona:
+      name: Postać fikcyjna 21A
+      age: osoba dorosła
+      language: Polish
+      role: osoba doświadczona w gotowaniu
+      background: Ma zwyczaj szybko opisywać dobrze znane sobie metody.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Wyjaśnić kroki tak, by początkujący mógł je wykonać. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wspólne gotowanie
+  - speaker: agent
+    goal: Dopytać o niejasne instrukcje i podzielić się zadaniami
+    persona:
+      name: Postać fikcyjna 21B
+      age: osoba dorosła
+      language: Polish
+      role: początkujący kucharz
+      background: Nie zna dobrze przyborów ani terminów kulinarnych.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Dopytać o niejasne instrukcje i podzielić się zadaniami. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wspólne gotowanie
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Wyjaśnić kroki tak, by początkujący mógł je wykonać / Dopytać o niejasne instrukcje
+    i podzielić się zadaniami) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+shopping:
+  id: shopping
+  title: Porównywanie produktów
+  relationship: klient i sprzedawca
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Porównywanie produktów
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Wybrać produkt bez niepotrzebnych wydatków / Poznać cel zakupu i wyjaśnić różnice
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Wybrać produkt bez niepotrzebnych wydatków
+    persona:
+      name: Postać fikcyjna 22A
+      age: osoba dorosła
+      language: Polish
+      role: klient porównujący produkty
+      background: Z góry określił budżet i niezbędne funkcje.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Wybrać produkt bez niepotrzebnych wydatków. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Porównywanie produktów
+  - speaker: agent
+    goal: Poznać cel zakupu i wyjaśnić różnice
+    persona:
+      name: Postać fikcyjna 22B
+      age: osoba dorosła
+      language: Polish
+      role: osoba objaśniająca produkt
+      background: Porównuje i opisuje cechy fikcyjnych produktów.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Poznać cel zakupu i wyjaśnić różnice. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Porównywanie produktów
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Wybrać produkt bez niepotrzebnych wydatków / Poznać cel zakupu i wyjaśnić
+    różnice) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+repair:
+  id: repair
+  title: Przyjęcie zgłoszenia naprawy
+  relationship: użytkownik urządzenia i pracownik serwisu
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Przyjęcie zgłoszenia naprawy
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Dokładnie opisać usterkę i umówić kontrolę / Ustalić objawy i bezpieczne dalsze kroki
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Dokładnie opisać usterkę i umówić kontrolę
+    persona:
+      name: Postać fikcyjna 23A
+      age: osoba dorosła
+      language: Polish
+      role: użytkownik niesprawnego urządzenia
+      background: Pamięta, kiedy pojawił się problem.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Dokładnie opisać usterkę i umówić kontrolę. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Przyjęcie zgłoszenia naprawy
+  - speaker: agent
+    goal: Ustalić objawy i bezpieczne dalsze kroki
+    persona:
+      name: Postać fikcyjna 23B
+      age: osoba dorosła
+      language: Polish
+      role: pracownik przyjmujący zgłoszenie
+      background: Nie może potwierdzić usterki przed bezpośrednim sprawdzeniem urządzenia.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Ustalić objawy i bezpieczne dalsze kroki. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Przyjęcie zgłoszenia naprawy
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Dokładnie opisać usterkę i umówić kontrolę / Ustalić objawy i bezpieczne dalsze
+    kroki) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+delivery:
+  id: delivery
+  title: Pytanie o dostawę
+  relationship: odbiorca i kurier
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Pytanie o dostawę
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Poznać dostępne sposoby odbioru / Sprawdzić warunki odbioru i przedstawić alternatywy
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Poznać dostępne sposoby odbioru
+    persona:
+      name: Postać fikcyjna 24A
+      age: osoba dorosła
+      language: Polish
+      role: odbiorca pytający o godzinę dostawy
+      background: Może odebrać przesyłkę tylko w ograniczonym czasie.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Poznać dostępne sposoby odbioru. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pytanie o dostawę
+  - speaker: agent
+    goal: Sprawdzić warunki odbioru i przedstawić alternatywy
+    persona:
+      name: Postać fikcyjna 24B
+      age: osoba dorosła
+      language: Polish
+      role: pracownik dostawy
+      background: Może przekazać wyłącznie potwierdzony harmonogram.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Sprawdzić warunki odbioru i przedstawić alternatywy. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pytanie o dostawę
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Poznać dostępne sposoby odbioru / Sprawdzić warunki odbioru i przedstawić
+    alternatywy) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+library:
+  id: library
+  title: Polecanie książek
+  relationship: czytelnik i bibliotekarz
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Polecanie książek
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Znaleźć rodzaj książki, który nie wymaga dużego wysiłku / Zaproponować kryteria wyszukiwania dopasowane
+      do upodobań
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Znaleźć rodzaj książki, który nie wymaga dużego wysiłku
+    persona:
+      name: Postać fikcyjna 25A
+      age: osoba dorosła
+      language: Polish
+      role: czytelnik szukający nowego gatunku
+      background: Potrafi opowiedzieć, jakie książki ostatnio czytał.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Znaleźć rodzaj książki, który nie wymaga dużego wysiłku. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Polecanie książek
+  - speaker: agent
+    goal: Zaproponować kryteria wyszukiwania dopasowane do upodobań
+    persona:
+      name: Postać fikcyjna 25B
+      age: osoba dorosła
+      language: Polish
+      role: bibliotekarz
+      background: Pyta o cel czytania i preferencje.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Zaproponować kryteria wyszukiwania dopasowane do upodobań. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Polecanie książek
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Znaleźć rodzaj książki, który nie wymaga dużego wysiłku / Zaproponować kryteria
+    wyszukiwania dopasowane do upodobań) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+bookclub:
+  id: bookclub
+  title: Dyskusja o książce
+  relationship: uczestnicy klubu książki
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Dyskusja o książce
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Wyjaśnić własną interpretację / Porównać argumenty za różnymi interpretacjami
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Wyjaśnić własną interpretację
+    persona:
+      name: Postać fikcyjna 26A
+      age: osoba dorosła
+      language: Polish
+      role: czytelnik utożsamiający się z postacią
+      background: Podczas lektury skupia się na emocjach bohaterów.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Wyjaśnić własną interpretację. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Dyskusja o książce
+  - speaker: agent
+    goal: Porównać argumenty za różnymi interpretacjami
+    persona:
+      name: Postać fikcyjna 26B
+      age: osoba dorosła
+      language: Polish
+      role: czytelnik analizujący strukturę
+      background: Zwraca uwagę na konstrukcję narracji i związki przyczynowo-skutkowe.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Porównać argumenty za różnymi interpretacjami. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Dyskusja o książce
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Wyjaśnić własną interpretację / Porównać argumenty za różnymi interpretacjami)
+    lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+music:
+  id: music
+  title: Współpraca muzyczna
+  relationship: muzycy
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Współpraca muzyczna
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Ustalić tempo i sygnał rozpoczęcia wspólnej gry / Podzielić się zamysłem wykonania i uzgodnić go
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ustalić tempo i sygnał rozpoczęcia wspólnej gry
+    persona:
+      name: Postać fikcyjna 27A
+      age: osoba dorosła
+      language: Polish
+      role: muzyk skupiony na rytmie
+      background: Próbuje zgrać się z innymi przez wielokrotne ćwiczenia.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Ustalić tempo i sygnał rozpoczęcia wspólnej gry. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Współpraca muzyczna
+  - speaker: agent
+    goal: Podzielić się zamysłem wykonania i uzgodnić go
+    persona:
+      name: Postać fikcyjna 27B
+      age: osoba dorosła
+      language: Polish
+      role: muzyk skupiony na ekspresji
+      background: Najpierw wyobraża sobie dynamikę i nastrój utworu.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Podzielić się zamysłem wykonania i uzgodnić go. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Współpraca muzyczna
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Ustalić tempo i sygnał rozpoczęcia wspólnej gry / Podzielić się zamysłem wykonania
+    i uzgodnić go) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+podcast:
+  id: podcast
+  title: Wywiad do podcastu
+  relationship: prowadzący i gość
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wywiad do podcastu
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Wydobyć przykłady za pomocą otwartych pytań / Barwnie opowiedzieć o doświadczeniach bez przesady
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Wydobyć przykłady za pomocą otwartych pytań
+    persona:
+      name: Postać fikcyjna 28A
+      age: osoba dorosła
+      language: Polish
+      role: prowadzący wywiad
+      background: Chce poznać konkretne doświadczenia gościa.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Wydobyć przykłady za pomocą otwartych pytań. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wywiad do podcastu
+  - speaker: agent
+    goal: Barwnie opowiedzieć o doświadczeniach bez przesady
+    persona:
+      name: Postać fikcyjna 28B
+      age: osoba dorosła
+      language: Polish
+      role: gość opowiadający o swoim hobby
+      background: Ma za sobą wiele drobnych sukcesów i prób zakończonych błędami.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Barwnie opowiedzieć o doświadczeniach bez przesady. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wywiad do podcastu
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Wydobyć przykłady za pomocą otwartych pytań / Barwnie opowiedzieć o doświadczeniach
+    bez przesady) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+writing:
+  id: writing
+  title: Wspólne tworzenie opowieści
+  relationship: współautorzy
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wspólne tworzenie opowieści
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Ustalić tło działań bohatera / Przełożyć pomysł na konkretną scenę
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ustalić tło działań bohatera
+    persona:
+      name: Postać fikcyjna 29A
+      age: osoba dorosła
+      language: Polish
+      role: autor tworzący założenia
+      background: Ceni świat przedstawiony i logiczną spójność.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Ustalić tło działań bohatera. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wspólne tworzenie opowieści
+  - speaker: agent
+    goal: Przełożyć pomysł na konkretną scenę
+    persona:
+      name: Postać fikcyjna 29B
+      age: osoba dorosła
+      language: Polish
+      role: autor tworzący sceny
+      background: Interesują go dialogi i zmiany emocjonalne.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Przełożyć pomysł na konkretną scenę. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wspólne tworzenie opowieści
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Ustalić tło działań bohatera / Przełożyć pomysł na konkretną scenę) lub uzgadniają
+    realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+volunteer:
+  id: volunteer
+  title: Wolontariat podczas lokalnego wydarzenia
+  relationship: wolontariusze
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wolontariat podczas lokalnego wydarzenia
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Wyjaśnić zadania nowej osobie / Ustalić obowiązki i sposób proszenia o pomoc
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Wyjaśnić zadania nowej osobie
+    persona:
+      name: Postać fikcyjna 30A
+      age: osoba dorosła
+      language: Polish
+      role: doświadczony organizator wydarzeń
+      background: Zna układ punktów informacyjnych i podział ról.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Wyjaśnić zadania nowej osobie. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wolontariat podczas lokalnego wydarzenia
+  - speaker: agent
+    goal: Ustalić obowiązki i sposób proszenia o pomoc
+    persona:
+      name: Postać fikcyjna 30B
+      age: osoba dorosła
+      language: Polish
+      role: nowy wolontariusz
+      background: Chce pomóc, ale obawia się popełnienia błędu.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Ustalić obowiązki i sposób proszenia o pomoc. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wolontariat podczas lokalnego wydarzenia
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Wyjaśnić zadania nowej osobie / Ustalić obowiązki i sposób proszenia o pomoc)
+    lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+sports:
+  id: sports
+  title: Planowanie ćwiczeń
+  relationship: partnerzy treningowi
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Planowanie ćwiczeń
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Wybrać aktywność, którą można wspólnie kontynuować / Zaproponować niezbyt obciążający cel
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Wybrać aktywność, którą można wspólnie kontynuować
+    persona:
+      name: Postać fikcyjna 31A
+      age: osoba dorosła
+      language: Polish
+      role: osoba regularnie ćwicząca
+      background: Woli umiarkowany plan bez nadmiernego wysiłku.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Wybrać aktywność, którą można wspólnie kontynuować. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Planowanie ćwiczeń
+  - speaker: agent
+    goal: Zaproponować niezbyt obciążający cel
+    persona:
+      name: Postać fikcyjna 31B
+      age: osoba dorosła
+      language: Polish
+      role: osoba wracająca do ćwiczeń
+      background: Nie jest pewna swojej obecnej kondycji.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Zaproponować niezbyt obciążający cel. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Planowanie ćwiczeń
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Wybrać aktywność, którą można wspólnie kontynuować / Zaproponować niezbyt
+    obciążający cel) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+garden:
+  id: garden
+  title: Pielęgnacja roślin
+  relationship: miłośnicy roślin
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Pielęgnacja roślin
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Poznać oznaki, które warto obserwować, i nawyki pielęgnacyjne / Zapytać o stan rośliny i wyjaśnić, jak
+      go sprawdzić
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Poznać oznaki, które warto obserwować, i nawyki pielęgnacyjne
+    persona:
+      name: Postać fikcyjna 32A
+      age: osoba dorosła
+      language: Polish
+      role: osoba, która dopiero zaczyna uprawę roślin
+      background: Nie wie jeszcze, jak często podlewać roślinę.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Poznać oznaki, które warto obserwować, i nawyki pielęgnacyjne. Mówi naturalnie po polsku, po
+        jednym lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie
+        przedstawia niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pielęgnacja roślin
+  - speaker: agent
+    goal: Zapytać o stan rośliny i wyjaśnić, jak go sprawdzić
+    persona:
+      name: Postać fikcyjna 32B
+      age: osoba dorosła
+      language: Polish
+      role: doświadczony hodowca roślin
+      background: Wie, że pielęgnacja zależy od warunków otoczenia.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Zapytać o stan rośliny i wyjaśnić, jak go sprawdzić. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pielęgnacja roślin
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Poznać oznaki, które warto obserwować, i nawyki pielęgnacyjne / Zapytać o
+    stan rośliny i wyjaśnić, jak go sprawdzić) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+lost_item:
+  id: lost_item
+  title: Pytanie o zgubę
+  relationship: osoba, która coś zgubiła, i pracownik informacji
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Pytanie o zgubę
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Przypomnieć sobie cechy przedmiotu i przebytą trasę / Ustalić opis przedmiotu i procedurę kontaktu
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Przypomnieć sobie cechy przedmiotu i przebytą trasę
+    persona:
+      name: Postać fikcyjna 33A
+      age: osoba dorosła
+      language: Polish
+      role: osoba, która zgubiła przedmiot
+      background: Nie ma pewności, gdzie ostatnio widziała zgubę.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Przypomnieć sobie cechy przedmiotu i przebytą trasę. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pytanie o zgubę
+  - speaker: agent
+    goal: Ustalić opis przedmiotu i procedurę kontaktu
+    persona:
+      name: Postać fikcyjna 33B
+      age: osoba dorosła
+      language: Polish
+      role: pracownik biura rzeczy znalezionych
+      background: Nie może twierdzić, że znaleziono przedmiot, dopóki tego nie sprawdzi.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Ustalić opis przedmiotu i procedurę kontaktu. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Pytanie o zgubę
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Przypomnieć sobie cechy przedmiotu i przebytą trasę / Ustalić opis przedmiotu
+    i procedurę kontaktu) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+apology:
+  id: apology
+  title: Wyjaśnienie nieporozumienia
+  relationship: przyjaciele
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Wyjaśnienie nieporozumienia
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Przeprosić bez wymówek i zaproponować naprawienie sytuacji / Wyjaśnić, co było przykre, i ustalić zasady
+      kolejnego spotkania
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Przeprosić bez wymówek i zaproponować naprawienie sytuacji
+    persona:
+      name: Postać fikcyjna 34A
+      age: osoba dorosła
+      language: Polish
+      role: przyjaciel, który nie dotarł na spotkanie
+      background: Ma powód, by wyjaśnić sytuację, ale żałuje, że kazał czekać drugiej osobie.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Przeprosić bez wymówek i zaproponować naprawienie sytuacji. Mówi naturalnie po polsku, po jednym
+        lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wyjaśnienie nieporozumienia
+  - speaker: agent
+    goal: Wyjaśnić, co było przykre, i ustalić zasady kolejnego spotkania
+    persona:
+      name: Postać fikcyjna 34B
+      age: osoba dorosła
+      language: Polish
+      role: przyjaciel, który czekał
+      background: Jest mu przykro, bo długo czekał.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Wyjaśnić, co było przykre, i ustalić zasady kolejnego spotkania. Mówi naturalnie po polsku, po
+        jednym lub dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie
+        przedstawia niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Wyjaśnienie nieporozumienia
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Przeprosić bez wymówek i zaproponować naprawienie sytuacji / Wyjaśnić, co
+    było przykre, i ustalić zasady kolejnego spotkania) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+celebration:
+  id: celebration
+  title: Świętowanie małego sukcesu
+  relationship: współpracownicy
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Świętowanie małego sukcesu
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Podzielić się doświadczeniem i kolejnym celem / Docenić wysiłek i pogratulować bez wywierania presji
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Podzielić się doświadczeniem i kolejnym celem
+    persona:
+      name: Postać fikcyjna 35A
+      age: osoba dorosła
+      language: Polish
+      role: osoba, która osiągnęła mały cel
+      background: Długo się starała, ale nie uważa osiągnięcia za coś wielkiego.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Podzielić się doświadczeniem i kolejnym celem. Mówi naturalnie po polsku, po jednym lub dwóch
+        zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Świętowanie małego sukcesu
+  - speaker: agent
+    goal: Docenić wysiłek i pogratulować bez wywierania presji
+    persona:
+      name: Postać fikcyjna 35B
+      age: osoba dorosła
+      language: Polish
+      role: współpracownik składający gratulacje
+      background: Pamięta konkretne starania drugiej osoby.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Docenić wysiłek i pogratulować bez wywierania presji. Mówi naturalnie po polsku, po jednym lub
+        dwóch zdaniach naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia
+        niepotwierdzonych faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Świętowanie małego sukcesu
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Podzielić się doświadczeniem i kolejnym celem / Docenić wysiłek i pogratulować
+    bez wywierania presji) lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.
+community:
+  id: community
+  title: Spotkanie w sprawie wspólnej przestrzeni
+  relationship: członkowie społeczności
+  context:
+    location: miejsce rozmowy odpowiednie do sytuacji
+    environment: bezpośrednia rozmowa
+    circumstances: Spotkanie w sprawie wspólnej przestrzeni
+  scenario:
+    facts_policy: Wcześniej ustal potrzebne fakty, takie jak ceny, godziny i nazwy miejsc, a następnie przekazuj
+      je konsekwentnie obu osobom.
+    goal: Zapewnić sobie czas na skupioną pracę / Znaleźć porę na spotkania grupowe
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Zapewnić sobie czas na skupioną pracę
+    persona:
+      name: Postać fikcyjna 36A
+      age: osoba dorosła
+      language: Polish
+      role: mieszkaniec potrzebujący cichej wspólnej przestrzeni
+      background: Korzysta z niej do czytania i pracy.
+      personality: Konkretnie wyjaśnia swoje potrzeby i pyta o to, czego nie wie.
+      rules: 'Cel: Zapewnić sobie czas na skupioną pracę. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach
+        naraz. Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych
+        faktów jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Spotkanie w sprawie wspólnej przestrzeni
+  - speaker: agent
+    goal: Znaleźć porę na spotkania grupowe
+    persona:
+      name: Postać fikcyjna 36B
+      age: osoba dorosła
+      language: Polish
+      role: mieszkaniec potrzebujący miejsca na spotkania
+      background: Potrzebuje przestrzeni, w której ludzie mogą się spotykać.
+      personality: Sprawdza cel rozmówcy i wspólnie z nim rozważa możliwe rozwiązania.
+      rules: 'Cel: Znaleźć porę na spotkania grupowe. Mówi naturalnie po polsku, po jednym lub dwóch zdaniach naraz.
+        Nie zna prywatnych informacji, którymi rozmówca się nie podzielił. Nie przedstawia niepotwierdzonych faktów
+        jako pewnych. Emocje mogą zmieniać się w trakcie rozmowy.'
+      circumstances: Spotkanie w sprawie wspólnej przestrzeni
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Obie strony pozostają przy swoich rolach i granicach wiedzy.
+  - Obie strony realizują swoje cele (Zapewnić sobie czas na skupioną pracę / Znaleźć porę na spotkania grupowe)
+    lub uzgadniają realny następny krok.
+  - Odpowiada naturalnie i na temat po polsku, odnosząc się do wypowiedzi rozmówcy.
+  - Nie ma jawnego wywodu rozumowania, tokenów specjalnych ani mechanicznego powtarzania.

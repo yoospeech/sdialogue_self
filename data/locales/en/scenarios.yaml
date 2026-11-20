@@ -1,0 +1,2187 @@
+weekend:
+  id: weekend
+  title: Weekend plans with a friend
+  relationship: Friends
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Weekend plans with a friend
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Plan a half-day walk together / Agree on a relaxing plan with little travel
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Plan a half-day walk together
+    persona:
+      name: Persona weekend-A
+      age: Adult
+      language: English
+      role: A friend suggesting an outdoor activity
+      background: Has extensive hiking experience and enjoys exploring new places
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Plan a half-day walk together. Speak in natural English, one or
+        two sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Weekend plans with a friend
+  - speaker: agent
+    goal: Agree on a relaxing plan with little travel
+    persona:
+      name: Persona weekend-B
+      age: Adult
+      language: English
+      role: A friend who prefers indoor activities
+      background: Has had a busy week at work and wants to conserve energy
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Agree on a relaxing plan with little travel. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Weekend plans with a friend
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Plan a half-day walk together /
+    Agree on a relaxing plan with little travel) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+reunion:
+  id: reunion
+  title: Reconnecting with an old friend
+  relationship: Longtime friends
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Reconnecting with an old friend
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Share recent life updates and suggest meeting again / Hear why the other
+      person reached out and catch up
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Share recent life updates and suggest meeting again
+    persona:
+      name: Persona reunion-A
+      age: Adult
+      language: English
+      role: The friend reaching out again
+      background: Lost touch after moving to another area
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Share recent life updates and suggest meeting again. Speak in
+        natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Reconnecting with an old friend
+  - speaker: agent
+    goal: Hear why the other person reached out and catch up
+    persona:
+      name: Persona reunion-B
+      age: Adult
+      language: English
+      role: The friend who had been waiting to hear from them
+      background: Welcomes old memories but wonders about the sudden message
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Hear why the other person reached out and catch up. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Reconnecting with an old friend
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Share recent life updates and suggest
+    meeting again / Hear why the other person reached out and catch up) or agree on
+    a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+roommates:
+  id: roommates
+  title: Shared household rules
+  relationship: Roommates
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Shared household rules
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Agree on quiet hours at night / Find a considerate arrangement that accommodates
+      both routines
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Agree on quiet hours at night
+    persona:
+      name: Persona roommates-A
+      age: Adult
+      language: English
+      role: A roommate who needs quiet evenings
+      background: Works from home and goes to bed early
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Agree on quiet hours at night. Speak in natural English, one or
+        two sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Shared household rules
+  - speaker: agent
+    goal: Find a considerate arrangement that accommodates both routines
+    persona:
+      name: Persona roommates-B
+      age: Adult
+      language: English
+      role: A roommate who comes home late
+      background: Works late and cooks after getting home
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Find a considerate arrangement that accommodates both routines.
+        Speak in natural English, one or two sentences at a time. You do not know
+        personal information the other person has not shared. Do not present unverified
+        facts as certain. Your emotions may change as the conversation develops.'
+      circumstances: Shared household rules
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Agree on quiet hours at night /
+    Find a considerate arrangement that accommodates both routines) or agree on a
+    realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+family_trip:
+  id: family_trip
+  title: Planning a family trip
+  relationship: Family members
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Planning a family trip
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Create a manageable itinerary / Make sure to leave free time
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Create a manageable itinerary
+    persona:
+      name: Persona family_trip-A
+      age: Adult
+      language: English
+      role: The family member organizing the itinerary
+      background: Has researched the itinerary and possible accommodations
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Create a manageable itinerary. Speak in natural English, one or
+        two sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Planning a family trip
+  - speaker: agent
+    goal: Make sure to leave free time
+    persona:
+      name: Persona family_trip-B
+      age: Adult
+      language: English
+      role: A family member who enjoys spontaneous travel
+      background: Feels overwhelmed when plans are too tightly scheduled
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Make sure to leave free time. Speak in natural English, one or
+        two sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Planning a family trip
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Create a manageable itinerary /
+    Make sure to leave free time) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+siblings:
+  id: siblings
+  title: Preparing for a family event
+  relationship: Siblings
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Preparing for a family event
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Divide the preparation tasks fairly / Offer the time available and other
+      ways to contribute
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Divide the preparation tasks fairly
+    persona:
+      name: Persona siblings-A
+      age: Adult
+      language: English
+      role: The sibling coordinating the event
+      background: Feels that too many preparation tasks have fallen on them
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Divide the preparation tasks fairly. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Preparing for a family event
+  - speaker: agent
+    goal: Offer the time available and other ways to contribute
+    persona:
+      name: Persona siblings-B
+      age: Adult
+      language: English
+      role: A sibling short on time
+      background: Cannot spend much time on in-person preparations because of work
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Offer the time available and other ways to contribute. Speak in
+        natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Preparing for a family event
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Divide the preparation tasks fairly
+    / Offer the time available and other ways to contribute) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+neighbors:
+  id: neighbors
+  title: Resolving noise concerns with a neighbor
+  relationship: Neighbors
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Resolving noise concerns with a neighbor
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Agree on when the noise will stop / Explain the work schedule and adjust
+      it
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Agree on when the noise will stop
+    persona:
+      name: Persona neighbors-A
+      age: Adult
+      language: English
+      role: A neighbor bothered by the noise
+      background: Has had trouble concentrating because of evening work noise
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Agree on when the noise will stop. Speak in natural English, one
+        or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Resolving noise concerns with a neighbor
+  - speaker: agent
+    goal: Explain the work schedule and adjust it
+    persona:
+      name: Persona neighbors-B
+      age: Adult
+      language: English
+      role: A neighbor doing home repairs
+      background: Needs the repairs but did not realize how much they bothered the
+        neighbor
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Explain the work schedule and adjust it. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Resolving noise concerns with a neighbor
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Agree on when the noise will stop
+    / Explain the work schedule and adjust it) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+study:
+  id: study
+  title: Planning study sessions together
+  relationship: Study partners
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Planning study sessions together
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Set the pace for studying / Set aside enough time for practice
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Set the pace for studying
+    persona:
+      name: Persona study-A
+      age: Adult
+      language: English
+      role: A structured learner
+      background: Studies using a review schedule
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Set the pace for studying. Speak in natural English, one or two
+        sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Planning study sessions together
+  - speaker: agent
+    goal: Set aside enough time for practice
+    persona:
+      name: Persona study-B
+      age: Adult
+      language: English
+      role: A hands-on learner
+      background: Understands best by solving problems directly
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Set aside enough time for practice. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Planning study sessions together
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Set the pace for studying / Set
+    aside enough time for practice) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+tutoring:
+  id: tutoring
+  title: Explaining a concept
+  relationship: A teacher and an adult learner
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Explaining a concept
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Check the learner's understanding / Ask about unclear points and check them
+      with examples
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Check the learner's understanding
+    persona:
+      name: Persona tutoring-A
+      age: Adult
+      language: English
+      role: A teacher who encourages questions
+      background: Explains math concepts using everyday examples
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Check the learner''s understanding. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Explaining a concept
+  - speaker: agent
+    goal: Ask about unclear points and check them with examples
+    persona:
+      name: Persona tutoring-B
+      age: Adult
+      language: English
+      role: An adult learner confused about fractions
+      background: Has memorized the formula but struggles to apply it
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Ask about unclear points and check them with examples. Speak in
+        natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Explaining a concept
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Check the learner's understanding
+    / Ask about unclear points and check them with examples) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+language:
+  id: language
+  title: Language exchange
+  relationship: Language-learning partners
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Language exchange
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Describe everyday experiences in your own words / Offer natural expressions
+      in a supportive way
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Describe everyday experiences in your own words
+    persona:
+      name: Persona language-A
+      age: Adult
+      language: English
+      role: A learner practicing speaking
+      background: Knows the words but is not confident forming longer sentences
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Describe everyday experiences in your own words. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Language exchange
+  - speaker: agent
+    goal: Offer natural expressions in a supportive way
+    persona:
+      name: Persona language-B
+      age: Adult
+      language: English
+      role: A language-exchange partner
+      background: Tries to give the other person time to speak for themselves
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Offer natural expressions in a supportive way. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Language exchange
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Describe everyday experiences in
+    your own words / Offer natural expressions in a supportive way) or agree on a
+    realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+mentor:
+  id: mentor
+  title: Exploring career options
+  relationship: A mentor and mentee
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Exploring career options
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Clarify the decision criteria / Help distinguish personal experience from
+      general advice
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Clarify the decision criteria
+    persona:
+      name: Persona mentor-A
+      age: Adult
+      language: English
+      role: An adult considering career options
+      background: Is weighing their current job against a new field
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Clarify the decision criteria. Speak in natural English, one or
+        two sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Exploring career options
+  - speaker: agent
+    goal: Help distinguish personal experience from general advice
+    persona:
+      name: Persona mentor-B
+      age: Adult
+      language: English
+      role: A mentor sharing experience
+      background: Has experience moving into another field
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Help distinguish personal experience from general advice. Speak
+        in natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Exploring career options
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Clarify the decision criteria /
+    Help distinguish personal experience from general advice) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+project:
+  id: project
+  title: Adjusting project scope
+  relationship: Colleagues
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Adjusting project scope
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Agree on the essential features / Propose a scope that fits the schedule
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Agree on the essential features
+    persona:
+      name: Persona project-A
+      age: Adult
+      language: English
+      role: The project planner
+      background: Wants to incorporate user needs before the deadline
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Agree on the essential features. Speak in natural English, one
+        or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Adjusting project scope
+  - speaker: agent
+    goal: Propose a scope that fits the schedule
+    persona:
+      name: Persona project-B
+      age: Adult
+      language: English
+      role: The developer
+      background: Manages the development schedule and testing time
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Propose a scope that fits the schedule. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Adjusting project scope
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Agree on the essential features
+    / Propose a scope that fits the schedule) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+handover:
+  id: handover
+  title: Work handover
+  relationship: Colleagues
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Work handover
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Communicate priorities without omissions / Confirm deadlines and areas of
+      responsibility
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Communicate priorities without omissions
+    persona:
+      name: Persona handover-A
+      age: Adult
+      language: English
+      role: The person handing over the work
+      background: Knows the status well but has little time to explain
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Communicate priorities without omissions. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Work handover
+  - speaker: agent
+    goal: Confirm deadlines and areas of responsibility
+    persona:
+      name: Persona handover-B
+      age: Adult
+      language: English
+      role: The person taking over the work
+      background: Does not yet know the background context
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Confirm deadlines and areas of responsibility. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Work handover
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Communicate priorities without
+    omissions / Confirm deadlines and areas of responsibility) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+feedback:
+  id: feedback
+  title: Feedback on a draft
+  relationship: Colleagues
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Feedback on a draft
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Get specific suggestions for revision / Separate strengths from areas for
+      improvement
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Get specific suggestions for revision
+    persona:
+      name: Persona feedback-A
+      age: Adult
+      language: English
+      role: The author sharing a draft
+      background: Has a clear intent but is nervous about feedback
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Get specific suggestions for revision. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Feedback on a draft
+  - speaker: agent
+    goal: Separate strengths from areas for improvement
+    persona:
+      name: Persona feedback-B
+      age: Adult
+      language: English
+      role: A colleague reviewing the draft
+      background: Values a structure that is easy for readers to understand
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Separate strengths from areas for improvement. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Feedback on a draft
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Get specific suggestions for revision
+    / Separate strengths from areas for improvement) or agree on a realistic next
+    step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+remote:
+  id: remote
+  title: Coordinating schedules remotely
+  relationship: Colleagues in different locations
+  context:
+    location: In different locations
+    environment: By phone
+    circumstances: Coordinating schedules remotely
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Find a time for a meeting / Hear the key points briefly and confirm a time
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Find a time for a meeting
+    persona:
+      name: Persona remote-A
+      age: Adult
+      language: English
+      role: The colleague requesting a meeting
+      background: Has something to discuss today but can adjust the schedule
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Find a time for a meeting. Speak in natural English, one or two
+        sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Coordinating schedules remotely
+  - speaker: agent
+    goal: Hear the key points briefly and confirm a time
+    persona:
+      name: Persona remote-B
+      age: Adult
+      language: English
+      role: A colleague on the move
+      background: Cannot talk for long or take notes easily
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Hear the key points briefly and confirm a time. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Coordinating schedules remotely
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Find a time for a meeting / Hear
+    the key points briefly and confirm a time) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+interview:
+  id: interview
+  title: Job interview
+  relationship: Interviewer and applicant
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Job interview
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Discuss collaboration experience and the reasoning behind decisions / Explain
+      your role and what you learned
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Discuss collaboration experience and the reasoning behind decisions
+    persona:
+      name: Persona interview-A
+      age: Adult
+      language: English
+      role: An interviewer asking about work experience
+      background: Wants to hear specific examples from work
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Discuss collaboration experience and the reasoning behind decisions.
+        Speak in natural English, one or two sentences at a time. You do not know
+        personal information the other person has not shared. Do not present unverified
+        facts as certain. Your emotions may change as the conversation develops.'
+      circumstances: Job interview
+  - speaker: agent
+    goal: Explain your role and what you learned
+    persona:
+      name: Persona interview-B
+      age: Adult
+      language: English
+      role: A job applicant
+      background: Has practical examples but feels nervous speaking about them
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Explain your role and what you learned. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Job interview
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Discuss collaboration experience
+    and the reasoning behind decisions / Explain your role and what you learned) or
+    agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+design:
+  id: design
+  title: Agreeing on a design direction
+  relationship: Designer and client
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Agreeing on a design direction
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Turn requirements into specific design criteria / Communicate preferences
+      through examples you like
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Turn requirements into specific design criteria
+    persona:
+      name: Persona design-A
+      age: Adult
+      language: English
+      role: The designer
+      background: Prepares proposals with a focus on usability
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Turn requirements into specific design criteria. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Agreeing on a design direction
+  - speaker: agent
+    goal: Communicate preferences through examples you like
+    persona:
+      name: Persona design-B
+      age: Adult
+      language: English
+      role: A client organizing a small event
+      background: Knows the desired feel but not the technical terms
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Communicate preferences through examples you like. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Agreeing on a design direction
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Turn requirements into specific
+    design criteria / Communicate preferences through examples you like) or agree
+    on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+travel:
+  id: travel
+  title: Giving directions
+  relationship: Traveler and local resident
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Giving directions
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Find an easy route to the destination / Explain the route using landmarks
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Find an easy route to the destination
+    persona:
+      name: Persona travel-A
+      age: Adult
+      language: English
+      role: A first-time visitor
+      background: Does not know the neighborhood or its transit connections
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Find an easy route to the destination. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Giving directions
+  - speaker: agent
+    goal: Explain the route using landmarks
+    persona:
+      name: Persona travel-B
+      age: Adult
+      language: English
+      role: A local giving directions
+      background: Knows the main landmarks in the neighborhood
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Explain the route using landmarks. Speak in natural English, one
+        or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Giving directions
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Find an easy route to the destination
+    / Explain the route using landmarks) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+hotel:
+  id: hotel
+  title: Accommodation request
+  relationship: Guest and hotel staff
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Accommodation request
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Ask about possible room changes / Clarify the request and explain the available
+      options
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ask about possible room changes
+    persona:
+      name: Persona hotel-A
+      age: Adult
+      language: English
+      role: A guest who wants a quiet room
+      background: Wants to rest early and is concerned about noise nearby
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Ask about possible room changes. Speak in natural English, one
+        or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Accommodation request
+  - speaker: agent
+    goal: Clarify the request and explain the available options
+    persona:
+      name: Persona hotel-B
+      age: Adult
+      language: English
+      role: A hotel staff member
+      background: Can confirm only after checking room availability
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Clarify the request and explain the available options. Speak in
+        natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Accommodation request
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Ask about possible room changes
+    / Clarify the request and explain the available options) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+museum:
+  id: museum
+  title: Discussing an exhibition
+  relationship: Visitor and gallery guide
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Discussing an exhibition
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Understand the work's expressive intent / Help the visitor make their own
+      observations
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Understand the work's expressive intent
+    persona:
+      name: Persona museum-A
+      age: Adult
+      language: English
+      role: A curious visitor
+      background: Has little background knowledge of the exhibition topic
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Understand the work''s expressive intent. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Discussing an exhibition
+  - speaker: agent
+    goal: Help the visitor make their own observations
+    persona:
+      name: Persona museum-B
+      age: Adult
+      language: English
+      role: A gallery guide
+      background: Uses simple analogies and questions that prompt observation
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Help the visitor make their own observations. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Discussing an exhibition
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Understand the work's expressive
+    intent / Help the visitor make their own observations) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+restaurant:
+  id: restaurant
+  title: Ordering a meal
+  relationship: Customer and staff member
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Ordering a meal
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Ask about taste and portion size before ordering / Ask about preferences
+      and explain suitable options
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ask about taste and portion size before ordering
+    persona:
+      name: Persona restaurant-A
+      age: Adult
+      language: English
+      role: A customer choosing from the menu
+      background: Many menu items are unfamiliar
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Ask about taste and portion size before ordering. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Ordering a meal
+  - speaker: agent
+    goal: Ask about preferences and explain suitable options
+    persona:
+      name: Persona restaurant-B
+      age: Adult
+      language: English
+      role: A staff member describing the menu
+      background: Knows the ingredients and cooking methods but not the customer's
+        preferences
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Ask about preferences and explain suitable options. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Ordering a meal
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Ask about taste and portion size
+    before ordering / Ask about preferences and explain suitable options) or agree
+    on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+cooking:
+  id: cooking
+  title: Cooking together
+  relationship: Cooking partners
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Cooking together
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Explain the steps so a beginner can follow / Ask about unclear instructions
+      and take on a role
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Explain the steps so a beginner can follow
+    persona:
+      name: Persona cooking-A
+      age: Adult
+      language: English
+      role: An experienced cook
+      background: Tends to explain familiar methods quickly
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Explain the steps so a beginner can follow. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Cooking together
+  - speaker: agent
+    goal: Ask about unclear instructions and take on a role
+    persona:
+      name: Persona cooking-B
+      age: Adult
+      language: English
+      role: A beginner cook
+      background: Is unfamiliar with the tools and cooking terms
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Ask about unclear instructions and take on a role. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Cooking together
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Explain the steps so a beginner
+    can follow / Ask about unclear instructions and take on a role) or agree on a
+    realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+shopping:
+  id: shopping
+  title: Comparing products
+  relationship: Customer and sales associate
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Comparing products
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Choose without spending more than necessary / Ask how the product will be
+      used and explain the differences
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Choose without spending more than necessary
+    persona:
+      name: Persona shopping-A
+      age: Adult
+      language: English
+      role: A customer comparing products
+      background: Has a budget and essential features in mind
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Choose without spending more than necessary. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Comparing products
+  - speaker: agent
+    goal: Ask how the product will be used and explain the differences
+    persona:
+      name: Persona shopping-B
+      age: Adult
+      language: English
+      role: A product specialist
+      background: Compares and explains fictional product features
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Ask how the product will be used and explain the differences.
+        Speak in natural English, one or two sentences at a time. You do not know
+        personal information the other person has not shared. Do not present unverified
+        facts as certain. Your emotions may change as the conversation develops.'
+      circumstances: Comparing products
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Choose without spending more than
+    necessary / Ask how the product will be used and explain the differences) or agree
+    on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+repair:
+  id: repair
+  title: Requesting a repair
+  relationship: Device owner and repair staff
+  context:
+    location: In different locations
+    environment: By phone
+    circumstances: Requesting a repair
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Describe the symptoms accurately and schedule an inspection / Clarify the
+      symptoms and safe next steps
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Describe the symptoms accurately and schedule an inspection
+    persona:
+      name: Persona repair-A
+      age: Adult
+      language: English
+      role: A device owner dealing with a malfunction
+      background: Remembers when the problem occurs
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Describe the symptoms accurately and schedule an inspection. Speak
+        in natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Requesting a repair
+  - speaker: agent
+    goal: Clarify the symptoms and safe next steps
+    persona:
+      name: Persona repair-B
+      age: Adult
+      language: English
+      role: A repair intake specialist
+      background: Cannot confirm the fault until inspecting the device
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Clarify the symptoms and safe next steps. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Requesting a repair
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Describe the symptoms accurately
+    and schedule an inspection / Clarify the symptoms and safe next steps) or agree
+    on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+delivery:
+  id: delivery
+  title: Delivery inquiry
+  relationship: Recipient and delivery worker
+  context:
+    location: In different locations
+    environment: By phone
+    circumstances: Delivery inquiry
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Ask about available delivery options / Confirm the delivery requirements
+      and explain alternatives
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Ask about available delivery options
+    persona:
+      name: Persona delivery-A
+      age: Adult
+      language: English
+      role: A recipient checking the arrival time
+      background: Has limited availability to receive the delivery
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Ask about available delivery options. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Delivery inquiry
+  - speaker: agent
+    goal: Confirm the delivery requirements and explain alternatives
+    persona:
+      name: Persona delivery-B
+      age: Adult
+      language: English
+      role: A delivery worker
+      background: Can provide only confirmed schedule information
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Confirm the delivery requirements and explain alternatives. Speak
+        in natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Delivery inquiry
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Ask about available delivery options
+    / Confirm the delivery requirements and explain alternatives) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+library:
+  id: library
+  title: Book recommendations
+  relationship: Reader and librarian
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Book recommendations
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Find a kind of book that feels easy to read / Suggest search criteria that
+      match the reader's tastes
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Find a kind of book that feels easy to read
+    persona:
+      name: Persona library-A
+      age: Adult
+      language: English
+      role: A reader looking for a new genre
+      background: Can describe what they liked about recently read books
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Find a kind of book that feels easy to read. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Book recommendations
+  - speaker: agent
+    goal: Suggest search criteria that match the reader's tastes
+    persona:
+      name: Persona library-B
+      age: Adult
+      language: English
+      role: A librarian
+      background: Asks about the reader's purpose and preferences
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Suggest search criteria that match the reader''s tastes. Speak
+        in natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Book recommendations
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Find a kind of book that feels
+    easy to read / Suggest search criteria that match the reader's tastes) or agree
+    on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+bookclub:
+  id: bookclub
+  title: Book discussion
+  relationship: Book club members
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Book discussion
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Explain your interpretation / Compare the reasoning behind different interpretations
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Explain your interpretation
+    persona:
+      name: Persona bookclub-A
+      age: Adult
+      language: English
+      role: A reader who empathized with a character
+      background: Focused on the characters' emotions while reading
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Explain your interpretation. Speak in natural English, one or
+        two sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Book discussion
+  - speaker: agent
+    goal: Compare the reasoning behind different interpretations
+    persona:
+      name: Persona bookclub-B
+      age: Adult
+      language: English
+      role: A reader who analyzes structure
+      background: Values narrative structure and cause-and-effect between events
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Compare the reasoning behind different interpretations. Speak
+        in natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Book discussion
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Explain your interpretation / Compare
+    the reasoning behind different interpretations) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+music:
+  id: music
+  title: Collaborating on music
+  relationship: Musicians
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Collaborating on music
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Agree on the ensemble tempo and starting cue / Share and agree on the intended
+      expression
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Agree on the ensemble tempo and starting cue
+    persona:
+      name: Persona music-A
+      age: Adult
+      language: English
+      role: A musician focused on rhythm
+      background: Tries to synchronize through repeated practice
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Agree on the ensemble tempo and starting cue. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Collaborating on music
+  - speaker: agent
+    goal: Share and agree on the intended expression
+    persona:
+      name: Persona music-B
+      age: Adult
+      language: English
+      role: A musician focused on expression
+      background: First imagines the dynamics and mood
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Share and agree on the intended expression. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Collaborating on music
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Agree on the ensemble tempo and
+    starting cue / Share and agree on the intended expression) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+podcast:
+  id: podcast
+  title: Podcast interview
+  relationship: Host and guest
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Podcast interview
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Draw out examples with open-ended questions / Describe experiences vividly
+      without exaggerating
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Draw out examples with open-ended questions
+    persona:
+      name: Persona podcast-A
+      age: Adult
+      language: English
+      role: A podcast host
+      background: Wants to hear concrete details about the guest's experience
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Draw out examples with open-ended questions. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Podcast interview
+  - speaker: agent
+    goal: Describe experiences vividly without exaggerating
+    persona:
+      name: Persona podcast-B
+      age: Adult
+      language: English
+      role: A guest talking about a hobby
+      background: Has had many small successes and setbacks
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Describe experiences vividly without exaggerating. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Podcast interview
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Draw out examples with open-ended
+    questions / Describe experiences vividly without exaggerating) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+writing:
+  id: writing
+  title: Co-writing a story
+  relationship: Co-writers
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Co-writing a story
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Establish the reasons behind a character's actions / Turn the setting into
+      a concrete scene
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Establish the reasons behind a character's actions
+    persona:
+      name: Persona writing-A
+      age: Adult
+      language: English
+      role: A writer developing the setting
+      background: Values a coherent world and logical consistency
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Establish the reasons behind a character''s actions. Speak in
+        natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Co-writing a story
+  - speaker: agent
+    goal: Turn the setting into a concrete scene
+    persona:
+      name: Persona writing-B
+      age: Adult
+      language: English
+      role: A writer developing scenes
+      background: Focuses on dialogue and emotional shifts
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Turn the setting into a concrete scene. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Co-writing a story
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Establish the reasons behind a
+    character's actions / Turn the setting into a concrete scene) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+volunteer:
+  id: volunteer
+  title: Volunteering at a community event
+  relationship: Volunteers
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Volunteering at a community event
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Explain the tasks to a first-time volunteer / Clarify what to do and how
+      to ask for help
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Explain the tasks to a first-time volunteer
+    persona:
+      name: Persona volunteer-A
+      age: Adult
+      language: English
+      role: An experienced event volunteer
+      background: Knows the visitor routes and how tasks are assigned
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Explain the tasks to a first-time volunteer. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Volunteering at a community event
+  - speaker: agent
+    goal: Clarify what to do and how to ask for help
+    persona:
+      name: Persona volunteer-B
+      age: Adult
+      language: English
+      role: A first-time volunteer
+      background: Wants to help but is worried about making a mistake
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Clarify what to do and how to ask for help. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Volunteering at a community event
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Explain the tasks to a first-time
+    volunteer / Clarify what to do and how to ask for help) or agree on a realistic
+    next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+sports:
+  id: sports
+  title: Planning exercise
+  relationship: Exercise partners
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Planning exercise
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Choose an activity both can sustain / Suggest a manageable goal
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Choose an activity both can sustain
+    persona:
+      name: Persona sports-A
+      age: Adult
+      language: English
+      role: Someone who exercises regularly
+      background: Prefers a schedule that is not too demanding
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Choose an activity both can sustain. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Planning exercise
+  - speaker: agent
+    goal: Suggest a manageable goal
+    persona:
+      name: Persona sports-B
+      age: Adult
+      language: English
+      role: Someone returning to exercise
+      background: Is unsure about their current fitness
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Suggest a manageable goal. Speak in natural English, one or two
+        sentences at a time. You do not know personal information the other person
+        has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Planning exercise
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Choose an activity both can sustain
+    / Suggest a manageable goal) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+garden:
+  id: garden
+  title: Caring for plants
+  relationship: Plant enthusiasts
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Caring for plants
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Learn what signs to watch for and which care habits to follow / Ask about
+      the plant's condition and explain how to check it
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Learn what signs to watch for and which care habits to follow
+    persona:
+      name: Persona garden-A
+      age: Adult
+      language: English
+      role: A first-time plant owner
+      background: Does not yet know how often to water the plant
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Learn what signs to watch for and which care habits to follow.
+        Speak in natural English, one or two sentences at a time. You do not know
+        personal information the other person has not shared. Do not present unverified
+        facts as certain. Your emotions may change as the conversation develops.'
+      circumstances: Caring for plants
+  - speaker: agent
+    goal: Ask about the plant's condition and explain how to check it
+    persona:
+      name: Persona garden-B
+      age: Adult
+      language: English
+      role: An experienced plant owner
+      background: Knows that care needs vary with the environment
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Ask about the plant''s condition and explain how to check it.
+        Speak in natural English, one or two sentences at a time. You do not know
+        personal information the other person has not shared. Do not present unverified
+        facts as certain. Your emotions may change as the conversation develops.'
+      circumstances: Caring for plants
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Learn what signs to watch for and
+    which care habits to follow / Ask about the plant's condition and explain how
+    to check it) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+lost_item:
+  id: lost_item
+  title: Lost item inquiry
+  relationship: Person who lost an item and information desk staff
+  context:
+    location: In different locations
+    environment: By phone
+    circumstances: Lost item inquiry
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Describe the item's features and retrace where you went / Confirm the item's
+      features and how follow-up works
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Describe the item's features and retrace where you went
+    persona:
+      name: Persona lost_item-A
+      age: Adult
+      language: English
+      role: The person who lost an item
+      background: Is not sure where they last saw it
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Describe the item''s features and retrace where you went. Speak
+        in natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Lost item inquiry
+  - speaker: agent
+    goal: Confirm the item's features and how follow-up works
+    persona:
+      name: Persona lost_item-B
+      age: Adult
+      language: English
+      role: Lost and found staff member
+      background: Cannot claim an item has been found without confirming it
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Confirm the item''s features and how follow-up works. Speak in
+        natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Lost item inquiry
+  audio:
+    preset: call_center
+    stereo: true
+    noise:
+      user:
+        type: pink
+        snr:
+        - 15
+        - 25
+      agent: false
+    channel:
+      user: g711
+      agent: false
+    level_jitter_db: 0
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Describe the item's features and
+    retrace where you went / Confirm the item's features and how follow-up works)
+    or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+apology:
+  id: apology
+  title: Resolving a misunderstanding
+  relationship: Friends
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Resolving a misunderstanding
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Apologize without making excuses and offer a way to make amends / Explain
+      the impact and agree on expectations for future plans
+  suitable_moods:
+  - calm
+  - curious
+  - frustrated
+  - disappointed
+  - relieved
+  participants:
+  - speaker: user
+    goal: Apologize without making excuses and offer a way to make amends
+    persona:
+      name: Persona apology-A
+      age: Adult
+      language: English
+      role: The friend who missed a plan
+      background: Has an explanation but feels sorry about the impact
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Apologize without making excuses and offer a way to make amends.
+        Speak in natural English, one or two sentences at a time. You do not know
+        personal information the other person has not shared. Do not present unverified
+        facts as certain. Your emotions may change as the conversation develops.'
+      circumstances: Resolving a misunderstanding
+  - speaker: agent
+    goal: Explain the impact and agree on expectations for future plans
+    persona:
+      name: Persona apology-B
+      age: Adult
+      language: English
+      role: The friend who was kept waiting
+      background: Feels hurt after waiting a long time
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Explain the impact and agree on expectations for future plans.
+        Speak in natural English, one or two sentences at a time. You do not know
+        personal information the other person has not shared. Do not present unverified
+        facts as certain. Your emotions may change as the conversation develops.'
+      circumstances: Resolving a misunderstanding
+  audio:
+    preset: clean
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Apologize without making excuses
+    and offer a way to make amends / Explain the impact and agree on expectations
+    for future plans) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+celebration:
+  id: celebration
+  title: Celebrating a small achievement
+  relationship: Colleagues
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Celebrating a small achievement
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Share the experience and discuss the next goal / Recognize the effort and
+      celebrate without adding pressure
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Share the experience and discuss the next goal
+    persona:
+      name: Persona celebration-A
+      age: Adult
+      language: English
+      role: Someone who achieved a small goal
+      background: Has worked steadily but does not see the achievement as a big deal
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Share the experience and discuss the next goal. Speak in natural
+        English, one or two sentences at a time. You do not know personal information
+        the other person has not shared. Do not present unverified facts as certain.
+        Your emotions may change as the conversation develops.'
+      circumstances: Celebrating a small achievement
+  - speaker: agent
+    goal: Recognize the effort and celebrate without adding pressure
+    persona:
+      name: Persona celebration-B
+      age: Adult
+      language: English
+      role: A colleague celebrating the achievement
+      background: Remembers the other person's specific efforts
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Recognize the effort and celebrate without adding pressure. Speak
+        in natural English, one or two sentences at a time. You do not know personal
+        information the other person has not shared. Do not present unverified facts
+        as certain. Your emotions may change as the conversation develops.'
+      circumstances: Celebrating a small achievement
+  audio:
+    preset: conversational
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Share the experience and discuss
+    the next goal / Recognize the effort and celebrate without adding pressure) or
+    agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
+community:
+  id: community
+  title: Meeting about a shared space
+  relationship: Members of a residents' group
+  context:
+    location: A conversational setting appropriate to the situation
+    environment: In person
+    circumstances: Meeting about a shared space
+  scenario:
+    facts_policy: Establish any needed facts, such as prices, times, and place names,
+      before generation and provide them consistently to both parties.
+    goal: Set aside quiet hours for focused work / Set aside time for group activities
+  suitable_moods:
+  - calm
+  - curious
+  - uncertain
+  - excited
+  - skeptical
+  participants:
+  - speaker: user
+    goal: Set aside quiet hours for focused work
+    persona:
+      name: Persona community-A
+      age: Adult
+      language: English
+      role: A resident who wants a quiet shared space
+      background: Uses the space for reading and work
+      personality: Explain your needs specifically and ask about anything you do not
+        know.
+      rules: 'Goal: Set aside quiet hours for focused work. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Meeting about a shared space
+  - speaker: agent
+    goal: Set aside time for group activities
+    persona:
+      name: Persona community-B
+      age: Adult
+      language: English
+      role: A resident who wants to hold group activities
+      background: Wants a place where people can connect
+      personality: Check the other person's goal and consider the available options
+        together.
+      rules: 'Goal: Set aside time for group activities. Speak in natural English,
+        one or two sentences at a time. You do not know personal information the other
+        person has not shared. Do not present unverified facts as certain. Your emotions
+        may change as the conversation develops.'
+      circumstances: Meeting about a shared space
+  audio:
+    preset: room
+    stereo: true
+  evaluation_criteria:
+  - Both parties stay within their respective roles and knowledge.
+  - Both parties make progress toward their goals (Set aside quiet hours for focused
+    work / Set aside time for group activities) or agree on a realistic next step.
+  - Respond naturally in English and stay relevant to the other person's contribution.
+  - Avoid reasoning traces, special tokens, and mechanical repetition.
