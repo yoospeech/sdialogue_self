@@ -69,14 +69,36 @@ class PersonaProfile:
             persona = PERSONAS[0].to_sdialog(language="Korean")
         """
         from sdialog.personas import Persona
-        language_name = LANGUAGES[_language_code(language or self.language)]
-        rules = self.rules.replace("자연스러운 한국어로", f"자연스러운 {language_name}로")
+        language_code = _language_code(language or self.language)
+        language_name = LANGUAGES[language_code]
+        if language_code == "en":
+            scenario_name = self.scenario_id.replace("_", " ")
+            name = f"{self.scenario_id}-{self.persona_id.rsplit('_', 1)[-1]}"
+            role = f"{self.speaker} participant in the {scenario_name} scenario"
+            background = f"A fictional adult participating in a {scenario_name} conversation."
+            personality = f"Mood: {self.mood}. Communication style: concise and collaborative."
+            circumstances = f"{scenario_name} conversation. Constraint: communicate clearly and stay in role."
+            rules = (
+                f"Speak natural English in one or two sentences. Stay within the {scenario_name} scenario. "
+                "Do not invent private information or unverified facts."
+            )
+            goal = f"Make practical progress on the shared {scenario_name} objective."
+            experience = "This is a fictional scenario-specific participant."
+        else:
+            name = self.name
+            role = self.role
+            background = f"{self.background} {self.experience}"
+            personality = f"현재 감정: {self.mood}. 말하기 방식: {self.communication_style}"
+            circumstances = f"{self.circumstances} 개인 제약: {self.constraint}"
+            rules = self.rules.replace("자연스러운 한국어로", f"자연스러운 {language_name}로")
+            goal = self.goal
+            experience = self.experience
         return Persona(
-            name=self.name, age=self.age, language=language_name, role=self.role,
-            background=f"{self.background} {self.experience}",
-            personality=f"현재 감정: {self.mood}. 말하기 방식: {self.communication_style}",
-            circumstances=f"{self.circumstances} 개인 제약: {self.constraint}",
-            rules=(f"{rules} 개인 목표: {self.goal}. 실제 이름: {self.name}. "
+            name=name, age=self.age, language=language_name, role=role,
+            background=background,
+            personality=personality,
+            circumstances=circumstances,
+            rules=(f"{rules} Goal: {goal}. Experience: {experience}. Name: {name}. "
                    f"Speak in {language_name}. The profile descriptions are metadata, not the output language. "
                    f"Express numbers and codes as spoken words in {language_name}."),
         )
@@ -190,10 +212,12 @@ def get_pair(scenario_id: str, variant: int = 0,
     return replace(a, language=code), replace(b, language=code)
 
 
-def get_scenario(scenario_id: str) -> Dict[str, Any]:
+def get_scenario(scenario_id: str, language: Optional[str] = None) -> Dict[str, Any]:
     """Return an independent copy of context, goals, audio settings and evaluation criteria.
 
     :param scenario_id: Scenario key.
+    :param language: Optional language for human-readable scenario metadata. English metadata is localized;
+        other languages retain the catalog metadata while the agents still receive the selected output language.
     :return: A scenario dictionary. Noise SNR ranges are tuples for the Audio API.
 
     Example:
@@ -201,6 +225,23 @@ def get_scenario(scenario_id: str) -> Dict[str, Any]:
     """
     import copy
     result = copy.deepcopy(_SCENARIOS[scenario_id])
+    if language is not None and _language_code(language) == "en":
+        title = scenario_id.replace("_", " ").title()
+        result["title"] = title
+        result["relationship"] = "Two fictional participants"
+        result["context"] = {
+            "location": "a suitable conversation space",
+            "environment": "phone call" if result["context"]["environment"] == "전화" else "in person",
+            "circumstances": title,
+        }
+        result["scenario"]["goal"] = f"Make practical progress on the {title.lower()} scenario."
+        result["scenario"]["facts_policy"] = "Use only facts established in the conversation."
+        result["evaluation_criteria"] = [
+            "Both participants maintain their roles and knowledge boundaries",
+            "The conversation makes practical progress toward a shared objective",
+            "Responses are relevant, concise, and natural in English",
+            "There is no hidden reasoning, special token, or mechanical repetition",
+        ]
     for value in result["audio"].get("noise", {}).values():
         if isinstance(value, dict) and isinstance(value.get("snr"), list):
             value["snr"] = tuple(value["snr"])
